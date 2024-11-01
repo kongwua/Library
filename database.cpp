@@ -79,3 +79,21 @@ bool database::chack_user(User user) {
         return false;
     }
 }
+
+bool database::insert_user(User user) {
+    //插入用户信息到数据库
+    QSqlDatabase db = QSqlDatabase::database(QString("user.db"));//打开用户数据库
+    QSqlQuery query(db);//创建查询对象
+    query.prepare("insert into user_table(id, psw, type) values(:id, :psw, :type)");
+    query.bindValue(":id", user.id);
+    query.bindValue(":psw", user.psw);
+    query.bindValue(":type", user.type);
+    if (query.exec()) {
+//        qDebug() << "用户信息插入成功";
+        return true;
+    } else{
+        qDebug() << "插入失败:" << query.lastError().text();
+        return false;
+    }
+
+}

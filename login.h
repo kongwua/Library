@@ -22,6 +22,7 @@ public:
     ~login() override;
 public slots:
     void user_login();//登录槽函数
+    void user_register(); //注册槽函数
 private:
     Ui::login *ui;
 };
