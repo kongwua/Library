@@ -6,19 +6,16 @@
 #define LIBRARY_LIBRARY_H
 #include "login.h"
 
-enum UserType{//用户类型枚举
-    Admin,//管理员
-    Student//学生
-};
+
 
 class User{
     //用户类
 public:
 
-private:
     QString id;//用户账号
     QString psw;//用户密码
-    UserType type;//用户类型
+    int type;//用户类型,0为管理员，1为学生
+
 };
 
 #endif //LIBRARY_LIBRARY_H

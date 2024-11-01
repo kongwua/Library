@@ -10,10 +10,13 @@
 #include <QSqlError>
 #include <QDebug>
 #include <QDir>
+
+#include "Library.h"
 class database {
     public:
     static void create_database(QString db_name); //创建数据库
     static void create_user_table();//创建用户表格
+    static bool chack_user(User user);//验证用户
 };
 
 
