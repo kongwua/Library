@@ -27,10 +27,12 @@
 			"D:/app_install/QT/6.5.3/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
 			"D:/app_install/QT/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake",
 			"D:/app_install/QT/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"D:/app_install/QT/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
+			"D:/app_install/QT/6.5.3/mingw_64/lib/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake",
+			"D:/app_install/QT/6.5.3/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfig.cmake",
 			"D:/app_install/QT/6.5.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake",
 			"D:/app_install/QT/6.5.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
-			"D:/app_install/QT/6.5.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
-			"D:/app_install/QT/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake"
+			"D:/app_install/QT/6.5.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake"
 		],
 		"nodes" : 
 		[
@@ -40,7 +42,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 17,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
@@ -106,67 +108,93 @@
 				"parent" : 12
 			},
 			{
-				"command" : 3,
-				"file" : 3,
-				"line" : 157,
-				"parent" : 3
-			},
-			{
-				"file" : 7,
-				"parent" : 14
-			},
-			{
-				"command" : 2,
-				"file" : 7,
-				"line" : 55,
-				"parent" : 15
-			},
-			{
-				"file" : 6,
-				"parent" : 16
-			},
-			{
-				"command" : 1,
-				"file" : 6,
-				"line" : 61,
-				"parent" : 17
-			},
-			{
-				"command" : 2,
-				"file" : 7,
-				"line" : 52,
-				"parent" : 15
-			},
-			{
-				"file" : 8,
-				"parent" : 19
-			},
-			{
-				"command" : 1,
-				"file" : 8,
-				"line" : 61,
-				"parent" : 20
-			},
-			{
 				"command" : 2,
 				"file" : 5,
 				"line" : 52,
 				"parent" : 10
 			},
 			{
-				"file" : 9,
+				"file" : 6,
+				"parent" : 14
+			},
+			{
+				"command" : 1,
+				"file" : 6,
+				"line" : 61,
+				"parent" : 15
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 157,
+				"parent" : 3
+			},
+			{
+				"file" : 8,
+				"parent" : 17
+			},
+			{
+				"command" : 2,
+				"file" : 8,
+				"line" : 55,
+				"parent" : 18
+			},
+			{
+				"file" : 7,
+				"parent" : 19
+			},
+			{
+				"command" : 1,
+				"file" : 7,
+				"line" : 61,
+				"parent" : 20
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 157,
+				"parent" : 3
+			},
+			{
+				"file" : 10,
 				"parent" : 22
+			},
+			{
+				"command" : 2,
+				"file" : 10,
+				"line" : 55,
+				"parent" : 23
+			},
+			{
+				"file" : 9,
+				"parent" : 24
 			},
 			{
 				"command" : 1,
 				"file" : 9,
 				"line" : 61,
+				"parent" : 25
+			},
+			{
+				"command" : 2,
+				"file" : 10,
+				"line" : 52,
 				"parent" : 23
+			},
+			{
+				"file" : 11,
+				"parent" : 27
+			},
+			{
+				"command" : 1,
+				"file" : 11,
+				"line" : 61,
+				"parent" : 28
 			},
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 21,
+				"line" : 26,
 				"parent" : 0
 			}
 		]
@@ -177,49 +205,53 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-DQT_QML_DEBUG -g -fdiagnostics-color=always"
+					"fragment" : "-g -fdiagnostics-color=always"
 				}
 			],
 			"defines" : 
 			[
 				{
-					"backtrace" : 25,
+					"backtrace" : 30,
 					"define" : "MINGW_HAS_SECURE_API=1"
 				},
 				{
-					"backtrace" : 25,
+					"backtrace" : 30,
 					"define" : "QT_CORE_LIB"
 				},
 				{
-					"backtrace" : 25,
+					"backtrace" : 30,
 					"define" : "QT_GUI_LIB"
 				},
 				{
-					"backtrace" : 25,
+					"backtrace" : 30,
+					"define" : "QT_SQL_LIB"
+				},
+				{
+					"backtrace" : 30,
 					"define" : "QT_WIDGETS_LIB"
 				},
 				{
-					"backtrace" : 25,
+					"backtrace" : 30,
 					"define" : "UNICODE"
 				},
 				{
-					"backtrace" : 25,
+					"backtrace" : 30,
 					"define" : "WIN32"
 				},
 				{
-					"backtrace" : 25,
+					"backtrace" : 30,
 					"define" : "WIN64"
 				},
 				{
-					"backtrace" : 25,
+					"backtrace" : 30,
 					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
 				},
 				{
-					"backtrace" : 25,
+					"backtrace" : 30,
 					"define" : "_UNICODE"
 				},
 				{
-					"backtrace" : 25,
+					"backtrace" : 30,
 					"define" : "_WIN64"
 				}
 			],
@@ -228,32 +260,37 @@
 				{
 					"backtrace" : 0,
 					"isSystem" : true,
-					"path" : "C:/Users/recatu/Documents/Library/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/include"
+					"path" : "C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include"
 				},
 				{
-					"backtrace" : 25,
+					"backtrace" : 30,
 					"isSystem" : true,
 					"path" : "D:/app_install/QT/6.5.3/mingw_64/include/QtCore"
 				},
 				{
-					"backtrace" : 25,
+					"backtrace" : 30,
 					"isSystem" : true,
 					"path" : "D:/app_install/QT/6.5.3/mingw_64/include"
 				},
 				{
-					"backtrace" : 25,
+					"backtrace" : 30,
 					"isSystem" : true,
 					"path" : "D:/app_install/QT/6.5.3/mingw_64/mkspecs/win32-g++"
 				},
 				{
-					"backtrace" : 25,
+					"backtrace" : 30,
 					"isSystem" : true,
 					"path" : "D:/app_install/QT/6.5.3/mingw_64/include/QtGui"
 				},
 				{
-					"backtrace" : 25,
+					"backtrace" : 30,
 					"isSystem" : true,
 					"path" : "D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets"
+				},
+				{
+					"backtrace" : 30,
+					"isSystem" : true,
+					"path" : "D:/app_install/QT/6.5.3/mingw_64/include/QtSql"
 				}
 			],
 			"language" : "CXX",
@@ -261,8 +298,8 @@
 			{
 				"backtraces" : 
 				[
-					25,
-					25
+					30,
+					30
 				],
 				"standard" : "17"
 			},
@@ -270,7 +307,8 @@
 			[
 				0,
 				1,
-				2
+				2,
+				5
 			]
 		}
 	],
@@ -290,7 +328,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-DQT_QML_DEBUG -g",
+				"fragment" : "-g",
 				"role" : "flags"
 			},
 			{
@@ -308,33 +346,38 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 18,
-				"fragment" : "D:\\app_install\\QT\\6.5.3\\mingw_64\\lib\\libQt6Core.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 21,
-				"fragment" : "-lmpr",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 21,
-				"fragment" : "-luserenv",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 24,
+				"backtrace" : 16,
 				"fragment" : "-ld3d11",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 24,
+				"backtrace" : 16,
 				"fragment" : "-ldxgi",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 24,
+				"backtrace" : 16,
 				"fragment" : "-ldxguid",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "D:\\app_install\\QT\\6.5.3\\mingw_64\\lib\\libQt6Sql.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "D:\\app_install\\QT\\6.5.3\\mingw_64\\lib\\libQt6Core.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "-lmpr",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "-luserenv",
 				"role" : "libraries"
 			},
 			{
@@ -359,7 +402,8 @@
 			[
 				0,
 				1,
-				2
+				2,
+				5
 			]
 		},
 		{
@@ -367,7 +411,9 @@
 			"sourceIndexes" : 
 			[
 				3,
-				5
+				6,
+				7,
+				8
 			]
 		},
 		{
@@ -375,14 +421,14 @@
 			"sourceIndexes" : 
 			[
 				4,
-				6
+				9
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				7
+				10
 			]
 		}
 	],
@@ -392,7 +438,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/mocs_compilation.cpp",
+			"path" : "cmake-build-debug/Library_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -418,21 +464,37 @@
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/include/ui_login.h",
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "database.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "database.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Library.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/timestamp",
+			"path" : "cmake-build-debug/Library_autogen/include/ui_login.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Library_autogen/timestamp",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/timestamp.rule",
+			"path" : "cmake-build-debug/Library_autogen/timestamp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],

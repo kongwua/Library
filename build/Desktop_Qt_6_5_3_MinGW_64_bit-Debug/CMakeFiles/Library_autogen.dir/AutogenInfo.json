@@ -284,6 +284,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/recatu/Documents/Library/Library.h",
+			"MU",
+			"EWIEGA46WW/moc_Library.cpp",
+			null
+		],
+		[
 			"C:/Users/recatu/Documents/Library/database.h",
 			"MU",
 			"EWIEGA46WW/moc_database.cpp",

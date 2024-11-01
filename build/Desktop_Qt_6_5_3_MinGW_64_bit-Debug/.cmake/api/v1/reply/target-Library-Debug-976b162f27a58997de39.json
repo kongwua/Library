@@ -194,7 +194,7 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 24,
+				"line" : 26,
 				"parent" : 0
 			}
 		]
@@ -205,7 +205,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fdiagnostics-color=always"
+					"fragment" : "-DQT_QML_DEBUG -g -fdiagnostics-color=always"
 				}
 			],
 			"defines" : 
@@ -260,7 +260,7 @@
 				{
 					"backtrace" : 0,
 					"isSystem" : true,
-					"path" : "C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include"
+					"path" : "C:/Users/recatu/Documents/Library/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/include"
 				},
 				{
 					"backtrace" : 30,
@@ -315,11 +315,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "Library_autogen::@6890427a1f51a3e7e1df"
+			"id" : "Library_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "Library_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "Library_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Library::@6890427a1f51a3e7e1df",
@@ -328,7 +328,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-DQT_QML_DEBUG -g",
 				"role" : "flags"
 			},
 			{
@@ -412,7 +412,8 @@
 			[
 				3,
 				6,
-				7
+				7,
+				8
 			]
 		},
 		{
@@ -420,14 +421,14 @@
 			"sourceIndexes" : 
 			[
 				4,
-				8
+				9
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				9
+				10
 			]
 		}
 	],
@@ -437,7 +438,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/Library_autogen/mocs_compilation.cpp",
+			"path" : "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -474,21 +475,26 @@
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "cmake-build-debug/Library_autogen/include/ui_login.h",
+			"backtrace" : 1,
+			"path" : "Library.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/Library_autogen/timestamp",
+			"path" : "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/include/ui_login.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/timestamp",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/Library_autogen/timestamp.rule",
+			"path" : "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/timestamp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],

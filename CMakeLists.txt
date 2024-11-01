@@ -20,7 +20,9 @@ add_executable(Library main.cpp
         login.h
         login.ui
         database.cpp
-        database.h)
+        database.h
+        Library.h
+        Library.h)
 target_link_libraries(Library
         Qt::Core
         Qt::Gui

@@ -11,12 +11,9 @@
 login::login(QWidget *parent) :
         QWidget(parent), ui(new Ui::login) {
     ui->setupUi(this);
-    QString path = QDir::currentPath();
-    QApplication::addLibraryPath(path + "/plugins");
-    QPluginLoader loader(path+QString("/plugins/sqldrivers/qsqlite.dll"));
 
-    database db;
-    db.create_database("users.db");//创建名为users.db的数据库文件
+
+    database::create_database("users.db");//创建名为users.db的数据库文件
 }
 
 login::~login() {

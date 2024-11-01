@@ -345,3 +345,4 @@ C:/Users/recatu/Documents/Library/database.cpp
 C:/Users/recatu/Documents/Library/login.cpp
  uic:ui_login.h
 C:/Users/recatu/Documents/Library/main.cpp
+C:/Users/recatu/Documents/Library/Library.h

@@ -12,7 +12,8 @@
 #include <QDir>
 class database {
     public:
-    void create_database(QString db_name); //创建数据库
+    static void create_database(QString db_name); //创建数据库
+    static void create_user_table();//创建用户表格
 };
 
 

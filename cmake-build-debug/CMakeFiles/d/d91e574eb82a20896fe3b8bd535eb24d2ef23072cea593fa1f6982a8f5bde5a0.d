@@ -1,5 +1,6 @@
 Library_autogen/timestamp: \
   C:/Users/recatu/Documents/Library/CMakeLists.txt \
+  C:/Users/recatu/Documents/Library/Library.h \
   CMakeFiles/3.27.8/CMakeCCompiler.cmake \
   CMakeFiles/3.27.8/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.8/CMakeRCCompiler.cmake \
