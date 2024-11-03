@@ -14,7 +14,7 @@ login::login(QWidget *parent) :
     ui->setupUi(this);
 
 
-    database::create_database("users.db");//创建名为users.db的数据库文件
+    database::create_database("users.db");//创建名为users的数据库文件
     connect(ui->login_btn, &QPushButton::clicked, this,&login::user_login);//登录按钮点击事件
     connect(ui->register_btn, &QPushButton::clicked, this,&login::user_register);//注册按钮点击事件
 }
@@ -30,7 +30,7 @@ void login::user_login() {
     user.id = ui->id_Ledit->text();
     user.psw = ui->psw_Ledit->text();
     if(user.id.isEmpty() || user.psw.isEmpty()){
-        QMessageBox::warning(this,"登录失败","用户名或密码不能为空！");
+        QMessageBox::warning(this,"登录失败","用户ID或密码不能为空！");
         return;
     }
     if(database::chack_user(user)){
@@ -50,15 +50,16 @@ void login::user_register() {
     user.type = 1;//学生用户
 
     if(user.id.isEmpty() || user.psw.isEmpty()){
-        QMessageBox::warning(this,"注册失败","用户名或密码不能为空！");
+        QMessageBox::warning(this,"注册失败","用户ID或密码不能为空！");
         return;
     }
     if (user.id.length()>30 || user.psw.length()>30){
-        QMessageBox::warning(this,"注册失败","用户名或密码过长！应小于30个字符！");
+        QMessageBox::warning(this,"注册失败","用户ID或密码过长！应小于30个字符！");
+        return;
     }
     if(database::insert_user(user)){//注册成功
         QMessageBox::information(this,"注册成功","恭喜您，注册成功！");
     } else{
-        QMessageBox::warning(this,"注册失败","用户名已存在！");
+        QMessageBox::warning(this,"注册失败","用户ID已存在！");
     }
 }

@@ -26,6 +26,7 @@ class Ui_User_manage
 {
 public:
     QGridLayout *gridLayout_2;
+    QLabel *label_2;
     QWidget *widget;
     QGridLayout *gridLayout;
     QLabel *label;
@@ -35,7 +36,7 @@ public:
     QPushButton *pushButton_3;
     QSpacerItem *horizontalSpacer;
     QTableView *tableView;
-    QLabel *label_2;
+    QLabel *label_3;
 
     void setupUi(QWidget *User_manage)
     {
@@ -44,6 +45,11 @@ public:
         User_manage->resize(704, 502);
         gridLayout_2 = new QGridLayout(User_manage);
         gridLayout_2->setObjectName("gridLayout_2");
+        label_2 = new QLabel(User_manage);
+        label_2->setObjectName("label_2");
+
+        gridLayout_2->addWidget(label_2, 0, 0, 1, 1);
+
         widget = new QWidget(User_manage);
         widget->setObjectName("widget");
         gridLayout = new QGridLayout(widget);
@@ -83,13 +89,17 @@ public:
 
         tableView = new QTableView(User_manage);
         tableView->setObjectName("tableView");
+        tableView->setStyleSheet(QString::fromUtf8("QTableView QHeaderView::section {\n"
+"    background-color: lightgray;\n"
+"    border: 1px solid gray;\n"
+"}"));
 
-        gridLayout_2->addWidget(tableView, 2, 0, 1, 1);
+        gridLayout_2->addWidget(tableView, 3, 0, 1, 1);
 
-        label_2 = new QLabel(User_manage);
-        label_2->setObjectName("label_2");
+        label_3 = new QLabel(User_manage);
+        label_3->setObjectName("label_3");
 
-        gridLayout_2->addWidget(label_2, 0, 0, 1, 1);
+        gridLayout_2->addWidget(label_3, 2, 0, 1, 1);
 
 
         retranslateUi(User_manage);
@@ -100,11 +110,12 @@ public:
     void retranslateUi(QWidget *User_manage)
     {
         User_manage->setWindowTitle(QCoreApplication::translate("User_manage", "User_manage", nullptr));
+        label_2->setText(QCoreApplication::translate("User_manage", "\347\224\250\346\210\267\347\256\241\347\220\206", nullptr));
         label->setText(QCoreApplication::translate("User_manage", "\346\220\234\347\264\242\357\274\232", nullptr));
         add_user->setText(QCoreApplication::translate("User_manage", "\345\242\236\345\212\240\347\224\250\346\210\267", nullptr));
         delete_user->setText(QCoreApplication::translate("User_manage", "\345\210\240\351\231\244\347\224\250\346\210\267", nullptr));
         pushButton_3->setText(QCoreApplication::translate("User_manage", "\346\233\264\346\224\271\347\224\250\346\210\267", nullptr));
-        label_2->setText(QCoreApplication::translate("User_manage", "\347\224\250\346\210\267\347\256\241\347\220\206", nullptr));
+        label_3->setText(QCoreApplication::translate("User_manage", "\346\263\250\357\274\232tag\344\270\255\357\274\2320--\347\256\241\347\220\206\345\221\230 \357\274\2141--\345\255\246\347\224\237", nullptr));
     } // retranslateUi
 
 };

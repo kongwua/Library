@@ -25,7 +25,7 @@ void database::create_database(QString db_name) {
 
 void database::create_user_table() {
     //创建用户表格
-    QSqlDatabase db = QSqlDatabase::database(QString("user.db"));//打开用户数据库
+    QSqlDatabase db = QSqlDatabase::database(QString("users.db"));//打开用户数据库
     QSqlQuery query(db);//创建查询对象
     if (query.exec(QString("select * from user_table"))) {
 //        qDebug() << "用户表格已存在";
@@ -66,7 +66,7 @@ void database::create_user_table() {
 bool database::chack_user(User user) {
     //检查用户名和密码是否在数据库中存在
 
-    QSqlDatabase db = QSqlDatabase::database(QString("user.db"));//打开用户数据库
+    QSqlDatabase db = QSqlDatabase::database(QString("users.db"));//打开用户数据库
     QSqlQuery query(db);//创建查询对象
     query.exec(QString("select * from user_table where id='%1' and psw='%2'").arg(user.id).arg(user.psw));
     if (query.next()) {
@@ -82,7 +82,7 @@ bool database::chack_user(User user) {
 
 bool database::insert_user(User user) {
     //插入用户信息到数据库
-    QSqlDatabase db = QSqlDatabase::database(QString("user.db"));//打开用户数据库
+    QSqlDatabase db = QSqlDatabase::database(QString("users.db"));//打开用户数据库
     QSqlQuery query(db);//创建查询对象
     query.prepare("insert into user_table(id, psw, type) values(:id, :psw, :type)");
     query.bindValue(":id", user.id);
