@@ -22,7 +22,24 @@ add_executable(Library main.cpp
         database.cpp
         database.h
         Library.h
-        Library.h)
+        Library.h
+        Book.cpp
+        Book.h
+        admin.cpp
+        admin.h
+        admin.ui
+        user_manage.cpp
+        user_manage.h
+        user_manage.ui
+        book_manage.cpp
+        book_manage.h
+        book_manage.ui
+        borrow_manage.cpp
+        borrow_manage.h
+        borrow_manage.ui
+        borrow_record.cpp
+        borrow_record.h
+        borrow_record.ui)
 target_link_libraries(Library
         Qt::Core
         Qt::Gui

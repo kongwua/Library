@@ -1,6 +1,20 @@
 Library_autogen/timestamp: \
+  C:/Users/recatu/Documents/Library/Book.cpp \
+  C:/Users/recatu/Documents/Library/Book.h \
   C:/Users/recatu/Documents/Library/CMakeLists.txt \
   C:/Users/recatu/Documents/Library/Library.h \
+  C:/Users/recatu/Documents/Library/admin.cpp \
+  C:/Users/recatu/Documents/Library/admin.h \
+  C:/Users/recatu/Documents/Library/admin.ui \
+  C:/Users/recatu/Documents/Library/book_manage.cpp \
+  C:/Users/recatu/Documents/Library/book_manage.h \
+  C:/Users/recatu/Documents/Library/book_manage.ui \
+  C:/Users/recatu/Documents/Library/borrow_manage.cpp \
+  C:/Users/recatu/Documents/Library/borrow_manage.h \
+  C:/Users/recatu/Documents/Library/borrow_manage.ui \
+  C:/Users/recatu/Documents/Library/borrow_record.cpp \
+  C:/Users/recatu/Documents/Library/borrow_record.h \
+  C:/Users/recatu/Documents/Library/borrow_record.ui \
   CMakeFiles/3.27.8/CMakeCCompiler.cmake \
   CMakeFiles/3.27.8/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.8/CMakeRCCompiler.cmake \
@@ -12,6 +26,9 @@ Library_autogen/timestamp: \
   C:/Users/recatu/Documents/Library/login.h \
   C:/Users/recatu/Documents/Library/login.ui \
   C:/Users/recatu/Documents/Library/main.cpp \
+  C:/Users/recatu/Documents/Library/user_manage.cpp \
+  C:/Users/recatu/Documents/Library/user_manage.h \
+  C:/Users/recatu/Documents/Library/user_manage.ui \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20memory.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qalgorithms.h \
@@ -145,8 +162,11 @@ Library_autogen/timestamp: \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtransform.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qwindowdefs.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QWidget \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qsizepolicy.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

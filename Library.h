@@ -5,7 +5,7 @@
 #ifndef LIBRARY_LIBRARY_H
 #define LIBRARY_LIBRARY_H
 #include "login.h"
-
+#include "admin.h"
 
 
 class User{

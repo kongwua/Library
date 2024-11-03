@@ -1,11 +1,13 @@
 #include <QApplication>
 #include <QDir>
-#include "login.h"
+#include "Library.h"
 
 int main(int argc, char *argv[]) {
 
     QApplication a(argc, argv);
-    login w;
+//    login w;//登录界面
+//    w.show();
+    admin w;//管理员界面
     w.show();
     return QApplication::exec();
 }

@@ -81,6 +81,54 @@ build CMakeFiles/Library.dir/database.cpp.obj: CXX_COMPILER__Library_unscanned_D
   OBJECT_DIR = CMakeFiles\Library.dir
   OBJECT_FILE_DIR = CMakeFiles\Library.dir
 
+build CMakeFiles/Library.dir/Book.cpp.obj: CXX_COMPILER__Library_unscanned_Debug C$:/Users/recatu/Documents/Library/Book.cpp || cmake_object_order_depends_target_Library
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Library.dir\Book.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/recatu/Documents/Library/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/include -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtCore -isystem D:/app_install/QT/6.5.3/mingw_64/include -isystem D:/app_install/QT/6.5.3/mingw_64/mkspecs/win32-g++ -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtGui -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtSql
+  OBJECT_DIR = CMakeFiles\Library.dir
+  OBJECT_FILE_DIR = CMakeFiles\Library.dir
+
+build CMakeFiles/Library.dir/admin.cpp.obj: CXX_COMPILER__Library_unscanned_Debug C$:/Users/recatu/Documents/Library/admin.cpp || cmake_object_order_depends_target_Library
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Library.dir\admin.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/recatu/Documents/Library/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/include -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtCore -isystem D:/app_install/QT/6.5.3/mingw_64/include -isystem D:/app_install/QT/6.5.3/mingw_64/mkspecs/win32-g++ -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtGui -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtSql
+  OBJECT_DIR = CMakeFiles\Library.dir
+  OBJECT_FILE_DIR = CMakeFiles\Library.dir
+
+build CMakeFiles/Library.dir/user_manage.cpp.obj: CXX_COMPILER__Library_unscanned_Debug C$:/Users/recatu/Documents/Library/user_manage.cpp || cmake_object_order_depends_target_Library
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Library.dir\user_manage.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/recatu/Documents/Library/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/include -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtCore -isystem D:/app_install/QT/6.5.3/mingw_64/include -isystem D:/app_install/QT/6.5.3/mingw_64/mkspecs/win32-g++ -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtGui -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtSql
+  OBJECT_DIR = CMakeFiles\Library.dir
+  OBJECT_FILE_DIR = CMakeFiles\Library.dir
+
+build CMakeFiles/Library.dir/book_manage.cpp.obj: CXX_COMPILER__Library_unscanned_Debug C$:/Users/recatu/Documents/Library/book_manage.cpp || cmake_object_order_depends_target_Library
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Library.dir\book_manage.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/recatu/Documents/Library/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/include -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtCore -isystem D:/app_install/QT/6.5.3/mingw_64/include -isystem D:/app_install/QT/6.5.3/mingw_64/mkspecs/win32-g++ -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtGui -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtSql
+  OBJECT_DIR = CMakeFiles\Library.dir
+  OBJECT_FILE_DIR = CMakeFiles\Library.dir
+
+build CMakeFiles/Library.dir/borrow_manage.cpp.obj: CXX_COMPILER__Library_unscanned_Debug C$:/Users/recatu/Documents/Library/borrow_manage.cpp || cmake_object_order_depends_target_Library
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Library.dir\borrow_manage.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/recatu/Documents/Library/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/include -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtCore -isystem D:/app_install/QT/6.5.3/mingw_64/include -isystem D:/app_install/QT/6.5.3/mingw_64/mkspecs/win32-g++ -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtGui -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtSql
+  OBJECT_DIR = CMakeFiles\Library.dir
+  OBJECT_FILE_DIR = CMakeFiles\Library.dir
+
+build CMakeFiles/Library.dir/borrow_record.cpp.obj: CXX_COMPILER__Library_unscanned_Debug C$:/Users/recatu/Documents/Library/borrow_record.cpp || cmake_object_order_depends_target_Library
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Library.dir\borrow_record.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/recatu/Documents/Library/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/include -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtCore -isystem D:/app_install/QT/6.5.3/mingw_64/include -isystem D:/app_install/QT/6.5.3/mingw_64/mkspecs/win32-g++ -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtGui -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets -isystem D:/app_install/QT/6.5.3/mingw_64/include/QtSql
+  OBJECT_DIR = CMakeFiles\Library.dir
+  OBJECT_FILE_DIR = CMakeFiles\Library.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Library
@@ -89,7 +137,7 @@ build CMakeFiles/Library.dir/database.cpp.obj: CXX_COMPILER__Library_unscanned_D
 #############################################
 # Link the executable Library.exe
 
-build Library.exe: CXX_EXECUTABLE_LINKER__Library_Debug CMakeFiles/Library.dir/Library_autogen/mocs_compilation.cpp.obj CMakeFiles/Library.dir/main.cpp.obj CMakeFiles/Library.dir/login.cpp.obj CMakeFiles/Library.dir/database.cpp.obj | D$:/app_install/QT/6.5.3/mingw_64/lib/libQt6Widgets.a D$:/app_install/QT/6.5.3/mingw_64/lib/libQt6Gui.a D$:/app_install/QT/6.5.3/mingw_64/lib/libQt6Sql.a D$:/app_install/QT/6.5.3/mingw_64/lib/libQt6Core.a || Library_autogen Library_autogen_timestamp_deps
+build Library.exe: CXX_EXECUTABLE_LINKER__Library_Debug CMakeFiles/Library.dir/Library_autogen/mocs_compilation.cpp.obj CMakeFiles/Library.dir/main.cpp.obj CMakeFiles/Library.dir/login.cpp.obj CMakeFiles/Library.dir/database.cpp.obj CMakeFiles/Library.dir/Book.cpp.obj CMakeFiles/Library.dir/admin.cpp.obj CMakeFiles/Library.dir/user_manage.cpp.obj CMakeFiles/Library.dir/book_manage.cpp.obj CMakeFiles/Library.dir/borrow_manage.cpp.obj CMakeFiles/Library.dir/borrow_record.cpp.obj | D$:/app_install/QT/6.5.3/mingw_64/lib/libQt6Widgets.a D$:/app_install/QT/6.5.3/mingw_64/lib/libQt6Gui.a D$:/app_install/QT/6.5.3/mingw_64/lib/libQt6Sql.a D$:/app_install/QT/6.5.3/mingw_64/lib/libQt6Core.a || Library_autogen Library_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = D:/app_install/QT/6.5.3/mingw_64/lib/libQt6Widgets.a  D:/app_install/QT/6.5.3/mingw_64/lib/libQt6Gui.a  -ld3d11  -ldxgi  -ldxguid  D:/app_install/QT/6.5.3/mingw_64/lib/libQt6Sql.a  D:/app_install/QT/6.5.3/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Library.dir
@@ -133,7 +181,7 @@ build Library_autogen_timestamp_deps: phony
 #############################################
 # Utility command for Library_autogen
 
-build Library_autogen: phony CMakeFiles/Library_autogen Library_autogen/include/ui_login.h Library_autogen/timestamp Library_autogen/mocs_compilation.cpp Library_autogen_timestamp_deps
+build Library_autogen: phony CMakeFiles/Library_autogen Library_autogen/include/ui_login.h Library_autogen/include/ui_admin.h Library_autogen/include/ui_user_manage.h Library_autogen/include/ui_book_manage.h Library_autogen/include/ui_borrow_manage.h Library_autogen/include/ui_borrow_record.h Library_autogen/timestamp Library_autogen/mocs_compilation.cpp Library_autogen_timestamp_deps
 
 
 #############################################
@@ -150,7 +198,7 @@ build Library_autogen/timestamp Library_autogen/mocs_compilation.cpp | ${cmake_n
 #############################################
 # Phony custom command for CMakeFiles\Library_autogen
 
-build CMakeFiles/Library_autogen Library_autogen/include/ui_login.h | ${cmake_ninja_workdir}CMakeFiles/Library_autogen ${cmake_ninja_workdir}Library_autogen/include/ui_login.h: phony Library_autogen/timestamp || Library_autogen_timestamp_deps
+build CMakeFiles/Library_autogen Library_autogen/include/ui_login.h Library_autogen/include/ui_admin.h Library_autogen/include/ui_user_manage.h Library_autogen/include/ui_book_manage.h Library_autogen/include/ui_borrow_manage.h Library_autogen/include/ui_borrow_record.h | ${cmake_ninja_workdir}CMakeFiles/Library_autogen ${cmake_ninja_workdir}Library_autogen/include/ui_login.h ${cmake_ninja_workdir}Library_autogen/include/ui_admin.h ${cmake_ninja_workdir}Library_autogen/include/ui_user_manage.h ${cmake_ninja_workdir}Library_autogen/include/ui_book_manage.h ${cmake_ninja_workdir}Library_autogen/include/ui_borrow_manage.h ${cmake_ninja_workdir}Library_autogen/include/ui_borrow_record.h: phony Library_autogen/timestamp || Library_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

@@ -194,7 +194,7 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 26,
+				"line" : 43,
 				"parent" : 0
 			}
 		]
@@ -308,18 +308,24 @@
 				0,
 				1,
 				2,
-				5
+				5,
+				8,
+				10,
+				13,
+				16,
+				19,
+				22
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "Library_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "Library_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "Library_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Library::@6890427a1f51a3e7e1df",
@@ -403,7 +409,13 @@
 				0,
 				1,
 				2,
-				5
+				5,
+				8,
+				10,
+				13,
+				16,
+				19,
+				22
 			]
 		},
 		{
@@ -413,7 +425,18 @@
 				3,
 				6,
 				7,
-				8
+				9,
+				11,
+				14,
+				17,
+				20,
+				23,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30
 			]
 		},
 		{
@@ -421,14 +444,19 @@
 			"sourceIndexes" : 
 			[
 				4,
-				9
+				12,
+				15,
+				18,
+				21,
+				24,
+				31
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				10
+				32
 			]
 		}
 	],
@@ -480,9 +508,130 @@
 			"sourceGroupIndex" : 1
 		},
 		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Book.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Book.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "admin.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "admin.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "admin.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "user_manage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "user_manage.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "user_manage.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "book_manage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "book_manage.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "book_manage.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "borrow_manage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "borrow_manage.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "borrow_manage.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "borrow_record.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "borrow_record.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "borrow_record.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/Library_autogen/include/ui_login.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Library_autogen/include/ui_admin.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Library_autogen/include/ui_user_manage.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Library_autogen/include/ui_book_manage.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Library_autogen/include/ui_borrow_manage.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/Library_autogen/include/ui_borrow_record.h",
 			"sourceGroupIndex" : 1
 		},
 		{
