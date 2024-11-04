@@ -19,7 +19,8 @@ public:
     explicit User_manage(QWidget *parent = nullptr);
 
     ~User_manage() override;
-
+public slots:
+    void on_search();//当搜索框内有内容再按下回车时，搜索并高亮显示
 private:
     Ui::User_manage *ui;
 };
