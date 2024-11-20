@@ -1,0 +1,1 @@
+ D:/app_install/QT/6.5.3/mingw_64/lib/libQt6Widgets.a D:/app_install/QT/6.5.3/mingw_64/lib/libQt6Gui.a -ld3d11 -ldxgi -ldxguid D:/app_install/QT/6.5.3/mingw_64/lib/libQt6Sql.a D:/app_install/QT/6.5.3/mingw_64/lib/libQt6Core.a -lmpr -luserenv -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
