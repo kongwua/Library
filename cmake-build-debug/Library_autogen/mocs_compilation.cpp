@@ -3,6 +3,5 @@
 #include "EWIEGA46WW/moc_book_manage.cpp"
 #include "EWIEGA46WW/moc_borrow_manage.cpp"
 #include "EWIEGA46WW/moc_borrow_record.cpp"
-#include "EWIEGA46WW/moc_database.cpp"
 #include "EWIEGA46WW/moc_login.cpp"
 #include "EWIEGA46WW/moc_user_manage.cpp"

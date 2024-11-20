@@ -38,28 +38,20 @@ namespace {
 #ifdef QT_MOC_HAS_STRINGDATA
 struct qt_meta_stringdata_CLASSUser_manageENDCLASS_t {};
 static constexpr auto qt_meta_stringdata_CLASSUser_manageENDCLASS = QtMocHelpers::stringData(
-    "User_manage",
-    "on_search",
-    ""
+    "User_manage"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSUser_manageENDCLASS_t {
-    uint offsetsAndSizes[6];
+    uint offsetsAndSizes[2];
     char stringdata0[12];
-    char stringdata1[10];
-    char stringdata2[1];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSUser_manageENDCLASS_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_CLASSUser_manageENDCLASS_t qt_meta_stringdata_CLASSUser_manageENDCLASS = {
     {
-        QT_MOC_LITERAL(0, 11),  // "User_manage"
-        QT_MOC_LITERAL(12, 9),  // "on_search"
-        QT_MOC_LITERAL(22, 0)   // ""
+        QT_MOC_LITERAL(0, 11)   // "User_manage"
     },
-    "User_manage",
-    "on_search",
-    ""
+    "User_manage"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -71,18 +63,12 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSUser_manageENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       0,    0, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
-
- // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   20,    2, 0x0a,    1 /* Public */,
-
- // slots: parameters
-    QMetaType::Void,
 
        0        // eod
 };
@@ -95,23 +81,16 @@ Q_CONSTINIT const QMetaObject User_manage::staticMetaObject = { {
     nullptr,
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSUser_manageENDCLASS_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<User_manage, std::true_type>,
-        // method 'on_search'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<User_manage, std::true_type>
     >,
     nullptr
 } };
 
 void User_manage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<User_manage *>(_o);
-        (void)_t;
-        switch (_id) {
-        case 0: _t->on_search(); break;
-        default: ;
-        }
-    }
+    (void)_o;
+    (void)_id;
+    (void)_c;
     (void)_a;
 }
 
@@ -131,17 +110,6 @@ void *User_manage::qt_metacast(const char *_clname)
 int User_manage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
-    if (_id < 0)
-        return _id;
-    if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
-            qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
-    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
-            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 1;
-    }
     return _id;
 }
 QT_WARNING_POP
