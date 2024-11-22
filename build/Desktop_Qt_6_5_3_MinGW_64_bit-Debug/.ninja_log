@@ -1,0 +1,16 @@
+# ninja log v6
+3	950	7538103169787869	Library_autogen/timestamp	307eea177b441acf
+3	950	7538103169787869	Library_autogen/mocs_compilation.cpp	307eea177b441acf
+3	950	7538103169787869	C:/Users/recatu/Documents/Library/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/timestamp	307eea177b441acf
+3	950	7538103169787869	C:/Users/recatu/Documents/Library/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/mocs_compilation.cpp	307eea177b441acf
+1126	1799	7538103173109777	CMakeFiles/Library.dir/Book.cpp.obj	d03b37f54a7aa7ad
+955	3843	7538103171395080	CMakeFiles/Library.dir/Library_autogen/mocs_compilation.cpp.obj	e2661287c2de408f
+1138	3959	7538103173225901	CMakeFiles/Library.dir/admin.cpp.obj	269a247045188706
+1328	4004	7538103175124146	CMakeFiles/Library.dir/csv_function.cpp.obj	2fa65a5422940400
+1006	4004	7538103171905458	CMakeFiles/Library.dir/main.cpp.obj	b8f266ccce639357
+1230	4101	7538103174148931	CMakeFiles/Library.dir/book_manage.cpp.obj	2df1c8923a7246cb
+1259	4125	7538103174430245	CMakeFiles/Library.dir/borrow_manage.cpp.obj	d59687cd62da1d45
+1295	4168	7538103174797027	CMakeFiles/Library.dir/borrow_record.cpp.obj	5f98f147da3ef6cd
+1060	4202	7538103172450461	CMakeFiles/Library.dir/login.cpp.obj	95cbc5ee00700d3a
+1187	4232	7538103173713890	CMakeFiles/Library.dir/user_manage.cpp.obj	391a14b62b31fc6b
+4232	4890	7538103204163846	Library.exe	1d87cddb00e2415e

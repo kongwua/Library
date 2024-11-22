@@ -115,7 +115,7 @@ public:
         add_user->setText(QCoreApplication::translate("User_manage", "\345\242\236\345\212\240\347\224\250\346\210\267", nullptr));
         delete_user->setText(QCoreApplication::translate("User_manage", "\345\210\240\351\231\244\347\224\250\346\210\267", nullptr));
         pushButton_3->setText(QCoreApplication::translate("User_manage", "\346\233\264\346\224\271\347\224\250\346\210\267", nullptr));
-        label_3->setText(QCoreApplication::translate("User_manage", "\346\263\250\357\274\232type\344\270\255\357\274\2320--\347\256\241\347\220\206\345\221\230 \357\274\2141--\345\255\246\347\224\237", nullptr));
+        label_3->setText(QCoreApplication::translate("User_manage", "\346\263\250\357\274\232type\344\270\255\357\274\2321--\347\256\241\347\220\206\345\221\230 \357\274\2140--\345\255\246\347\224\237", nullptr));
     } // retranslateUi
 
 };

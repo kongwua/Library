@@ -9,7 +9,7 @@
 #include <QTextStream>
 #include <QDebug>
 
-#define DIVIDER "," //设置分隔符为逗号
+#define DIVIDER ' ' //设置分隔符为逗号
 
 class csv_User {
     //用户csv读写操作类
@@ -17,11 +17,16 @@ public:
     csv_User() {
         user_head = nullptr;
         user_num = 0;
+        init_user_list();
     }
 
     ~csv_User() {
 
     }
+    USER_NODE* get_user_head() {
+        return user_head;//返回用户链表头指针
+    }
+
 
     QFile* init_csv(QString csv_name); //初始化csv文件,返回文件指针
     USER_NODE* init_user_list(); //初始化用户链表,返回链表头指针

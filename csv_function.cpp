@@ -14,7 +14,7 @@ QFile* csv_User::init_csv(QString csv_name) {
         //写入初始管理员账号和密码
         file->open(QIODevice::WriteOnly | QIODevice::Text);
         QTextStream out(file);
-        out << "1234" <<DIVIDER<< "1234" <<DIVIDER<< "0" <<"\n"<< Qt::endl;//初始管理员账号为1234 密码为1234
+        out << "1234" <<DIVIDER<< "1234" <<DIVIDER<< "0" <<DIVIDER<<"1"<<"\n"<< Qt::endl;//初始管理员账号为1234 密码为1234
     }
     csv_file = file;
     return file;
@@ -56,6 +56,7 @@ bool csv_User::read_csv() {
         new_node->data.ID = fields.at(0);
         new_node->data.password = fields.at(1);
         new_node->data.book_borrow = fields.at(2).toInt();
+        new_node->data.user_type = fields.at(3).toInt();
         new_node->next = nullptr;
         p->next = new_node;//将新节点链接到链表
         p = new_node;//更新指针

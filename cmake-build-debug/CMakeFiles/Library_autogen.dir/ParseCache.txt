@@ -1034,6 +1034,7 @@ C:/Users/recatu/Documents/Library/admin.h
  mdp:C:/Users/recatu/Documents/Library/user_manage.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20memory.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20type_traits.h
+ mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qalgorithms.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qanystringview.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qarraydata.h
@@ -1140,6 +1141,7 @@ C:/Users/recatu/Documents/Library/admin.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qvarlengtharray.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qversiontagging.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qxptype_traits.h
+ mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QStandardItemModel
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qaction.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qbitmap.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qbrush.h
@@ -1159,6 +1161,7 @@ C:/Users/recatu/Documents/Library/admin.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qregion.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qrgb.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qrgba64.h
+ mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qstandarditemmodel.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtgui-config.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtguiexports.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtguiglobal.h
@@ -1720,6 +1723,7 @@ C:/Users/recatu/Documents/Library/user_manage.h
  mdp:C:/Users/recatu/Documents/Library/user_manage.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20memory.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20type_traits.h
+ mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qalgorithms.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qanystringview.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qarraydata.h
@@ -1826,6 +1830,7 @@ C:/Users/recatu/Documents/Library/user_manage.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qvarlengtharray.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qversiontagging.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qxptype_traits.h
+ mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QStandardItemModel
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qaction.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qbitmap.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qbrush.h
@@ -1845,6 +1850,7 @@ C:/Users/recatu/Documents/Library/user_manage.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qregion.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qrgb.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qrgba64.h
+ mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qstandarditemmodel.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtgui-config.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtguiexports.h
  mdp:D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtguiglobal.h

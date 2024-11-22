@@ -7,7 +7,7 @@
 #define LIBRARY_LOGIN_H
 
 #include <QWidget>
-
+using std::string;
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class login; }
@@ -24,6 +24,8 @@ public slots:
     void user_login();//登录槽函数
 private:
     Ui::login *ui;
+    string userID;
+    string password;
 };
 
 

@@ -6,6 +6,7 @@ C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/EWIEGA46WW/m
   C:/Users/recatu/Documents/Library/user_manage.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20memory.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qalgorithms.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qanystringview.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qarraydata.h \
@@ -112,6 +113,7 @@ C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/EWIEGA46WW/m
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qvarlengtharray.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qversiontagging.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qxptype_traits.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QStandardItemModel \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qaction.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qbitmap.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qbrush.h \
@@ -131,6 +133,7 @@ C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/EWIEGA46WW/m
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qregion.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qrgb.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qrgba64.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qstandarditemmodel.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtgui-config.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtguiexports.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtguiglobal.h \

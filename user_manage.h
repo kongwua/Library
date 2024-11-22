@@ -6,7 +6,7 @@
 #define LIBRARY_USER_MANAGE_H
 
 #include <QWidget>
-
+#include <QStandardItemModel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class User_manage; }
@@ -19,7 +19,7 @@ public:
     explicit User_manage(QWidget *parent = nullptr);
 
     ~User_manage() override;
-
+    QStandardItemModel* createTablemodel();//读取csv文件并创建表格模型
 private:
     Ui::User_manage *ui;
 };

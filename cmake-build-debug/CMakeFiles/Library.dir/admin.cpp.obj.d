@@ -356,6 +356,9 @@ CMakeFiles/Library.dir/admin.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QWidget \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qwidget.h \
  C:\Users\recatu\Documents\Library\user_manage.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QStandardItemModel \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qstandarditemmodel.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h \
  C:\Users\recatu\Documents\Library\borrow_manage.h \
  C:\Users\recatu\Documents\Library\borrow_record.h \
  C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_admin.h \
