@@ -416,4 +416,30 @@ CMakeFiles/Library.dir/main.cpp.obj: \
  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
- D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/Qdebug \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdebug.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QCloseEvent \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qevent.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qpointer.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qurl.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qeventpoint.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qvector2d.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qvectornd.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qpointingdevice.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qinputdevice.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qscreen.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QList \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlist.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QObject \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qobject.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QRect \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qrect.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSize \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qsize.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QTransform \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtransform.h

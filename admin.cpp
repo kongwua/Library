@@ -6,6 +6,7 @@
 
 #include "admin.h"
 #include "ui_admin.h"
+#include "Library.h"
 
 
 admin::admin(QWidget *parent) :
@@ -14,7 +15,8 @@ admin::admin(QWidget *parent) :
             ,m_book_manage(nullptr)
             ,m_borrow_manage(nullptr)
             ,m_borrow_record(nullptr)//页面指针初始化
-{    ui->setupUi(this);
+{
+    ui->setupUi(this);
     initUI();
 }
 
@@ -65,3 +67,15 @@ void admin::menu_change(){
         }
     } while (false);
 }
+
+void admin::closeEvent(QCloseEvent *event) {
+    //关闭窗口时，将链表内数据写入文件
+    if(lib.writeUser(lib.userPath)||lib.writeBook(lib.bookPath)){
+        QMessageBox::warning(this,"警告","数据写入失败！");
+        return;
+    }
+    QMessageBox::information(this,"提示","数据已保存！");
+    event->accept();
+}
+
+

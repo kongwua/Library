@@ -1,7 +1,7 @@
 //
 // Created by recatu on 2024/10/31.
 //
-//ç™»å½•ç•Œé¢
+//µÇÂ¼½çÃæ
 
 #ifndef LIBRARY_LOGIN_H
 #define LIBRARY_LOGIN_H
@@ -18,10 +18,12 @@ Q_OBJECT
 
 public:
     explicit login(QWidget *parent = nullptr);
-
+    void first_longin();//Ê×´ÎµÇÂ¼£¬½«ÕËºÅÃÜÂëĞ´ÈëÓÃ»§Á´±í
     ~login() override;
+signals:
+        void login_success();//µÇÂ¼³É¹¦ĞÅºÅ
 public slots:
-    void user_login();//ç™»å½•æ§½å‡½æ•°
+    void user_login();//µÇÂ¼²Ûº¯Êı
 private:
     Ui::login *ui;
     string userID;

@@ -192,12 +192,6 @@
 		<Unit filename="C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/mocs_compilation.cpp">
 			<Option target="Library"/>
 		</Unit>
-		<Unit filename="C:/Users/recatu/Documents/Library/csv_function.cpp">
-			<Option target="Library"/>
-		</Unit>
-		<Unit filename="C:/Users/recatu/Documents/Library/csv_function.h">
-			<Option target="Library"/>
-		</Unit>
 		<Unit filename="C:/Users/recatu/Documents/Library/login.cpp">
 			<Option target="Library"/>
 		</Unit>

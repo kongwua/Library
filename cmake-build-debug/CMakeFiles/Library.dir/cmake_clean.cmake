@@ -14,8 +14,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Library.dir/borrow_manage.cpp.obj.d"
   "CMakeFiles/Library.dir/borrow_record.cpp.obj"
   "CMakeFiles/Library.dir/borrow_record.cpp.obj.d"
-  "CMakeFiles/Library.dir/csv_function.cpp.obj"
-  "CMakeFiles/Library.dir/csv_function.cpp.obj.d"
   "CMakeFiles/Library.dir/login.cpp.obj"
   "CMakeFiles/Library.dir/login.cpp.obj.d"
   "CMakeFiles/Library.dir/main.cpp.obj"

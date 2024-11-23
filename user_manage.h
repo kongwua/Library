@@ -19,10 +19,13 @@ public:
     explicit User_manage(QWidget *parent = nullptr);
 
     ~User_manage() override;
-    QStandardItemModel* createTablemodel();//读取csv文件并创建表格模型
+    void initModel();//初始化表格模型
+    void displayUserData();
 private:
     Ui::User_manage *ui;
+    QStandardItemModel* userModel;
 };
+
 
 
 #endif //LIBRARY_USER_MANAGE_H

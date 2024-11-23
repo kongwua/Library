@@ -8,6 +8,9 @@
 #include "admin.h"
 #include <iostream>
 #include <fstream>
+#include <Qdebug>
+#include <QMessageBox>
+#include <QCloseEvent>
 
 using std::string;
 using std::ofstream;
@@ -18,7 +21,7 @@ using std::cout;
 using std::cerr;
 using std::endl;
 
-#define DIVIDER ' ' //设置分隔符为空格
+#define DIVIDER ',' //设置分隔符为逗号
 
 class BookInfo;		// 图书信息类
 class UserInfo;		// 用户类
@@ -79,7 +82,7 @@ public:
         output << '[';//链表开始
         for (Node<T> *p = list.head->next; p != list.head; p = p->next) {
             output << *p;//遍历链表，输出元素
-            if (p->next != list.head) output << ", ";
+            if (p->next != list.head) output << ",";
         }
         output << ']';//链表结束
         return output;
@@ -92,6 +95,7 @@ public:
             ret++;
         return ret;
     }
+
     // 判断链表是否为空，空则返回true
     bool isEmpty() {
         return head->next == head;
@@ -207,6 +211,105 @@ private:
     Node<T> *head;
 
 };
+//通用链队列节点
+template<class Q> struct QNode {
+    Q elem;            // 队列元素
+    QNode<Q> *next;
+    friend ostream &operator <<(ostream &output, const QNode &qnode) {// 重载输出流
+        output << qnode.elem;
+        return output;
+    }
+
+    friend ostream &operator <<(ostream &output, const QNode *&qnode) {//
+        output << qnode->elem;
+        return output;
+    }
+};
+//通用链队列
+template<class Q> class Queue {
+private:
+    QNode<Q> *front;//队列头指针
+    QNode<Q> *rear;//队列尾指针
+public:
+    // 初始化队列
+    Queue() {
+        front = nullptr;
+        rear = nullptr;
+    }
+
+    ~Queue() {}
+    friend ostream &operator <<(ostream &output, const Queue &queue) {
+        output << '[';
+        for (QNode<Q> *p = queue.front; p != nullptr; p = p->next) {
+            output << *p;
+            if (p->next != nullptr) output << ", ";
+        }
+        output << ']';
+        return output;
+    }
+
+    friend ostream &operator <<(ostream &output, const Queue *&queue) {
+        output << '[';
+        for (QNode<Q> *p = queue->front; p != nullptr; p = p->next) {
+            output << *p;
+            if (p->next != nullptr) output << ", ";
+        }
+        output << ']';
+        return output;
+    }
+    int size() {
+        // 计算队列长度
+        if (rear==nullptr||front==nullptr) return 0;
+        int ret = 0;
+        for (QNode<Q> *p = front; p != rear; p = p->next)
+            ret++;
+        return ret;
+    }
+    bool isEmpty() {
+        // 判断队列是否为空
+        return front == nullptr;
+    }
+    QNode<Q>* enqueue(Q val) {
+        // 入队操作
+        QNode<Q> *item = new QNode<Q>;
+        item->next = nullptr;
+        if (!item) {
+            cerr << "内存分配失败.请检查剩余内存是否充足。" << endl;
+            return nullptr;
+        }
+        item->elem = val;
+        if (rear == nullptr) {
+            front = rear = item;
+        } else {
+            rear->next = item;
+            rear = item;
+        }
+        return rear;
+    }
+    QNode<Q>* dequeue() {
+        // 出队操作
+        if (front == nullptr) {
+            cerr << "队列为空。" << endl;
+            return nullptr;
+        }
+        QNode<Q> *item = front;
+        front = front->next;
+        if (front == nullptr) {
+            rear = nullptr;
+        }
+        return item;
+    }
+    QNode<Q>* getFront() {
+        // 返回队首元素
+        if (front == nullptr) {
+            cerr << "队列为空。" << endl;
+            return nullptr;
+        }
+        return front;
+    }
+
+};
+
 
 class UserInfo {
 public:
@@ -214,7 +317,8 @@ public:
     string password;				// 密码
     int type;						// 用户类型
     List<Node<BookInfo>*> books;	// 已借阅的书籍
-    List<string> booksID;
+    List<string> booksISBN;
+    List<string> reserveISBN;   //预约书籍
 
     UserInfo(): type(-1) {}
 
@@ -226,23 +330,25 @@ public:
     UserInfo(string reader, string pwd, int _type):
             ID(reader), password(pwd), type(_type) {}
 
-    UserInfo(string reader, int _type, List<string> books):
-            ID(reader), type(_type), booksID(books) {}
+    UserInfo(string reader, int _type, List<string> booksisbn):
+            ID(reader), type(_type), booksISBN(booksisbn) {}
 
-    UserInfo(string reader, string pwd, int _type, List<string> books):
-            ID(reader), password(pwd),type(_type), booksID(books) {}
+    UserInfo(string reader, string pwd, int _type, List<string> booksisbn):
+            ID(reader), password(pwd), type(_type), booksISBN(booksisbn) {}
 
     ~UserInfo() {}
 
     friend ostream &operator <<(ostream &output, const UserInfo &reader) {
         output << "{\"" << reader.ID << "\", \"" << reader.password << "\", "
-               << ", " << reader.type << ", " << reader.booksID << "}";
+               << ", " << reader.type << ", " << reader.booksISBN
+               <<", "<< reader.reserveISBN<< "}";
         return output;
     }
 
     friend ostream &operator <<(ostream &output, const UserInfo *&reader) {
-        output << "{\"" << reader->ID<< "\", \"" << reader->password << "\", "
-               << ", " << reader->type << ", " << reader->booksID << "}";
+        output << "{\"" << reader->ID << "\", \"" << reader->password << "\", "
+               << ", " << reader->type << ", " << reader->booksISBN
+               <<", "<< reader->reserveISBN<< "}";
         return output;
     }
 
@@ -256,8 +362,9 @@ public:
     float price;					// 价格
     List<Node<UserInfo>*> readers;	// 借阅该书的读者
     List<string> readersID;
+    Queue<string> reserveID;//预约队列,当可借阅书数量为0时启用
 
-    BookInfo(): isbn(nullptr), quantity(-1) {}
+    BookInfo(): isbn(), quantity(-1),price(0) {}
 
     BookInfo(string id): isbn(id), quantity(1) {}
 
@@ -272,14 +379,16 @@ public:
 
     friend ostream &operator <<(ostream &output, const BookInfo &book) {
         output << "{\"" << book.name << "\", " << book.isbn << ", "
-               << book.quantity << ", " << book.readers;
+               << book.quantity << ", " << book.price << ", " << book.readers
+               << ", " << book.reserveID;
         output << "}";
         return output;
     }
 
     friend ostream &operator <<(ostream &output, const BookInfo *&book) {
         output << "{\"" << book->name << "\", " << book->isbn << ", "
-               << book->quantity << ", " << book->readers << "}";
+               << book->quantity << ", " << book->price << ", " << book->readers
+               << ", " << book->reserveID<< "}";
         return output;
     }
 
@@ -306,6 +415,7 @@ public:
     ~Library() {}
     // 从文件读取数据
     int read(const char *userFile, const char *bookFile) {
+        //读取成功返回0，失败返回1
         bookPath = bookFile;
         userPath = userFile;
         int userState = userDataReader(userFile);
@@ -323,7 +433,7 @@ public:
             readersID.clear();
         }
         for (auto *p = users.begin(); p != users.end(); p = p->next) {
-            auto booksID = p->elem.booksID;
+            auto booksID = p->elem.booksISBN;
             for (auto *q = booksID.begin(); q != booksID.end(); q = q->next) {
                 p->elem.books.append(findBookbyISBN(q->elem));
             }
@@ -358,7 +468,7 @@ public:
             return 1;
         }
         for (auto *p = users.begin(); p != users.end(); p = p->next) {
-            output << p->elem.ID<< DIVIDE_CHAR << p->elem.password << DIVIDE_CHAR
+            output << p->elem.ID<< DIVIDE_CHAR << p->elem.password
                    <<  DIVIDE_CHAR << p->elem.type;
             auto books = p->elem.books;
             for (auto *q = books.begin(); q != books.end(); q = q->next) {
@@ -543,7 +653,7 @@ protected:
     int bookDataReader(const char *fileName) {
         ifstream input(fileName);
         if (!input) {
-            cerr << "数据读取失败。请检查文件\"" << fileName << "\"是否存在。" << endl;
+            qDebug() << "数据读取失败。请检查文件\"" << fileName << "\"是否存在。";
             return 1;
         }
         while (!input.eof()) {
@@ -595,7 +705,7 @@ protected:
     int userDataReader(const char *fileName) {
         ifstream input(fileName);
         if (!input) {
-            cerr << "数据读取失败。请检查文件\"" << fileName << "\"是否存在。" << endl;
+            qDebug() << "数据读取失败。请检查文件\"" << fileName << "\"是否存在。";
             return 1;
         }
         while (!input.eof()) {
@@ -644,5 +754,5 @@ protected:
 
 extern Library lib;
 extern string login_UserID;
-extern bool isLoginAdmin;
+extern bool isAdmin;
 #endif //LIBRARY_LIBRARY_H

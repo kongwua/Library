@@ -38,8 +38,7 @@ add_executable(Library main.cpp
         borrow_record.cpp
         borrow_record.h
         borrow_record.ui
-        csv_function.cpp
-        csv_function.h)
+)
 target_link_libraries(Library
         Qt::Core
         Qt::Gui

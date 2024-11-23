@@ -20,9 +20,14 @@ Q_OBJECT
 
 public:
     explicit admin(QWidget *parent = nullptr);
+    virtual void closeEvent(QCloseEvent *event);
+
+
 
     ~admin() override;
     void initUI();//初始化界面
+
+
 public slots:
     void menu_change(); //界面切换
 private:
@@ -31,6 +36,7 @@ private:
     Book_manage *m_book_manage;
     Borrow_manage *m_borrow_manage;
     Borrow_record *m_borrow_record;
+
 };
 
 

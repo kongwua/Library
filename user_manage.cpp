@@ -7,26 +7,19 @@
 
 #include "user_manage.h"
 #include "ui_User_manage.h"
-#include "csv_function.h"
+#include "Library.h"
 
 User_manage::User_manage(QWidget *parent) :
         QWidget(parent), ui(new Ui::User_manage) {
     ui->setupUi(this);
-
-//    auto model = new QStandardItemModel(0, 2);
-//    ui->tableView->setModel(model);
-    ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Fixed);//设置表头宽度固定
+    userModel = new QStandardItemModel();
+    ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);//设置表头宽度固定
     ui->tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);//设置表格不可编辑
     ui->tableView->setSelectionMode(QAbstractItemView::SingleSelection);//设置选择模式为单选
     ui->tableView->setSelectionBehavior(QAbstractItemView::SelectRows);//设置选择行为为选择整行
-//    model->setHorizontalHeaderLabels({"用户ID", "密码", "权限"});
-//    model->appendRow({new QStandardItem("10001"), new QStandardItem("123456"), new QStandardItem("管理员")});
 
+    displayUserData();
 
-//    connect(ui->search_line, &QLineEdit::returnPressed, this, &User_manage::on_search);
-    //当搜索框内有内容再按下回车时，搜索并高亮显示
-    QStandardItemModel *model = createTablemodel();
-    ui->tableView->setModel(model);
 
 }
 
@@ -34,26 +27,27 @@ User_manage::~User_manage() {
     delete ui;
 }
 
-QStandardItemModel* User_manage::createTablemodel() {
-    //读取csv文件,获取链表,创建表格模型,返回模型
-    csv_User csv;
-    csv.init_csv("user.csv");
-    csv.read_csv();
-    auto p = csv.get_user_head();
-    p = p->next;
-    QStandardItemModel *model = new QStandardItemModel();
-    //设置表头
-    model->setHorizontalHeaderLabels({"用户ID", "密码", "借阅数量","权限"});
-    //遍历链表，添加数据到表格
-    int row = 0;
-    while (p) {
-        model->setItem(row, 0, new QStandardItem(p->data.ID));
-        model->setItem(row, 1, new QStandardItem(p->data.password));
-        model->setItem(row, 2, new QStandardItem(QString::number(p->data.book_borrow)));
-        model->setItem(row, 3, new QStandardItem(QString::number(p->data.user_type)));
-        p = p->next;
-        row++;
+
+
+void User_manage::initModel() {
+    //初始化表格模型
+    userModel->clear();
+    userModel->setHorizontalHeaderLabels({"用户ID","借阅数量","预约数量","权限"});
+    ui->tableView->setModel(userModel);
+}
+
+void User_manage::displayUserData() {
+    //显示用户数据
+    initModel();
+    for(auto p=lib.users.begin();p!=lib.users.end();p=p->next){
+        if(!p) return;
+        QList<QStandardItem*> list;
+        list << new QStandardItem(p->elem.ID.data())
+             << new QStandardItem(std::to_string(p->elem.books.size()).data())
+             << new QStandardItem(std::to_string(p->elem.reserveISBN.size()).data())
+             << new QStandardItem((std::to_string(p->elem.type).data()?"管理员":"普通用户"));
+        userModel->appendRow(list);
     }
-    return model;
 
 }
+

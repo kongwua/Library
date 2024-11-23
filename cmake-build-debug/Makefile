@@ -285,30 +285,6 @@ borrow_record.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/borrow_record.cpp.s
 .PHONY : borrow_record.cpp.s
 
-csv_function.obj: csv_function.cpp.obj
-.PHONY : csv_function.obj
-
-# target to build an object file
-csv_function.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/csv_function.cpp.obj
-.PHONY : csv_function.cpp.obj
-
-csv_function.i: csv_function.cpp.i
-.PHONY : csv_function.i
-
-# target to preprocess a source file
-csv_function.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/csv_function.cpp.i
-.PHONY : csv_function.cpp.i
-
-csv_function.s: csv_function.cpp.s
-.PHONY : csv_function.s
-
-# target to generate assembly for a file
-csv_function.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/csv_function.cpp.s
-.PHONY : csv_function.cpp.s
-
 login.obj: login.cpp.obj
 .PHONY : login.obj
 
@@ -409,9 +385,6 @@ help:
 	@echo ... borrow_record.obj
 	@echo ... borrow_record.i
 	@echo ... borrow_record.s
-	@echo ... csv_function.obj
-	@echo ... csv_function.i
-	@echo ... csv_function.s
 	@echo ... login.obj
 	@echo ... login.i
 	@echo ... login.s
