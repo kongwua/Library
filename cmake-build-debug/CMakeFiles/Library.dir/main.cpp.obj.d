@@ -387,9 +387,9 @@ CMakeFiles/Library.dir/main.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qfileinfo.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
- C:\Users\recatu\Documents\Library\Library.h \
- C:\Users\recatu\Documents\Library\login.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QWidget \
+ C:\Users\recatu\Documents\Library\admin.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qwidget.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qaction.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qkeysequence.h \
@@ -400,18 +400,10 @@ CMakeFiles/Library.dir/main.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qfontmetrics.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qfontinfo.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qsizepolicy.h \
- C:\Users\recatu\Documents\Library\admin.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qwidget.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h \
- C:\Users\recatu\Documents\Library\book_manage.h \
- C:\Users\recatu\Documents\Library\user_manage.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QStandardItemModel \
- D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qstandarditemmodel.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h \
- C:\Users\recatu\Documents\Library\borrow_manage.h \
- C:\Users\recatu\Documents\Library\borrow_record.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QWidget \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qwidget.h \
+ C:\Users\recatu\Documents\Library\Library.h \
  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
@@ -442,4 +434,12 @@ CMakeFiles/Library.dir/main.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qsize.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QTransform \
- D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtransform.h
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtransform.h \
+ C:\Users\recatu\Documents\Library\book_manage.h \
+ C:\Users\recatu\Documents\Library\user_manage.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QStandardItemModel \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qstandarditemmodel.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h \
+ C:\Users\recatu\Documents\Library\borrow_manage.h \
+ C:\Users\recatu\Documents\Library\borrow_record.h \
+ C:\Users\recatu\Documents\Library\login.h

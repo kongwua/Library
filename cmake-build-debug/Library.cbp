@@ -171,6 +171,15 @@
 		<Unit filename="C:/Users/recatu/Documents/Library/borrow_record.ui">
 			<Option target="Library"/>
 		</Unit>
+		<Unit filename="C:/Users/recatu/Documents/Library/change_psw_dialog.cpp">
+			<Option target="Library"/>
+		</Unit>
+		<Unit filename="C:/Users/recatu/Documents/Library/change_psw_dialog.h">
+			<Option target="Library"/>
+		</Unit>
+		<Unit filename="C:/Users/recatu/Documents/Library/change_psw_dialog.ui">
+			<Option target="Library"/>
+		</Unit>
 		<Unit filename="C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_admin.h">
 			<Option target="Library"/>
 		</Unit>
@@ -183,10 +192,16 @@
 		<Unit filename="C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_borrow_record.h">
 			<Option target="Library"/>
 		</Unit>
+		<Unit filename="C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_change_psw_dialog.h">
+			<Option target="Library"/>
+		</Unit>
 		<Unit filename="C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_login.h">
 			<Option target="Library"/>
 		</Unit>
 		<Unit filename="C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_user_manage.h">
+			<Option target="Library"/>
+		</Unit>
+		<Unit filename="C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_userinfo_dialog.h">
 			<Option target="Library"/>
 		</Unit>
 		<Unit filename="C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/mocs_compilation.cpp">
@@ -211,6 +226,15 @@
 			<Option target="Library"/>
 		</Unit>
 		<Unit filename="C:/Users/recatu/Documents/Library/user_manage.ui">
+			<Option target="Library"/>
+		</Unit>
+		<Unit filename="C:/Users/recatu/Documents/Library/userinfo_dialog.cpp">
+			<Option target="Library"/>
+		</Unit>
+		<Unit filename="C:/Users/recatu/Documents/Library/userinfo_dialog.h">
+			<Option target="Library"/>
+		</Unit>
+		<Unit filename="C:/Users/recatu/Documents/Library/userinfo_dialog.ui">
 			<Option target="Library"/>
 		</Unit>
 		<Unit filename="C:/Users/recatu/Documents/Library/CMakeLists.txt">

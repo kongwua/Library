@@ -38,6 +38,12 @@ add_executable(Library main.cpp
         borrow_record.cpp
         borrow_record.h
         borrow_record.ui
+        userinfo_dialog.cpp
+        userinfo_dialog.h
+        userinfo_dialog.ui
+        change_psw_dialog.cpp
+        change_psw_dialog.h
+        change_psw_dialog.ui
 )
 target_link_libraries(Library
         Qt::Core

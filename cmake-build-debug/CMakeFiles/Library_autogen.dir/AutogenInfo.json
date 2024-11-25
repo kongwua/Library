@@ -320,6 +320,12 @@
 			null
 		],
 		[
+			"C:/Users/recatu/Documents/Library/change_psw_dialog.h",
+			"MU",
+			"EWIEGA46WW/moc_change_psw_dialog.cpp",
+			null
+		],
+		[
 			"C:/Users/recatu/Documents/Library/login.h",
 			"MU",
 			"EWIEGA46WW/moc_login.cpp",
@@ -329,6 +335,12 @@
 			"C:/Users/recatu/Documents/Library/user_manage.h",
 			"MU",
 			"EWIEGA46WW/moc_user_manage.cpp",
+			null
+		],
+		[
+			"C:/Users/recatu/Documents/Library/userinfo_dialog.h",
+			"MU",
+			"EWIEGA46WW/moc_userinfo_dialog.cpp",
 			null
 		]
 	],
@@ -407,9 +419,11 @@
 		[ "C:/Users/recatu/Documents/Library/book_manage.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/borrow_manage.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/borrow_record.cpp", "MU", null ],
+		[ "C:/Users/recatu/Documents/Library/change_psw_dialog.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/login.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/main.cpp", "MU", null ],
-		[ "C:/Users/recatu/Documents/Library/user_manage.cpp", "MU", null ]
+		[ "C:/Users/recatu/Documents/Library/user_manage.cpp", "MU", null ],
+		[ "C:/Users/recatu/Documents/Library/userinfo_dialog.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

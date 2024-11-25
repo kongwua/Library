@@ -29,8 +29,8 @@ void login::user_login() {
     //登录事件处理
     userID = ui->id_Ledit->text().toStdString();
     password = ui->psw_Ledit->text().toStdString();
-    if(userID.empty() || password.empty()){
-        QMessageBox::warning(this, "登录失败", "用户名或密码不能为空！");
+    if(userID.empty()){
+        QMessageBox::warning(this, "登录失败", "用户名不能为空！");
         return;
     }
     if (lib.login(userID, password)) {

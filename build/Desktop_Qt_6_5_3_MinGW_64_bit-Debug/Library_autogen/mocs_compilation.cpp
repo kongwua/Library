@@ -5,3 +5,4 @@
 #include "EWIEGA46WW/moc_borrow_record.cpp"
 #include "EWIEGA46WW/moc_login.cpp"
 #include "EWIEGA46WW/moc_user_manage.cpp"
+#include "EWIEGA46WW/moc_userinfo_dialog.cpp"

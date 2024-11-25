@@ -353,72 +353,7 @@ CMakeFiles/Library.dir/user_manage.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QStandardItemModel \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qstandarditemmodel.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h \
- C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_User_manage.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QVariant \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qvariant.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QApplication \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qapplication.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qeventloop.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qnativeinterface.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qguiapplication.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qinputmethod.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlocale.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qguiapplication_platform.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QGridLayout \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qgridlayout.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlayout.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlayoutitem.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qgridlayout.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QHeaderView \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qheaderview.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractitemview.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qframe.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qwidget.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qitemselectionmodel.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qstyleoption.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qvalidator.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qregularexpression.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qslider.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractslider.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qstyle.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtabbar.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qrubberband.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QLabel \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qpicture.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qiodevice.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtextdocument.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qurl.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QLineEdit \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtextcursor.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtextformat.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qpen.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtextoption.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QPushButton \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qpushbutton.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractbutton.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QSpacerItem \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlayoutitem.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QTableView \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtableview.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QWidget \
  C:\Users\recatu\Documents\Library\Library.h \
- C:\Users\recatu\Documents\Library\login.h \
- C:\Users\recatu\Documents\Library\admin.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h \
- C:\Users\recatu\Documents\Library\book_manage.h \
- C:\Users\recatu\Documents\Library\borrow_manage.h \
- C:\Users\recatu\Documents\Library\borrow_record.h \
  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
@@ -443,9 +378,13 @@ CMakeFiles/Library.dir/user_manage.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qwidget.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QCloseEvent \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qevent.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qiodevice.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qpointer.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qurl.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qeventpoint.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qvector2d.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qvectornd.h \
@@ -462,4 +401,69 @@ CMakeFiles/Library.dir/user_manage.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qsize.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QTransform \
- D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtransform.h
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtransform.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qnativeinterface.h \
+ C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_User_manage.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QVariant \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qvariant.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QApplication \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qapplication.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qeventloop.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qguiapplication.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qinputmethod.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlocale.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qguiapplication_platform.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QGridLayout \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlayout.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QHeaderView \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qheaderview.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractitemview.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qframe.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qitemselectionmodel.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qstyleoption.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qvalidator.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qregularexpression.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qslider.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractslider.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qstyle.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtabbar.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qrubberband.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QLabel \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qpicture.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtextdocument.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QLineEdit \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtextcursor.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtextformat.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qpen.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtextoption.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QPushButton \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qpushbutton.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractbutton.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QSpacerItem \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QTableView \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtableview.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QWidget \
+ C:\Users\recatu\Documents\Library\admin.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h \
+ C:\Users\recatu\Documents\Library\book_manage.h \
+ C:\Users\recatu\Documents\Library\borrow_manage.h \
+ C:\Users\recatu\Documents\Library\borrow_record.h \
+ C:\Users\recatu\Documents\Library\userinfo_dialog.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QDialog \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qstring.h

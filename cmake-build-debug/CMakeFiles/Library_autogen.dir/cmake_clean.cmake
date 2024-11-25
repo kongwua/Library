@@ -5,7 +5,9 @@ file(REMOVE_RECURSE
   "Library_autogen/include/ui_Borrow_record.h"
   "Library_autogen/include/ui_User_manage.h"
   "Library_autogen/include/ui_admin.h"
+  "Library_autogen/include/ui_change_psw_dialog.h"
   "Library_autogen/include/ui_login.h"
+  "Library_autogen/include/ui_userinfo_dialog.h"
   "Library_autogen/mocs_compilation.cpp"
 )
 

@@ -14,9 +14,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/recatu/Documents/Library/book_manage.cpp" "CMakeFiles/Library.dir/book_manage.cpp.obj" "gcc" "CMakeFiles/Library.dir/book_manage.cpp.obj.d"
   "C:/Users/recatu/Documents/Library/borrow_manage.cpp" "CMakeFiles/Library.dir/borrow_manage.cpp.obj" "gcc" "CMakeFiles/Library.dir/borrow_manage.cpp.obj.d"
   "C:/Users/recatu/Documents/Library/borrow_record.cpp" "CMakeFiles/Library.dir/borrow_record.cpp.obj" "gcc" "CMakeFiles/Library.dir/borrow_record.cpp.obj.d"
+  "C:/Users/recatu/Documents/Library/change_psw_dialog.cpp" "CMakeFiles/Library.dir/change_psw_dialog.cpp.obj" "gcc" "CMakeFiles/Library.dir/change_psw_dialog.cpp.obj.d"
   "C:/Users/recatu/Documents/Library/login.cpp" "CMakeFiles/Library.dir/login.cpp.obj" "gcc" "CMakeFiles/Library.dir/login.cpp.obj.d"
   "C:/Users/recatu/Documents/Library/main.cpp" "CMakeFiles/Library.dir/main.cpp.obj" "gcc" "CMakeFiles/Library.dir/main.cpp.obj.d"
   "C:/Users/recatu/Documents/Library/user_manage.cpp" "CMakeFiles/Library.dir/user_manage.cpp.obj" "gcc" "CMakeFiles/Library.dir/user_manage.cpp.obj.d"
+  "C:/Users/recatu/Documents/Library/userinfo_dialog.cpp" "CMakeFiles/Library.dir/userinfo_dialog.cpp.obj" "gcc" "CMakeFiles/Library.dir/userinfo_dialog.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

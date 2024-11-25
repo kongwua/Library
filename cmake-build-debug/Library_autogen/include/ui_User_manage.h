@@ -28,12 +28,12 @@ public:
     QGridLayout *gridLayout_2;
     QWidget *widget;
     QGridLayout *gridLayout;
-    QLabel *label;
-    QLineEdit *search_line;
-    QPushButton *add_user;
-    QPushButton *delete_user;
-    QPushButton *pushButton_3;
     QSpacerItem *horizontalSpacer;
+    QPushButton *userInfo_btn;
+    QLabel *label;
+    QPushButton *addUser_btn;
+    QLineEdit *search_line;
+    QPushButton *search_btn;
     QLabel *label_2;
     QTableView *tableView;
 
@@ -48,35 +48,35 @@ public:
         widget->setObjectName("widget");
         gridLayout = new QGridLayout(widget);
         gridLayout->setObjectName("gridLayout");
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer, 0, 5, 1, 1);
+
+        userInfo_btn = new QPushButton(widget);
+        userInfo_btn->setObjectName("userInfo_btn");
+
+        gridLayout->addWidget(userInfo_btn, 0, 4, 1, 1);
+
         label = new QLabel(widget);
         label->setObjectName("label");
         label->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         gridLayout->addWidget(label, 0, 0, 1, 1);
 
+        addUser_btn = new QPushButton(widget);
+        addUser_btn->setObjectName("addUser_btn");
+
+        gridLayout->addWidget(addUser_btn, 0, 3, 1, 1);
+
         search_line = new QLineEdit(widget);
         search_line->setObjectName("search_line");
 
         gridLayout->addWidget(search_line, 0, 1, 1, 1);
 
-        add_user = new QPushButton(widget);
-        add_user->setObjectName("add_user");
+        search_btn = new QPushButton(widget);
+        search_btn->setObjectName("search_btn");
 
-        gridLayout->addWidget(add_user, 0, 2, 1, 1);
-
-        delete_user = new QPushButton(widget);
-        delete_user->setObjectName("delete_user");
-
-        gridLayout->addWidget(delete_user, 0, 3, 1, 1);
-
-        pushButton_3 = new QPushButton(widget);
-        pushButton_3->setObjectName("pushButton_3");
-
-        gridLayout->addWidget(pushButton_3, 0, 4, 1, 1);
-
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout->addItem(horizontalSpacer, 0, 5, 1, 1);
+        gridLayout->addWidget(search_btn, 0, 2, 1, 1);
 
 
         gridLayout_2->addWidget(widget, 1, 0, 1, 1);
@@ -104,10 +104,10 @@ public:
     void retranslateUi(QWidget *User_manage)
     {
         User_manage->setWindowTitle(QCoreApplication::translate("User_manage", "User_manage", nullptr));
+        userInfo_btn->setText(QCoreApplication::translate("User_manage", "\350\257\246\347\273\206\344\277\241\346\201\257", nullptr));
         label->setText(QCoreApplication::translate("User_manage", "\346\220\234\347\264\242\357\274\232", nullptr));
-        add_user->setText(QCoreApplication::translate("User_manage", "\345\242\236\345\212\240\347\224\250\346\210\267", nullptr));
-        delete_user->setText(QCoreApplication::translate("User_manage", "\345\210\240\351\231\244\347\224\250\346\210\267", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("User_manage", "\346\233\264\346\224\271\347\224\250\346\210\267", nullptr));
+        addUser_btn->setText(QCoreApplication::translate("User_manage", "\345\242\236\345\212\240\347\224\250\346\210\267", nullptr));
+        search_btn->setText(QCoreApplication::translate("User_manage", "\346\220\234\347\264\242", nullptr));
         label_2->setText(QCoreApplication::translate("User_manage", "\347\224\250\346\210\267\347\256\241\347\220\206", nullptr));
     } // retranslateUi
 

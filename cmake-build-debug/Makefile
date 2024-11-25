@@ -285,6 +285,30 @@ borrow_record.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/borrow_record.cpp.s
 .PHONY : borrow_record.cpp.s
 
+change_psw_dialog.obj: change_psw_dialog.cpp.obj
+.PHONY : change_psw_dialog.obj
+
+# target to build an object file
+change_psw_dialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/change_psw_dialog.cpp.obj
+.PHONY : change_psw_dialog.cpp.obj
+
+change_psw_dialog.i: change_psw_dialog.cpp.i
+.PHONY : change_psw_dialog.i
+
+# target to preprocess a source file
+change_psw_dialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/change_psw_dialog.cpp.i
+.PHONY : change_psw_dialog.cpp.i
+
+change_psw_dialog.s: change_psw_dialog.cpp.s
+.PHONY : change_psw_dialog.s
+
+# target to generate assembly for a file
+change_psw_dialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/change_psw_dialog.cpp.s
+.PHONY : change_psw_dialog.cpp.s
+
 login.obj: login.cpp.obj
 .PHONY : login.obj
 
@@ -357,6 +381,30 @@ user_manage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/user_manage.cpp.s
 .PHONY : user_manage.cpp.s
 
+userinfo_dialog.obj: userinfo_dialog.cpp.obj
+.PHONY : userinfo_dialog.obj
+
+# target to build an object file
+userinfo_dialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/userinfo_dialog.cpp.obj
+.PHONY : userinfo_dialog.cpp.obj
+
+userinfo_dialog.i: userinfo_dialog.cpp.i
+.PHONY : userinfo_dialog.i
+
+# target to preprocess a source file
+userinfo_dialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/userinfo_dialog.cpp.i
+.PHONY : userinfo_dialog.cpp.i
+
+userinfo_dialog.s: userinfo_dialog.cpp.s
+.PHONY : userinfo_dialog.s
+
+# target to generate assembly for a file
+userinfo_dialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/userinfo_dialog.cpp.s
+.PHONY : userinfo_dialog.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -385,6 +433,9 @@ help:
 	@echo ... borrow_record.obj
 	@echo ... borrow_record.i
 	@echo ... borrow_record.s
+	@echo ... change_psw_dialog.obj
+	@echo ... change_psw_dialog.i
+	@echo ... change_psw_dialog.s
 	@echo ... login.obj
 	@echo ... login.i
 	@echo ... login.s
@@ -394,6 +445,9 @@ help:
 	@echo ... user_manage.obj
 	@echo ... user_manage.i
 	@echo ... user_manage.s
+	@echo ... userinfo_dialog.obj
+	@echo ... userinfo_dialog.i
+	@echo ... userinfo_dialog.s
 .PHONY : help
 
 

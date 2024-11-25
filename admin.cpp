@@ -17,7 +17,6 @@ admin::admin(QWidget *parent) :
             ,m_borrow_record(nullptr)//页面指针初始化
 {
     ui->setupUi(this);
-    initUI();
 }
 
 admin::~admin() {
@@ -76,6 +75,34 @@ void admin::closeEvent(QCloseEvent *event) {
     }
     QMessageBox::information(this,"提示","数据已保存！");
     event->accept();
+}
+
+QStandardItemModel* admin::initUserModel(QStandardItemModel* userModel) {
+    userModel->clear();
+    userModel->setHorizontalHeaderLabels({"用户ID","借阅数量","预约数量","权限"});
+}
+
+void admin::displayUserData(QStandardItemModel* userModel) {
+    initUserModel(userModel);
+    for(auto p=lib.users.begin();p!=lib.users.end();p=p->next){
+        appendOneUser(userModel,p);
+    }
+
+}
+
+void admin::appendOneUser(QStandardItemModel *userModel, Node<UserInfo> *p) {
+    if(!p) return;
+    QList<QStandardItem*> list;
+    list << new QStandardItem(p->elem.ID.data())
+         << new QStandardItem(std::to_string(p->elem.books.size()).data())
+         << new QStandardItem(std::to_string(p->elem.reserveISBN.size()).data())
+         << new QStandardItem((p->elem.type)?"管理员":"普通用户");
+    userModel->appendRow(list);
+}
+
+void admin::displayOneUser(QStandardItemModel *userModel, Node<UserInfo> *p) {
+    initUserModel(userModel);
+    appendOneUser(userModel,p);
 }
 
 

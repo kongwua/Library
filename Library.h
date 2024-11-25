@@ -4,8 +4,7 @@
 //用于存放用户和图书相关的类定义
 #ifndef LIBRARY_LIBRARY_H
 #define LIBRARY_LIBRARY_H
-#include "login.h"
-#include "admin.h"
+
 #include <iostream>
 #include <fstream>
 #include <Qdebug>
@@ -20,7 +19,6 @@ using std::istream;
 using std::cout;
 using std::cerr;
 using std::endl;
-
 #define DIVIDER ',' //设置分隔符为逗号
 
 class BookInfo;		// 图书信息类
@@ -320,7 +318,7 @@ public:
     List<string> booksISBN;
     List<string> reserveISBN;   //预约书籍
 
-    UserInfo(): type(-1) {}
+    UserInfo(): ID(""),type(-1) {}
 
     UserInfo(string id): ID(id), type(0) {}
 

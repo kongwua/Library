@@ -330,6 +330,12 @@
 			"MU",
 			"EWIEGA46WW/moc_user_manage.cpp",
 			null
+		],
+		[
+			"C:/Users/recatu/Documents/Library/userinfo_dialog.h",
+			"MU",
+			"EWIEGA46WW/moc_userinfo_dialog.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -409,7 +415,8 @@
 		[ "C:/Users/recatu/Documents/Library/borrow_record.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/login.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/main.cpp", "MU", null ],
-		[ "C:/Users/recatu/Documents/Library/user_manage.cpp", "MU", null ]
+		[ "C:/Users/recatu/Documents/Library/user_manage.cpp", "MU", null ],
+		[ "C:/Users/recatu/Documents/Library/userinfo_dialog.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
