@@ -141,30 +141,6 @@ Library_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library_autogen.dir\build.make CMakeFiles/Library_autogen.dir/build
 .PHONY : Library_autogen/fast
 
-Book.obj: Book.cpp.obj
-.PHONY : Book.obj
-
-# target to build an object file
-Book.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/Book.cpp.obj
-.PHONY : Book.cpp.obj
-
-Book.i: Book.cpp.i
-.PHONY : Book.i
-
-# target to preprocess a source file
-Book.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/Book.cpp.i
-.PHONY : Book.cpp.i
-
-Book.s: Book.cpp.s
-.PHONY : Book.s
-
-# target to generate assembly for a file
-Book.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/Book.cpp.s
-.PHONY : Book.cpp.s
-
 Library_autogen/mocs_compilation.obj: Library_autogen/mocs_compilation.cpp.obj
 .PHONY : Library_autogen/mocs_compilation.obj
 
@@ -236,6 +212,30 @@ book_manage.s: book_manage.cpp.s
 book_manage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/book_manage.cpp.s
 .PHONY : book_manage.cpp.s
+
+bookinfo_dialog.obj: bookinfo_dialog.cpp.obj
+.PHONY : bookinfo_dialog.obj
+
+# target to build an object file
+bookinfo_dialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj
+.PHONY : bookinfo_dialog.cpp.obj
+
+bookinfo_dialog.i: bookinfo_dialog.cpp.i
+.PHONY : bookinfo_dialog.i
+
+# target to preprocess a source file
+bookinfo_dialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/bookinfo_dialog.cpp.i
+.PHONY : bookinfo_dialog.cpp.i
+
+bookinfo_dialog.s: bookinfo_dialog.cpp.s
+.PHONY : bookinfo_dialog.s
+
+# target to generate assembly for a file
+bookinfo_dialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/bookinfo_dialog.cpp.s
+.PHONY : bookinfo_dialog.cpp.s
 
 borrow_manage.obj: borrow_manage.cpp.obj
 .PHONY : borrow_manage.obj
@@ -415,9 +415,6 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Library_autogen
 	@echo ... Library
-	@echo ... Book.obj
-	@echo ... Book.i
-	@echo ... Book.s
 	@echo ... Library_autogen/mocs_compilation.obj
 	@echo ... Library_autogen/mocs_compilation.i
 	@echo ... Library_autogen/mocs_compilation.s
@@ -427,6 +424,9 @@ help:
 	@echo ... book_manage.obj
 	@echo ... book_manage.i
 	@echo ... book_manage.s
+	@echo ... bookinfo_dialog.obj
+	@echo ... bookinfo_dialog.i
+	@echo ... bookinfo_dialog.s
 	@echo ... borrow_manage.obj
 	@echo ... borrow_manage.i
 	@echo ... borrow_manage.s

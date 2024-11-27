@@ -39,7 +39,7 @@ namespace {
 struct qt_meta_stringdata_CLASSUser_manageENDCLASS_t {};
 static constexpr auto qt_meta_stringdata_CLASSUser_manageENDCLASS = QtMocHelpers::stringData(
     "User_manage",
-    "on_addUser_clicked",
+    "on_addUser_btn_clicked",
     "",
     "on_search_btn_clicked",
     "on_tableView_clicked",
@@ -52,7 +52,7 @@ static constexpr auto qt_meta_stringdata_CLASSUser_manageENDCLASS = QtMocHelpers
 struct qt_meta_stringdata_CLASSUser_manageENDCLASS_t {
     uint offsetsAndSizes[18];
     char stringdata0[12];
-    char stringdata1[19];
+    char stringdata1[23];
     char stringdata2[1];
     char stringdata3[22];
     char stringdata4[21];
@@ -66,17 +66,17 @@ struct qt_meta_stringdata_CLASSUser_manageENDCLASS_t {
 Q_CONSTINIT static const qt_meta_stringdata_CLASSUser_manageENDCLASS_t qt_meta_stringdata_CLASSUser_manageENDCLASS = {
     {
         QT_MOC_LITERAL(0, 11),  // "User_manage"
-        QT_MOC_LITERAL(12, 18),  // "on_addUser_clicked"
-        QT_MOC_LITERAL(31, 0),  // ""
-        QT_MOC_LITERAL(32, 21),  // "on_search_btn_clicked"
-        QT_MOC_LITERAL(54, 20),  // "on_tableView_clicked"
-        QT_MOC_LITERAL(75, 11),  // "QModelIndex"
-        QT_MOC_LITERAL(87, 5),  // "index"
-        QT_MOC_LITERAL(93, 26),  // "on_tableView_doubleClicked"
-        QT_MOC_LITERAL(120, 23)   // "on_userInfo_btn_clicked"
+        QT_MOC_LITERAL(12, 22),  // "on_addUser_btn_clicked"
+        QT_MOC_LITERAL(35, 0),  // ""
+        QT_MOC_LITERAL(36, 21),  // "on_search_btn_clicked"
+        QT_MOC_LITERAL(58, 20),  // "on_tableView_clicked"
+        QT_MOC_LITERAL(79, 11),  // "QModelIndex"
+        QT_MOC_LITERAL(91, 5),  // "index"
+        QT_MOC_LITERAL(97, 26),  // "on_tableView_doubleClicked"
+        QT_MOC_LITERAL(124, 23)   // "on_userInfo_btn_clicked"
     },
     "User_manage",
-    "on_addUser_clicked",
+    "on_addUser_btn_clicked",
     "",
     "on_search_btn_clicked",
     "on_tableView_clicked",
@@ -128,7 +128,7 @@ Q_CONSTINIT const QMetaObject User_manage::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSUser_manageENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<User_manage, std::true_type>,
-        // method 'on_addUser_clicked'
+        // method 'on_addUser_btn_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_search_btn_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
@@ -149,7 +149,7 @@ void User_manage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         auto *_t = static_cast<User_manage *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_addUser_clicked(); break;
+        case 0: _t->on_addUser_btn_clicked(); break;
         case 1: _t->on_search_btn_clicked(); break;
         case 2: _t->on_tableView_clicked((*reinterpret_cast< std::add_pointer_t<QModelIndex>>(_a[1]))); break;
         case 3: _t->on_tableView_doubleClicked(); break;

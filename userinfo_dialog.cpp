@@ -126,6 +126,7 @@ void userinfo_dialog::initBookModel() {
     ui->book_tableView->horizontalHeader()->setSectionResizeMode(1, QHeaderView::Fixed);
     ui->book_tableView->horizontalHeader()->setSectionResizeMode(2, QHeaderView::Fixed);
     ui->book_tableView->horizontalHeader()->setSectionResizeMode(3, QHeaderView::Fixed);
+
     ui->book_tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
     ui->book_tableView->setAlternatingRowColors(true);
 }
@@ -134,7 +135,7 @@ void userinfo_dialog::displayBookTable() {
     //显示书籍表格
     initBookModel();
     ui->num_label->setText(tr("已借") + QString::number(user->elem.books.size())+tr("本"));
-    for(auto p = user->elem.books.begin(); p!=user->elem.books.end(); p++){
+    for(auto p = user->elem.books.begin(); p!=user->elem.books.end(); p=p->next){
         appendOneBook(p->elem);
     }
 }

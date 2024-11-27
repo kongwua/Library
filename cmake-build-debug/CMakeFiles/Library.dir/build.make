@@ -113,26 +113,11 @@ CMakeFiles/Library.dir/login.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Library.dir/login.cpp.s"
 	D:\app_install\QT\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\recatu\Documents\Library\login.cpp -o CMakeFiles\Library.dir\login.cpp.s
 
-CMakeFiles/Library.dir/Book.cpp.obj: CMakeFiles/Library.dir/flags.make
-CMakeFiles/Library.dir/Book.cpp.obj: CMakeFiles/Library.dir/includes_CXX.rsp
-CMakeFiles/Library.dir/Book.cpp.obj: C:/Users/recatu/Documents/Library/Book.cpp
-CMakeFiles/Library.dir/Book.cpp.obj: CMakeFiles/Library.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Library.dir/Book.cpp.obj"
-	D:\app_install\QT\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Library.dir/Book.cpp.obj -MF CMakeFiles\Library.dir\Book.cpp.obj.d -o CMakeFiles\Library.dir\Book.cpp.obj -c C:\Users\recatu\Documents\Library\Book.cpp
-
-CMakeFiles/Library.dir/Book.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Library.dir/Book.cpp.i"
-	D:\app_install\QT\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\recatu\Documents\Library\Book.cpp > CMakeFiles\Library.dir\Book.cpp.i
-
-CMakeFiles/Library.dir/Book.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Library.dir/Book.cpp.s"
-	D:\app_install\QT\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\recatu\Documents\Library\Book.cpp -o CMakeFiles\Library.dir\Book.cpp.s
-
 CMakeFiles/Library.dir/admin.cpp.obj: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/admin.cpp.obj: CMakeFiles/Library.dir/includes_CXX.rsp
 CMakeFiles/Library.dir/admin.cpp.obj: C:/Users/recatu/Documents/Library/admin.cpp
 CMakeFiles/Library.dir/admin.cpp.obj: CMakeFiles/Library.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Library.dir/admin.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Library.dir/admin.cpp.obj"
 	D:\app_install\QT\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Library.dir/admin.cpp.obj -MF CMakeFiles\Library.dir\admin.cpp.obj.d -o CMakeFiles\Library.dir\admin.cpp.obj -c C:\Users\recatu\Documents\Library\admin.cpp
 
 CMakeFiles/Library.dir/admin.cpp.i: cmake_force
@@ -147,7 +132,7 @@ CMakeFiles/Library.dir/user_manage.cpp.obj: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/user_manage.cpp.obj: CMakeFiles/Library.dir/includes_CXX.rsp
 CMakeFiles/Library.dir/user_manage.cpp.obj: C:/Users/recatu/Documents/Library/user_manage.cpp
 CMakeFiles/Library.dir/user_manage.cpp.obj: CMakeFiles/Library.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Library.dir/user_manage.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Library.dir/user_manage.cpp.obj"
 	D:\app_install\QT\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Library.dir/user_manage.cpp.obj -MF CMakeFiles\Library.dir\user_manage.cpp.obj.d -o CMakeFiles\Library.dir\user_manage.cpp.obj -c C:\Users\recatu\Documents\Library\user_manage.cpp
 
 CMakeFiles/Library.dir/user_manage.cpp.i: cmake_force
@@ -162,7 +147,7 @@ CMakeFiles/Library.dir/book_manage.cpp.obj: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/book_manage.cpp.obj: CMakeFiles/Library.dir/includes_CXX.rsp
 CMakeFiles/Library.dir/book_manage.cpp.obj: C:/Users/recatu/Documents/Library/book_manage.cpp
 CMakeFiles/Library.dir/book_manage.cpp.obj: CMakeFiles/Library.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Library.dir/book_manage.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Library.dir/book_manage.cpp.obj"
 	D:\app_install\QT\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Library.dir/book_manage.cpp.obj -MF CMakeFiles\Library.dir\book_manage.cpp.obj.d -o CMakeFiles\Library.dir\book_manage.cpp.obj -c C:\Users\recatu\Documents\Library\book_manage.cpp
 
 CMakeFiles/Library.dir/book_manage.cpp.i: cmake_force
@@ -177,7 +162,7 @@ CMakeFiles/Library.dir/borrow_manage.cpp.obj: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/borrow_manage.cpp.obj: CMakeFiles/Library.dir/includes_CXX.rsp
 CMakeFiles/Library.dir/borrow_manage.cpp.obj: C:/Users/recatu/Documents/Library/borrow_manage.cpp
 CMakeFiles/Library.dir/borrow_manage.cpp.obj: CMakeFiles/Library.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Library.dir/borrow_manage.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Library.dir/borrow_manage.cpp.obj"
 	D:\app_install\QT\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Library.dir/borrow_manage.cpp.obj -MF CMakeFiles\Library.dir\borrow_manage.cpp.obj.d -o CMakeFiles\Library.dir\borrow_manage.cpp.obj -c C:\Users\recatu\Documents\Library\borrow_manage.cpp
 
 CMakeFiles/Library.dir/borrow_manage.cpp.i: cmake_force
@@ -192,7 +177,7 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/borrow_record.cpp.obj: CMakeFiles/Library.dir/includes_CXX.rsp
 CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/borrow_record.cpp
 CMakeFiles/Library.dir/borrow_record.cpp.obj: CMakeFiles/Library.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Library.dir/borrow_record.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Library.dir/borrow_record.cpp.obj"
 	D:\app_install\QT\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Library.dir/borrow_record.cpp.obj -MF CMakeFiles\Library.dir\borrow_record.cpp.obj.d -o CMakeFiles\Library.dir\borrow_record.cpp.obj -c C:\Users\recatu\Documents\Library\borrow_record.cpp
 
 CMakeFiles/Library.dir/borrow_record.cpp.i: cmake_force
@@ -207,7 +192,7 @@ CMakeFiles/Library.dir/userinfo_dialog.cpp.obj: CMakeFiles/Library.dir/flags.mak
 CMakeFiles/Library.dir/userinfo_dialog.cpp.obj: CMakeFiles/Library.dir/includes_CXX.rsp
 CMakeFiles/Library.dir/userinfo_dialog.cpp.obj: C:/Users/recatu/Documents/Library/userinfo_dialog.cpp
 CMakeFiles/Library.dir/userinfo_dialog.cpp.obj: CMakeFiles/Library.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Library.dir/userinfo_dialog.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Library.dir/userinfo_dialog.cpp.obj"
 	D:\app_install\QT\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Library.dir/userinfo_dialog.cpp.obj -MF CMakeFiles\Library.dir\userinfo_dialog.cpp.obj.d -o CMakeFiles\Library.dir\userinfo_dialog.cpp.obj -c C:\Users\recatu\Documents\Library\userinfo_dialog.cpp
 
 CMakeFiles/Library.dir/userinfo_dialog.cpp.i: cmake_force
@@ -222,7 +207,7 @@ CMakeFiles/Library.dir/change_psw_dialog.cpp.obj: CMakeFiles/Library.dir/flags.m
 CMakeFiles/Library.dir/change_psw_dialog.cpp.obj: CMakeFiles/Library.dir/includes_CXX.rsp
 CMakeFiles/Library.dir/change_psw_dialog.cpp.obj: C:/Users/recatu/Documents/Library/change_psw_dialog.cpp
 CMakeFiles/Library.dir/change_psw_dialog.cpp.obj: CMakeFiles/Library.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Library.dir/change_psw_dialog.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Library.dir/change_psw_dialog.cpp.obj"
 	D:\app_install\QT\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Library.dir/change_psw_dialog.cpp.obj -MF CMakeFiles\Library.dir\change_psw_dialog.cpp.obj.d -o CMakeFiles\Library.dir\change_psw_dialog.cpp.obj -c C:\Users\recatu\Documents\Library\change_psw_dialog.cpp
 
 CMakeFiles/Library.dir/change_psw_dialog.cpp.i: cmake_force
@@ -233,19 +218,34 @@ CMakeFiles/Library.dir/change_psw_dialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Library.dir/change_psw_dialog.cpp.s"
 	D:\app_install\QT\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\recatu\Documents\Library\change_psw_dialog.cpp -o CMakeFiles\Library.dir\change_psw_dialog.cpp.s
 
+CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj: CMakeFiles/Library.dir/flags.make
+CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj: CMakeFiles/Library.dir/includes_CXX.rsp
+CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj: C:/Users/recatu/Documents/Library/bookinfo_dialog.cpp
+CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj: CMakeFiles/Library.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\recatu\Documents\Library\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj"
+	D:\app_install\QT\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj -MF CMakeFiles\Library.dir\bookinfo_dialog.cpp.obj.d -o CMakeFiles\Library.dir\bookinfo_dialog.cpp.obj -c C:\Users\recatu\Documents\Library\bookinfo_dialog.cpp
+
+CMakeFiles/Library.dir/bookinfo_dialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Library.dir/bookinfo_dialog.cpp.i"
+	D:\app_install\QT\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\recatu\Documents\Library\bookinfo_dialog.cpp > CMakeFiles\Library.dir\bookinfo_dialog.cpp.i
+
+CMakeFiles/Library.dir/bookinfo_dialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Library.dir/bookinfo_dialog.cpp.s"
+	D:\app_install\QT\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\recatu\Documents\Library\bookinfo_dialog.cpp -o CMakeFiles\Library.dir\bookinfo_dialog.cpp.s
+
 # Object files for target Library
 Library_OBJECTS = \
 "CMakeFiles/Library.dir/Library_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/Library.dir/main.cpp.obj" \
 "CMakeFiles/Library.dir/login.cpp.obj" \
-"CMakeFiles/Library.dir/Book.cpp.obj" \
 "CMakeFiles/Library.dir/admin.cpp.obj" \
 "CMakeFiles/Library.dir/user_manage.cpp.obj" \
 "CMakeFiles/Library.dir/book_manage.cpp.obj" \
 "CMakeFiles/Library.dir/borrow_manage.cpp.obj" \
 "CMakeFiles/Library.dir/borrow_record.cpp.obj" \
 "CMakeFiles/Library.dir/userinfo_dialog.cpp.obj" \
-"CMakeFiles/Library.dir/change_psw_dialog.cpp.obj"
+"CMakeFiles/Library.dir/change_psw_dialog.cpp.obj" \
+"CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj"
 
 # External object files for target Library
 Library_EXTERNAL_OBJECTS =
@@ -253,7 +253,6 @@ Library_EXTERNAL_OBJECTS =
 Library.exe: CMakeFiles/Library.dir/Library_autogen/mocs_compilation.cpp.obj
 Library.exe: CMakeFiles/Library.dir/main.cpp.obj
 Library.exe: CMakeFiles/Library.dir/login.cpp.obj
-Library.exe: CMakeFiles/Library.dir/Book.cpp.obj
 Library.exe: CMakeFiles/Library.dir/admin.cpp.obj
 Library.exe: CMakeFiles/Library.dir/user_manage.cpp.obj
 Library.exe: CMakeFiles/Library.dir/book_manage.cpp.obj
@@ -261,6 +260,7 @@ Library.exe: CMakeFiles/Library.dir/borrow_manage.cpp.obj
 Library.exe: CMakeFiles/Library.dir/borrow_record.cpp.obj
 Library.exe: CMakeFiles/Library.dir/userinfo_dialog.cpp.obj
 Library.exe: CMakeFiles/Library.dir/change_psw_dialog.cpp.obj
+Library.exe: CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj
 Library.exe: CMakeFiles/Library.dir/build.make
 Library.exe: D:/app_install/QT/6.5.3/mingw_64/lib/libQt6Widgets.a
 Library.exe: D:/app_install/QT/6.5.3/mingw_64/lib/libQt6Gui.a

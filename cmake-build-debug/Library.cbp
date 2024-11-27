@@ -126,12 +126,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/recatu/Documents/Library/Book.cpp">
-			<Option target="Library"/>
-		</Unit>
-		<Unit filename="C:/Users/recatu/Documents/Library/Book.h">
-			<Option target="Library"/>
-		</Unit>
 		<Unit filename="C:/Users/recatu/Documents/Library/Library.h">
 			<Option target="Library"/>
 		</Unit>
@@ -151,6 +145,15 @@
 			<Option target="Library"/>
 		</Unit>
 		<Unit filename="C:/Users/recatu/Documents/Library/book_manage.ui">
+			<Option target="Library"/>
+		</Unit>
+		<Unit filename="C:/Users/recatu/Documents/Library/bookinfo_dialog.cpp">
+			<Option target="Library"/>
+		</Unit>
+		<Unit filename="C:/Users/recatu/Documents/Library/bookinfo_dialog.h">
+			<Option target="Library"/>
+		</Unit>
+		<Unit filename="C:/Users/recatu/Documents/Library/bookinfo_dialog.ui">
 			<Option target="Library"/>
 		</Unit>
 		<Unit filename="C:/Users/recatu/Documents/Library/borrow_manage.cpp">
@@ -184,6 +187,9 @@
 			<Option target="Library"/>
 		</Unit>
 		<Unit filename="C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_book_manage.h">
+			<Option target="Library"/>
+		</Unit>
+		<Unit filename="C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_bookinfo_dialog.h">
 			<Option target="Library"/>
 		</Unit>
 		<Unit filename="C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_borrow_manage.h">

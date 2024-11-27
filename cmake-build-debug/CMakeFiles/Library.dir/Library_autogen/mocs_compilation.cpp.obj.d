@@ -404,24 +404,36 @@ CMakeFiles/Library.dir/Library_autogen/mocs_compilation.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QTransform \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtransform.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qnativeinterface.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iomanip \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/locale \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.tcc \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_conv.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/quoted_string.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc \
  C:/Users/recatu/Documents/Library/book_manage.h \
- C:/Users/recatu/Documents/Library/user_manage.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QStandardItemModel \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qstandarditemmodel.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h \
+ C:/Users/recatu/Documents/Library/user_manage.h \
  C:/Users/recatu/Documents/Library/borrow_manage.h \
  C:/Users/recatu/Documents/Library/borrow_record.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qtmochelpers.h \
  C:\Users\recatu\Documents\Library\cmake-build-debug\Library_autogen\EWIEGA46WW/moc_book_manage.cpp \
  C:/Users/recatu/Documents/Library/book_manage.h \
+ C:\Users\recatu\Documents\Library\cmake-build-debug\Library_autogen\EWIEGA46WW/moc_bookinfo_dialog.cpp \
+ C:/Users/recatu/Documents/Library/bookinfo_dialog.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QDialog \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
  C:\Users\recatu\Documents\Library\cmake-build-debug\Library_autogen\EWIEGA46WW/moc_borrow_manage.cpp \
  C:/Users/recatu/Documents/Library/borrow_manage.h \
  C:\Users\recatu\Documents\Library\cmake-build-debug\Library_autogen\EWIEGA46WW/moc_borrow_record.cpp \
  C:/Users/recatu/Documents/Library/borrow_record.h \
  C:\Users\recatu\Documents\Library\cmake-build-debug\Library_autogen\EWIEGA46WW/moc_change_psw_dialog.cpp \
  C:/Users/recatu/Documents/Library/change_psw_dialog.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QDialog \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
  C:\Users\recatu\Documents\Library\cmake-build-debug\Library_autogen\EWIEGA46WW/moc_login.cpp \
  C:/Users/recatu/Documents/Library/login.h \
  C:\Users\recatu\Documents\Library\cmake-build-debug\Library_autogen\EWIEGA46WW/moc_user_manage.cpp \

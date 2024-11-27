@@ -21,8 +21,6 @@ add_executable(Library main.cpp
         login.ui
         Library.h
         Library.h
-        Book.cpp
-        Book.h
         admin.cpp
         admin.h
         admin.ui
@@ -44,6 +42,9 @@ add_executable(Library main.cpp
         change_psw_dialog.cpp
         change_psw_dialog.h
         change_psw_dialog.ui
+        bookinfo_dialog.cpp
+        bookinfo_dialog.h
+        bookinfo_dialog.ui
 )
 target_link_libraries(Library
         Qt::Core

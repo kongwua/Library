@@ -284,12 +284,6 @@
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/recatu/Documents/Library/Book.h",
-			"MU",
-			"EWIEGA46WW/moc_Book.cpp",
-			null
-		],
-		[
 			"C:/Users/recatu/Documents/Library/Library.h",
 			"MU",
 			"EWIEGA46WW/moc_Library.cpp",
@@ -308,6 +302,12 @@
 			null
 		],
 		[
+			"C:/Users/recatu/Documents/Library/bookinfo_dialog.h",
+			"MU",
+			"EWIEGA46WW/moc_bookinfo_dialog.cpp",
+			null
+		],
+		[
 			"C:/Users/recatu/Documents/Library/borrow_manage.h",
 			"MU",
 			"EWIEGA46WW/moc_borrow_manage.cpp",
@@ -317,6 +317,12 @@
 			"C:/Users/recatu/Documents/Library/borrow_record.h",
 			"MU",
 			"EWIEGA46WW/moc_borrow_record.cpp",
+			null
+		],
+		[
+			"C:/Users/recatu/Documents/Library/change_psw_dialog.h",
+			"MU",
+			"EWIEGA46WW/moc_change_psw_dialog.cpp",
 			null
 		],
 		[
@@ -408,11 +414,12 @@
 	"SETTINGS_FILE" : "C:/Users/recatu/Documents/Library/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/Library_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "C:/Users/recatu/Documents/Library/Book.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/admin.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/book_manage.cpp", "MU", null ],
+		[ "C:/Users/recatu/Documents/Library/bookinfo_dialog.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/borrow_manage.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/borrow_record.cpp", "MU", null ],
+		[ "C:/Users/recatu/Documents/Library/change_psw_dialog.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/login.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/main.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/user_manage.cpp", "MU", null ],

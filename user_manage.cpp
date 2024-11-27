@@ -40,16 +40,7 @@ User_manage::~User_manage() {
 
 void User_manage::displayUserData() {
     //显示用户数据
-//    initModel();
-//    for(auto p=lib.users.begin();p!=lib.users.end();p=p->next){
-//        if(!p) return;
-//        QList<QStandardItem*> list;
-//        list << new QStandardItem(p->elem.ID.data())
-//             << new QStandardItem(std::to_string(p->elem.books.size()).data())
-//             << new QStandardItem(std::to_string(p->elem.reserveISBN.size()).data())
-//             << new QStandardItem((std::to_string(p->elem.type).data()?"管理员":"普通用户"));
-//        userModel->appendRow(list);
-//    }
+
     _admin->displayUserData(userModel);
     ui->tableView->setModel(userModel);
 }

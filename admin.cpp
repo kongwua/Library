@@ -49,11 +49,13 @@ void admin::menu_change(){
     auto str = sender()->objectName();
     do {
         if ("user_btn" == str){
-            ui->stackedWidget->setCurrentIndex(0);//跳转到用户管理页面
+            ui->stackedWidget->setCurrentIndex(0);//
+            m_user_manage->displayUserData();
             break;
         }
         if ("book_btn" == str){
             ui->stackedWidget->setCurrentIndex(1);//跳转到图书管理页面
+            m_book_manage->displayBookData();
             break;
         }
         if ("borrow_btn" == str){
@@ -103,6 +105,37 @@ void admin::appendOneUser(QStandardItemModel *userModel, Node<UserInfo> *p) {
 void admin::displayOneUser(QStandardItemModel *userModel, Node<UserInfo> *p) {
     initUserModel(userModel);
     appendOneUser(userModel,p);
+}
+
+QStandardItemModel *admin::initBookModel(QStandardItemModel *bookModel) {
+    bookModel->clear();
+    bookModel->setHorizontalHeaderLabels({"书名","书号","总数量","剩余数量","价格"});
+    return bookModel;
+}
+
+void admin::displayBookData(QStandardItemModel *bookModel) {
+    initBookModel(bookModel);
+    for(auto p=lib.books.begin();p!=lib.books.end();p=p->next){
+        appendOneBook(bookModel,p);
+    }
+}
+
+
+void admin::appendOneBook(QStandardItemModel *bookModel, Node<BookInfo> *p) {
+    if(!p) return;
+    QList<QStandardItem*> list;
+    list << new QStandardItem(p->elem.name.data())
+         << new QStandardItem(p->elem.isbn.data())
+         << new QStandardItem(std::to_string(p->elem.quantity).data())
+         << new QStandardItem(std::to_string(p->elem.quantity-p->elem.readers.size()).data())
+         << new QStandardItem(QString::number(p->elem.price));//保留两位小数
+    bookModel->appendRow(list);
+}
+
+void admin::displayOneBook(QStandardItemModel *bookModel, Node<BookInfo> *p) {
+    initBookModel(bookModel);
+    appendOneBook(bookModel,p);
+
 }
 
 

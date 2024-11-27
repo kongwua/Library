@@ -284,12 +284,6 @@
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/recatu/Documents/Library/Book.h",
-			"MU",
-			"EWIEGA46WW/moc_Book.cpp",
-			null
-		],
-		[
 			"C:/Users/recatu/Documents/Library/Library.h",
 			"MU",
 			"EWIEGA46WW/moc_Library.cpp",
@@ -305,6 +299,12 @@
 			"C:/Users/recatu/Documents/Library/book_manage.h",
 			"MU",
 			"EWIEGA46WW/moc_book_manage.cpp",
+			null
+		],
+		[
+			"C:/Users/recatu/Documents/Library/bookinfo_dialog.h",
+			"MU",
+			"EWIEGA46WW/moc_bookinfo_dialog.cpp",
 			null
 		],
 		[
@@ -414,9 +414,9 @@
 	"SETTINGS_FILE" : "C:/Users/recatu/Documents/Library/cmake-build-debug/CMakeFiles/Library_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "C:/Users/recatu/Documents/Library/Book.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/admin.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/book_manage.cpp", "MU", null ],
+		[ "C:/Users/recatu/Documents/Library/bookinfo_dialog.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/borrow_manage.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/borrow_record.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/change_psw_dialog.cpp", "MU", null ],

@@ -17,6 +17,8 @@ Library_autogen/timestamp: \
 	C:/Users/recatu/Documents/Library/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake \
 	C:/Users/recatu/Documents/Library/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
 	C:/Users/recatu/Documents/Library/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Library_autogen/moc_predefs.h \
+	C:/Users/recatu/Documents/Library/change_psw_dialog.cpp \
+	C:/Users/recatu/Documents/Library/change_psw_dialog.h \
 	C:/Users/recatu/Documents/Library/login.cpp \
 	C:/Users/recatu/Documents/Library/login.h \
 	C:/Users/recatu/Documents/Library/main.cpp \
@@ -634,6 +636,7 @@ Library_autogen/timestamp: \
 	C:/Users/recatu/Documents/Library/book_manage.ui \
 	C:/Users/recatu/Documents/Library/borrow_manage.ui \
 	C:/Users/recatu/Documents/Library/borrow_record.ui \
+	C:/Users/recatu/Documents/Library/change_psw_dialog.ui \
 	C:/Users/recatu/Documents/Library/login.ui \
 	C:/Users/recatu/Documents/Library/user_manage.ui \
 	C:/Users/recatu/Documents/Library/userinfo_dialog.ui \

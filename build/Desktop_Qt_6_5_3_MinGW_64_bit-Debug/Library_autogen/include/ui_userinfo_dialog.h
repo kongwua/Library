@@ -50,18 +50,19 @@ public:
     QHBoxLayout *horizontalLayout_2;
     QPushButton *return_btn;
     QPushButton *borrow_btn;
+    QLabel *num_label;
 
     void setupUi(QDialog *userinfo_dialog)
     {
         if (userinfo_dialog->objectName().isEmpty())
             userinfo_dialog->setObjectName("userinfo_dialog");
-        userinfo_dialog->resize(607, 455);
+        userinfo_dialog->resize(607, 486);
         book_tableView = new QTableView(userinfo_dialog);
         book_tableView->setObjectName("book_tableView");
-        book_tableView->setGeometry(QRect(10, 120, 581, 171));
+        book_tableView->setGeometry(QRect(10, 140, 581, 171));
         reserve_tableView = new QTableView(userinfo_dialog);
         reserve_tableView->setObjectName("reserve_tableView");
-        reserve_tableView->setGeometry(QRect(10, 300, 581, 111));
+        reserve_tableView->setGeometry(QRect(10, 330, 581, 111));
         layoutWidget = new QWidget(userinfo_dialog);
         layoutWidget->setObjectName("layoutWidget");
         layoutWidget->setGeometry(QRect(20, 10, 201, 44));
@@ -121,7 +122,7 @@ public:
 
         layoutWidget3 = new QWidget(userinfo_dialog);
         layoutWidget3->setObjectName("layoutWidget3");
-        layoutWidget3->setGeometry(QRect(10, 420, 158, 25));
+        layoutWidget3->setGeometry(QRect(10, 450, 158, 25));
         horizontalLayout_2 = new QHBoxLayout(layoutWidget3);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
@@ -135,6 +136,9 @@ public:
 
         horizontalLayout_2->addWidget(borrow_btn);
 
+        num_label = new QLabel(userinfo_dialog);
+        num_label->setObjectName("num_label");
+        num_label->setGeometry(QRect(520, 110, 71, 21));
 
         retranslateUi(userinfo_dialog);
 
@@ -150,6 +154,7 @@ public:
         delete_btn->setText(QCoreApplication::translate("userinfo_dialog", "\345\210\240\351\231\244\347\224\250\346\210\267", nullptr));
         return_btn->setText(QCoreApplication::translate("userinfo_dialog", "\350\277\230\344\271\246", nullptr));
         borrow_btn->setText(QCoreApplication::translate("userinfo_dialog", "\345\200\237\344\271\246", nullptr));
+        num_label->setText(QCoreApplication::translate("userinfo_dialog", "\345\267\262\345\200\237 0 \346\234\254", nullptr));
     } // retranslateUi
 
 };

@@ -10,6 +10,7 @@
 #include <Qdebug>
 #include <QMessageBox>
 #include <QCloseEvent>
+#include <iomanip>
 
 using std::string;
 using std::ofstream;
@@ -357,7 +358,7 @@ public:
     string name;					// 书名
     string isbn;					// ISBN
     int quantity;					// 数量
-    float price;					// 价格
+    double price;					// 价格
     List<Node<UserInfo>*> readers;	// 借阅该书的读者
     List<string> readersID;
     Queue<string> reserveID;//预约队列,当可借阅书数量为0时启用
@@ -368,16 +369,20 @@ public:
 
     BookInfo(string book,string isbn_num, int num):
             name(book), isbn(isbn_num), quantity(num) {}
-    BookInfo(string book, string isbn_num, int num, float price):
+    BookInfo(string book, string isbn_num, int num, double price):
             name(book), isbn(isbn_num), quantity(num), price(price) {}
-    BookInfo(string book, string isbn_num, int num, List<string> users):
-            name(book),isbn(isbn_num), quantity(num), readersID(users) {}
+    BookInfo(string book, string isbn_num, int num,double price, List<string> users):
+            name(book),isbn(isbn_num), quantity(num),price(price), readersID(users) {}
 
     ~BookInfo() {}
 
     friend ostream &operator <<(ostream &output, const BookInfo &book) {
         output << "{\"" << book.name << "\", " << book.isbn << ", "
-               << book.quantity << ", " << book.price << ", " << book.readers
+               << book.quantity << ", " ;
+            {
+            output << std::fixed << std::setprecision(2) << book.price;
+            }
+             output <<   ", " << book.readers
                << ", " << book.reserveID;
         output << "}";
         return output;
@@ -385,7 +390,11 @@ public:
 
     friend ostream &operator <<(ostream &output, const BookInfo *&book) {
         output << "{\"" << book->name << "\", " << book->isbn << ", "
-               << book->quantity << ", " << book->price << ", " << book->readers
+               << book->quantity << ", " ;
+        {
+            output << std::fixed << std::setprecision(2) << book->price;
+        }
+             output << ", " << book->readers
                << ", " << book->reserveID<< "}";
         return output;
     }
@@ -607,11 +616,11 @@ public:
         return 0;
     }
 
-    int borrowBookbyISBN(string userID,string bookISBN) {
+    int borrowBookByISBN(string userID, string bookISBN) {
         return borrowBook(findUser(userID), findBookbyISBN(bookISBN));
     }
 
-    int borrowBookbyName(string userName, string bookName) {
+    int borrowBookByName(string userName, string bookName) {
         return borrowBook(findUser(userName), findBookbyName(bookName));
     }
 
@@ -665,7 +674,7 @@ protected:
             int cnt = 0;		// 计算由分隔符隔开的块索引号
             string isbn;		// 图书的编号
             int quantity;		// 图书的数量
-            float price;		// 图书的价格
+            double price;		// 图书的价格
             List<string> IDs;		// 借阅图书的用户编号
             // 处理该行数据，按分隔符分隔处理
             for (string::iterator i = line.begin(); i != line.end(); i++) {
@@ -694,7 +703,7 @@ protected:
                 }
             }
 
-            books.append(BookInfo(name,isbn, quantity, IDs));
+            books.append(BookInfo(name,isbn, quantity, price,IDs));
         }
         input.close();
         return 0;

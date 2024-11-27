@@ -16,6 +16,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTableView>
 #include <QtWidgets/QWidget>
@@ -25,24 +26,32 @@ QT_BEGIN_NAMESPACE
 class Ui_Book_manage
 {
 public:
+    QGridLayout *gridLayout_4;
     QGridLayout *gridLayout_2;
     QLabel *label_2;
     QWidget *widget;
     QGridLayout *gridLayout;
-    QLabel *label;
-    QLineEdit *lineEdit;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
+    QRadioButton *bookName_radioButton;
+    QPushButton *search_btn;
+    QRadioButton *ISBN_radioButton;
+    QPushButton *addBook_btn;
+    QLineEdit *SearchEdit;
+    QTableView *book_tableView;
+    QWidget *widget_2;
+    QGridLayout *gridLayout_3;
+    QPushButton *bookInfo_btn;
+    QPushButton *returnBook_btn;
+    QPushButton *borrowBook_btn;
     QSpacerItem *horizontalSpacer;
-    QTableView *tableView;
 
     void setupUi(QWidget *Book_manage)
     {
         if (Book_manage->objectName().isEmpty())
             Book_manage->setObjectName("Book_manage");
-        Book_manage->resize(687, 548);
-        gridLayout_2 = new QGridLayout(Book_manage);
+        Book_manage->resize(787, 560);
+        gridLayout_4 = new QGridLayout(Book_manage);
+        gridLayout_4->setObjectName("gridLayout_4");
+        gridLayout_2 = new QGridLayout();
         gridLayout_2->setObjectName("gridLayout_2");
         label_2 = new QLabel(Book_manage);
         label_2->setObjectName("label_2");
@@ -53,43 +62,67 @@ public:
         widget->setObjectName("widget");
         gridLayout = new QGridLayout(widget);
         gridLayout->setObjectName("gridLayout");
-        label = new QLabel(widget);
-        label->setObjectName("label");
-        label->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        bookName_radioButton = new QRadioButton(widget);
+        bookName_radioButton->setObjectName("bookName_radioButton");
 
-        gridLayout->addWidget(label, 0, 0, 1, 1);
+        gridLayout->addWidget(bookName_radioButton, 0, 0, 1, 1);
 
-        lineEdit = new QLineEdit(widget);
-        lineEdit->setObjectName("lineEdit");
+        search_btn = new QPushButton(widget);
+        search_btn->setObjectName("search_btn");
 
-        gridLayout->addWidget(lineEdit, 0, 1, 1, 1);
+        gridLayout->addWidget(search_btn, 0, 3, 1, 1);
 
-        pushButton = new QPushButton(widget);
-        pushButton->setObjectName("pushButton");
+        ISBN_radioButton = new QRadioButton(widget);
+        ISBN_radioButton->setObjectName("ISBN_radioButton");
 
-        gridLayout->addWidget(pushButton, 0, 2, 1, 1);
+        gridLayout->addWidget(ISBN_radioButton, 0, 1, 1, 1);
 
-        pushButton_2 = new QPushButton(widget);
-        pushButton_2->setObjectName("pushButton_2");
+        addBook_btn = new QPushButton(widget);
+        addBook_btn->setObjectName("addBook_btn");
 
-        gridLayout->addWidget(pushButton_2, 0, 3, 1, 1);
+        gridLayout->addWidget(addBook_btn, 0, 4, 1, 1);
 
-        pushButton_3 = new QPushButton(widget);
-        pushButton_3->setObjectName("pushButton_3");
+        SearchEdit = new QLineEdit(widget);
+        SearchEdit->setObjectName("SearchEdit");
 
-        gridLayout->addWidget(pushButton_3, 0, 4, 1, 1);
-
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout->addItem(horizontalSpacer, 0, 5, 1, 1);
+        gridLayout->addWidget(SearchEdit, 0, 2, 1, 1);
 
 
         gridLayout_2->addWidget(widget, 1, 0, 1, 1);
 
-        tableView = new QTableView(Book_manage);
-        tableView->setObjectName("tableView");
+        book_tableView = new QTableView(Book_manage);
+        book_tableView->setObjectName("book_tableView");
 
-        gridLayout_2->addWidget(tableView, 2, 0, 1, 1);
+        gridLayout_2->addWidget(book_tableView, 2, 0, 1, 1);
+
+        widget_2 = new QWidget(Book_manage);
+        widget_2->setObjectName("widget_2");
+        gridLayout_3 = new QGridLayout(widget_2);
+        gridLayout_3->setObjectName("gridLayout_3");
+        bookInfo_btn = new QPushButton(widget_2);
+        bookInfo_btn->setObjectName("bookInfo_btn");
+
+        gridLayout_3->addWidget(bookInfo_btn, 0, 2, 1, 1);
+
+        returnBook_btn = new QPushButton(widget_2);
+        returnBook_btn->setObjectName("returnBook_btn");
+
+        gridLayout_3->addWidget(returnBook_btn, 0, 1, 1, 1);
+
+        borrowBook_btn = new QPushButton(widget_2);
+        borrowBook_btn->setObjectName("borrowBook_btn");
+
+        gridLayout_3->addWidget(borrowBook_btn, 0, 0, 1, 1);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_3->addItem(horizontalSpacer, 0, 3, 1, 1);
+
+
+        gridLayout_2->addWidget(widget_2, 3, 0, 1, 1);
+
+
+        gridLayout_4->addLayout(gridLayout_2, 0, 0, 1, 1);
 
 
         retranslateUi(Book_manage);
@@ -101,10 +134,13 @@ public:
     {
         Book_manage->setWindowTitle(QCoreApplication::translate("Book_manage", "Book_manage", nullptr));
         label_2->setText(QCoreApplication::translate("Book_manage", "\345\233\276\344\271\246\347\256\241\347\220\206", nullptr));
-        label->setText(QCoreApplication::translate("Book_manage", "\346\220\234\347\264\242\357\274\232", nullptr));
-        pushButton->setText(QCoreApplication::translate("Book_manage", "\345\242\236\345\212\240\347\224\250\346\210\267", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Book_manage", "\345\210\240\351\231\244\347\224\250\346\210\267", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("Book_manage", "\346\233\264\346\224\271\347\224\250\346\210\267", nullptr));
+        bookName_radioButton->setText(QCoreApplication::translate("Book_manage", "\344\271\246\345\220\215", nullptr));
+        search_btn->setText(QCoreApplication::translate("Book_manage", "\346\220\234\347\264\242", nullptr));
+        ISBN_radioButton->setText(QCoreApplication::translate("Book_manage", "\344\271\246\345\217\267", nullptr));
+        addBook_btn->setText(QCoreApplication::translate("Book_manage", "\345\242\236\345\212\240\345\233\276\344\271\246", nullptr));
+        bookInfo_btn->setText(QCoreApplication::translate("Book_manage", "\350\257\246\347\273\206\344\277\241\346\201\257", nullptr));
+        returnBook_btn->setText(QCoreApplication::translate("Book_manage", "\350\277\230\344\271\246", nullptr));
+        borrowBook_btn->setText(QCoreApplication::translate("Book_manage", "\345\200\237\344\271\246", nullptr));
     } // retranslateUi
 
 };

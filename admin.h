@@ -29,11 +29,13 @@ public:
     ~admin() override;
     void initUI();//初始化界面
     QStandardItemModel* initUserModel(QStandardItemModel* userModel); //初始化用户模型
+    QStandardItemModel* initBookModel(QStandardItemModel* bookModel);//初始化书籍模型
     void displayUserData(QStandardItemModel* userModel); //显示用户信息
     void appendOneUser(QStandardItemModel* userModel,Node<UserInfo>* p); //添加一个用户到模型中
     void displayOneUser(QStandardItemModel* userModel,Node<UserInfo>* p); //显示一个用户信息
-
-
+    void displayBookData(QStandardItemModel* bookModel);//显示图书信息
+    void appendOneBook(QStandardItemModel* bookModel,Node<BookInfo>* p); //添加一个书籍到模型中
+    void displayOneBook(QStandardItemModel* bookModel,Node<BookInfo>* p); //显示一个书籍信息
 public slots:
     void menu_change(); //界面切换
 private:

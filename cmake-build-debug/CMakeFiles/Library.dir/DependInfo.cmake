@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/recatu/Documents/Library/Book.cpp" "CMakeFiles/Library.dir/Book.cpp.obj" "gcc" "CMakeFiles/Library.dir/Book.cpp.obj.d"
   "C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/mocs_compilation.cpp" "CMakeFiles/Library.dir/Library_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/Library.dir/Library_autogen/mocs_compilation.cpp.obj.d"
   "C:/Users/recatu/Documents/Library/admin.cpp" "CMakeFiles/Library.dir/admin.cpp.obj" "gcc" "CMakeFiles/Library.dir/admin.cpp.obj.d"
   "C:/Users/recatu/Documents/Library/book_manage.cpp" "CMakeFiles/Library.dir/book_manage.cpp.obj" "gcc" "CMakeFiles/Library.dir/book_manage.cpp.obj.d"
+  "C:/Users/recatu/Documents/Library/bookinfo_dialog.cpp" "CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj" "gcc" "CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj.d"
   "C:/Users/recatu/Documents/Library/borrow_manage.cpp" "CMakeFiles/Library.dir/borrow_manage.cpp.obj" "gcc" "CMakeFiles/Library.dir/borrow_manage.cpp.obj.d"
   "C:/Users/recatu/Documents/Library/borrow_record.cpp" "CMakeFiles/Library.dir/borrow_record.cpp.obj" "gcc" "CMakeFiles/Library.dir/borrow_record.cpp.obj.d"
   "C:/Users/recatu/Documents/Library/change_psw_dialog.cpp" "CMakeFiles/Library.dir/change_psw_dialog.cpp.obj" "gcc" "CMakeFiles/Library.dir/change_psw_dialog.cpp.obj.d"
