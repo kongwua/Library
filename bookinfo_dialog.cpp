@@ -136,4 +136,29 @@ void bookinfo_dialog::on_delete_btn_clicked() {
 
 }
 
+void bookinfo_dialog::on_borrowBook_btn_clicked() {
+    //图书详细界面借书
+    if (lib.borrowBookByISBN(login_UserID,book->elem.isbn)){
+        if (QMessageBox::question(this,"借阅失败","此书无剩余，是否预约？",
+                                  QMessageBox::Yes|QMessageBox::No)==QMessageBox::Yes){
+            //预约
+            return;
+        } else{
+            return;
+        }
+    }
+    displayUserData();
+    QMessageBox::information(this,"提示",("借阅《" + tr(book->elem.name.data())+"》成功！"));
+}
+
+void bookinfo_dialog::on_returnBook_btn_clicked() {
+    //图书详细界面归还书
+    if (lib.returnBookbyISBN(login_UserID,book->elem.isbn)){
+        QMessageBox::information(this,"提示","你没有借阅这本书！");
+        return;
+    }
+    displayUserData();
+    QMessageBox::information(this,"提示",("还书《" + tr(book->elem.name.data())+"》成功！"));
+}
+
 

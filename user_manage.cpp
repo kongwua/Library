@@ -28,6 +28,10 @@ User_manage::User_manage(QWidget *parent) :
     if(!lib.isAdmin(lib.findUser(login_UserID))){
         isAdmin = false;//非管理员，禁止修改
         ui->addUser_btn->setHidden(true);//隐藏添加用户按钮
+        ui->search_btn->setHidden(true);//隐藏搜索按钮
+        ui->search_line->setHidden(true);//隐藏搜索框
+        userModel->clear();
+        displaySingleUserData(lib.findUser(login_UserID));
     }else{
         isAdmin = true;
     };
@@ -94,7 +98,11 @@ void User_manage::on_search_btn_clicked() {
     QString query = ui->search_line->text();
     ui->userInfo_btn->setDisabled(true);//设置按钮不可用
     if(query.isEmpty()){
-        displayUserData();
+        if (isAdmin){
+            displayUserData();
+        } else{
+            displaySingleUserData(lib.findUser(login_UserID));
+        }
         return;
     }
     displaySingleUserData(lib.findUser(query.toStdString()));

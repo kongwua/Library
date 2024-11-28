@@ -15,6 +15,7 @@
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
@@ -23,85 +24,80 @@
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTableView>
 #include <QtWidgets/QVBoxLayout>
-#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_userinfo_dialog
 {
 public:
-    QTableView *book_tableView;
-    QTableView *reserve_tableView;
-    QWidget *layoutWidget;
+    QGridLayout *gridLayout;
+    QHBoxLayout *horizontalLayout_2;
+    QPushButton *returnBook_btn;
     QVBoxLayout *verticalLayout;
     QLabel *label;
     QLineEdit *lineEdit;
-    QWidget *layoutWidget1;
-    QVBoxLayout *verticalLayout_2;
-    QCheckBox *admin_checkBox;
-    QPushButton *psw_btn;
-    QWidget *layoutWidget2;
+    QLabel *label_3;
+    QLabel *label_2;
     QHBoxLayout *horizontalLayout;
     QPushButton *delete_btn;
     QSpacerItem *horizontalSpacer_3;
     QSpacerItem *horizontalSpacer;
     QDialogButtonBox *buttonBox;
-    QWidget *layoutWidget3;
-    QHBoxLayout *horizontalLayout_2;
-    QPushButton *return_btn;
-    QPushButton *borrow_btn;
+    QVBoxLayout *verticalLayout_2;
+    QCheckBox *admin_checkBox;
+    QPushButton *psw_btn;
+    QTableView *reserve_tableView;
+    QTableView *book_tableView;
     QLabel *num_label;
+    QSpacerItem *horizontalSpacer_2;
+    QSpacerItem *horizontalSpacer_4;
+    QLabel *label_4;
 
     void setupUi(QDialog *userinfo_dialog)
     {
         if (userinfo_dialog->objectName().isEmpty())
             userinfo_dialog->setObjectName("userinfo_dialog");
-        userinfo_dialog->resize(607, 486);
-        book_tableView = new QTableView(userinfo_dialog);
-        book_tableView->setObjectName("book_tableView");
-        book_tableView->setGeometry(QRect(10, 140, 581, 171));
-        reserve_tableView = new QTableView(userinfo_dialog);
-        reserve_tableView->setObjectName("reserve_tableView");
-        reserve_tableView->setGeometry(QRect(10, 330, 581, 111));
-        layoutWidget = new QWidget(userinfo_dialog);
-        layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(20, 10, 201, 44));
-        verticalLayout = new QVBoxLayout(layoutWidget);
+        userinfo_dialog->resize(665, 570);
+        gridLayout = new QGridLayout(userinfo_dialog);
+        gridLayout->setObjectName("gridLayout");
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        returnBook_btn = new QPushButton(userinfo_dialog);
+        returnBook_btn->setObjectName("returnBook_btn");
+
+        horizontalLayout_2->addWidget(returnBook_btn);
+
+
+        gridLayout->addLayout(horizontalLayout_2, 6, 0, 1, 1);
+
+        verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(layoutWidget);
+        label = new QLabel(userinfo_dialog);
         label->setObjectName("label");
 
         verticalLayout->addWidget(label);
 
-        lineEdit = new QLineEdit(layoutWidget);
+        lineEdit = new QLineEdit(userinfo_dialog);
         lineEdit->setObjectName("lineEdit");
 
         verticalLayout->addWidget(lineEdit);
 
-        layoutWidget1 = new QWidget(userinfo_dialog);
-        layoutWidget1->setObjectName("layoutWidget1");
-        layoutWidget1->setGeometry(QRect(510, 10, 77, 50));
-        verticalLayout_2 = new QVBoxLayout(layoutWidget1);
-        verticalLayout_2->setObjectName("verticalLayout_2");
-        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        admin_checkBox = new QCheckBox(layoutWidget1);
-        admin_checkBox->setObjectName("admin_checkBox");
 
-        verticalLayout_2->addWidget(admin_checkBox);
+        gridLayout->addLayout(verticalLayout, 0, 0, 1, 1);
 
-        psw_btn = new QPushButton(layoutWidget1);
-        psw_btn->setObjectName("psw_btn");
+        label_3 = new QLabel(userinfo_dialog);
+        label_3->setObjectName("label_3");
 
-        verticalLayout_2->addWidget(psw_btn);
+        gridLayout->addWidget(label_3, 4, 0, 1, 1);
 
-        layoutWidget2 = new QWidget(userinfo_dialog);
-        layoutWidget2->setObjectName("layoutWidget2");
-        layoutWidget2->setGeometry(QRect(20, 70, 571, 31));
-        horizontalLayout = new QHBoxLayout(layoutWidget2);
+        label_2 = new QLabel(userinfo_dialog);
+        label_2->setObjectName("label_2");
+
+        gridLayout->addWidget(label_2, 2, 0, 1, 1);
+
+        horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        delete_btn = new QPushButton(layoutWidget2);
+        delete_btn = new QPushButton(userinfo_dialog);
         delete_btn->setObjectName("delete_btn");
 
         horizontalLayout->addWidget(delete_btn);
@@ -114,31 +110,58 @@ public:
 
         horizontalLayout->addItem(horizontalSpacer);
 
-        buttonBox = new QDialogButtonBox(layoutWidget2);
+        buttonBox = new QDialogButtonBox(userinfo_dialog);
         buttonBox->setObjectName("buttonBox");
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
 
         horizontalLayout->addWidget(buttonBox);
 
-        layoutWidget3 = new QWidget(userinfo_dialog);
-        layoutWidget3->setObjectName("layoutWidget3");
-        layoutWidget3->setGeometry(QRect(10, 450, 158, 25));
-        horizontalLayout_2 = new QHBoxLayout(layoutWidget3);
-        horizontalLayout_2->setObjectName("horizontalLayout_2");
-        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        return_btn = new QPushButton(layoutWidget3);
-        return_btn->setObjectName("return_btn");
 
-        horizontalLayout_2->addWidget(return_btn);
+        gridLayout->addLayout(horizontalLayout, 1, 0, 1, 3);
 
-        borrow_btn = new QPushButton(layoutWidget3);
-        borrow_btn->setObjectName("borrow_btn");
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setObjectName("verticalLayout_2");
+        admin_checkBox = new QCheckBox(userinfo_dialog);
+        admin_checkBox->setObjectName("admin_checkBox");
 
-        horizontalLayout_2->addWidget(borrow_btn);
+        verticalLayout_2->addWidget(admin_checkBox);
+
+        psw_btn = new QPushButton(userinfo_dialog);
+        psw_btn->setObjectName("psw_btn");
+
+        verticalLayout_2->addWidget(psw_btn);
+
+
+        gridLayout->addLayout(verticalLayout_2, 0, 2, 1, 1);
+
+        reserve_tableView = new QTableView(userinfo_dialog);
+        reserve_tableView->setObjectName("reserve_tableView");
+
+        gridLayout->addWidget(reserve_tableView, 5, 0, 1, 3);
+
+        book_tableView = new QTableView(userinfo_dialog);
+        book_tableView->setObjectName("book_tableView");
+
+        gridLayout->addWidget(book_tableView, 3, 0, 1, 3);
 
         num_label = new QLabel(userinfo_dialog);
         num_label->setObjectName("num_label");
-        num_label->setGeometry(QRect(520, 110, 71, 21));
+
+        gridLayout->addWidget(num_label, 2, 2, 1, 1);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_2, 0, 1, 1, 1);
+
+        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_4, 6, 1, 1, 2);
+
+        label_4 = new QLabel(userinfo_dialog);
+        label_4->setObjectName("label_4");
+
+        gridLayout->addWidget(label_4, 4, 2, 1, 1);
+
 
         retranslateUi(userinfo_dialog);
 
@@ -148,13 +171,15 @@ public:
     void retranslateUi(QDialog *userinfo_dialog)
     {
         userinfo_dialog->setWindowTitle(QCoreApplication::translate("userinfo_dialog", "\347\224\250\346\210\267\344\277\241\346\201\257", nullptr));
+        returnBook_btn->setText(QCoreApplication::translate("userinfo_dialog", "\350\277\230\344\271\246", nullptr));
         label->setText(QCoreApplication::translate("userinfo_dialog", "\347\224\250\346\210\267ID", nullptr));
+        label_3->setText(QCoreApplication::translate("userinfo_dialog", "\345\267\262\351\242\204\347\272\246\344\271\246\347\261\215", nullptr));
+        label_2->setText(QCoreApplication::translate("userinfo_dialog", "\345\267\262\345\200\237\351\230\205\344\271\246\347\261\215", nullptr));
+        delete_btn->setText(QCoreApplication::translate("userinfo_dialog", "\345\210\240\351\231\244\347\224\250\346\210\267", nullptr));
         admin_checkBox->setText(QCoreApplication::translate("userinfo_dialog", "\347\256\241\347\220\206\345\221\230", nullptr));
         psw_btn->setText(QCoreApplication::translate("userinfo_dialog", "\344\277\256\346\224\271\345\257\206\347\240\201", nullptr));
-        delete_btn->setText(QCoreApplication::translate("userinfo_dialog", "\345\210\240\351\231\244\347\224\250\346\210\267", nullptr));
-        return_btn->setText(QCoreApplication::translate("userinfo_dialog", "\350\277\230\344\271\246", nullptr));
-        borrow_btn->setText(QCoreApplication::translate("userinfo_dialog", "\345\200\237\344\271\246", nullptr));
         num_label->setText(QCoreApplication::translate("userinfo_dialog", "\345\267\262\345\200\237 0 \346\234\254", nullptr));
+        label_4->setText(QCoreApplication::translate("userinfo_dialog", "\345\267\262\351\242\204\347\272\246 0 \346\234\254", nullptr));
     } // retranslateUi
 
 };

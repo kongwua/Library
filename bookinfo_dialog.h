@@ -28,6 +28,8 @@ public:
 public slots:
     void  on_buttonBox_accepted();
     void on_delete_btn_clicked();//删除按钮
+    void on_borrowBook_btn_clicked();//借阅按钮
+    void on_returnBook_btn_clicked();//归还按钮
 private:
     Ui::bookinfo_dialog *ui;
     QStandardItemModel* userModel;

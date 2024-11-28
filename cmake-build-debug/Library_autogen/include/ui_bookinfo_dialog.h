@@ -32,18 +32,6 @@ class Ui_bookinfo_dialog
 {
 public:
     QGridLayout *gridLayout;
-    QHBoxLayout *horizontalLayout_3;
-    QLabel *label_5;
-    QSpacerItem *horizontalSpacer_2;
-    QLabel *num_label;
-    QHBoxLayout *horizontalLayout_2;
-    QPushButton *delete_btn;
-    QSpacerItem *horizontalSpacer;
-    QDialogButtonBox *buttonBox;
-    QHBoxLayout *horizontalLayout_5;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
-    QSpacerItem *horizontalSpacer_4;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout;
     QLabel *label;
@@ -57,12 +45,26 @@ public:
     QVBoxLayout *verticalLayout_4;
     QLabel *label_4;
     QDoubleSpinBox *price_doubleSpinBox;
+    QHBoxLayout *horizontalLayout_2;
+    QPushButton *delete_btn;
+    QSpacerItem *horizontalSpacer;
+    QDialogButtonBox *buttonBox;
+    QPushButton *borrowBook_btn;
+    QPushButton *returnBook_btn;
+    QHBoxLayout *horizontalLayout_3;
+    QLabel *label_5;
+    QSpacerItem *horizontalSpacer_2;
+    QLabel *num_label;
     QTableView *reader_tableView;
     QHBoxLayout *horizontalLayout_4;
     QLabel *label_7;
     QSpacerItem *horizontalSpacer_3;
     QLabel *label_8;
     QTableView *reserve_tableView;
+    QHBoxLayout *horizontalLayout_5;
+    QPushButton *pushButton_2;
+    QPushButton *pushButton_3;
+    QSpacerItem *horizontalSpacer_4;
 
     void setupUi(QDialog *bookinfo_dialog)
     {
@@ -71,64 +73,6 @@ public:
         bookinfo_dialog->resize(649, 534);
         gridLayout = new QGridLayout(bookinfo_dialog);
         gridLayout->setObjectName("gridLayout");
-        horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setObjectName("horizontalLayout_3");
-        label_5 = new QLabel(bookinfo_dialog);
-        label_5->setObjectName("label_5");
-
-        horizontalLayout_3->addWidget(label_5);
-
-        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_3->addItem(horizontalSpacer_2);
-
-        num_label = new QLabel(bookinfo_dialog);
-        num_label->setObjectName("num_label");
-
-        horizontalLayout_3->addWidget(num_label);
-
-
-        gridLayout->addLayout(horizontalLayout_3, 2, 0, 1, 1);
-
-        horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setObjectName("horizontalLayout_2");
-        delete_btn = new QPushButton(bookinfo_dialog);
-        delete_btn->setObjectName("delete_btn");
-
-        horizontalLayout_2->addWidget(delete_btn);
-
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_2->addItem(horizontalSpacer);
-
-        buttonBox = new QDialogButtonBox(bookinfo_dialog);
-        buttonBox->setObjectName("buttonBox");
-        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
-
-        horizontalLayout_2->addWidget(buttonBox);
-
-
-        gridLayout->addLayout(horizontalLayout_2, 1, 0, 1, 1);
-
-        horizontalLayout_5 = new QHBoxLayout();
-        horizontalLayout_5->setObjectName("horizontalLayout_5");
-        pushButton_2 = new QPushButton(bookinfo_dialog);
-        pushButton_2->setObjectName("pushButton_2");
-
-        horizontalLayout_5->addWidget(pushButton_2);
-
-        pushButton_3 = new QPushButton(bookinfo_dialog);
-        pushButton_3->setObjectName("pushButton_3");
-
-        horizontalLayout_5->addWidget(pushButton_3);
-
-        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_5->addItem(horizontalSpacer_4);
-
-
-        gridLayout->addLayout(horizontalLayout_5, 6, 0, 1, 1);
-
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
         verticalLayout = new QVBoxLayout();
@@ -192,12 +136,61 @@ public:
         horizontalLayout->addLayout(verticalLayout_4);
 
 
-        gridLayout->addLayout(horizontalLayout, 0, 0, 1, 1);
+        gridLayout->addLayout(horizontalLayout, 0, 0, 1, 2);
+
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        delete_btn = new QPushButton(bookinfo_dialog);
+        delete_btn->setObjectName("delete_btn");
+
+        horizontalLayout_2->addWidget(delete_btn);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer);
+
+        buttonBox = new QDialogButtonBox(bookinfo_dialog);
+        buttonBox->setObjectName("buttonBox");
+        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
+
+        horizontalLayout_2->addWidget(buttonBox);
+
+
+        gridLayout->addLayout(horizontalLayout_2, 1, 0, 1, 2);
+
+        borrowBook_btn = new QPushButton(bookinfo_dialog);
+        borrowBook_btn->setObjectName("borrowBook_btn");
+
+        gridLayout->addWidget(borrowBook_btn, 2, 0, 1, 1);
+
+        returnBook_btn = new QPushButton(bookinfo_dialog);
+        returnBook_btn->setObjectName("returnBook_btn");
+
+        gridLayout->addWidget(returnBook_btn, 2, 1, 1, 1);
+
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setObjectName("horizontalLayout_3");
+        label_5 = new QLabel(bookinfo_dialog);
+        label_5->setObjectName("label_5");
+
+        horizontalLayout_3->addWidget(label_5);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_2);
+
+        num_label = new QLabel(bookinfo_dialog);
+        num_label->setObjectName("num_label");
+
+        horizontalLayout_3->addWidget(num_label);
+
+
+        gridLayout->addLayout(horizontalLayout_3, 3, 0, 1, 2);
 
         reader_tableView = new QTableView(bookinfo_dialog);
         reader_tableView->setObjectName("reader_tableView");
 
-        gridLayout->addWidget(reader_tableView, 3, 0, 1, 1);
+        gridLayout->addWidget(reader_tableView, 4, 0, 1, 2);
 
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setObjectName("horizontalLayout_4");
@@ -216,12 +209,31 @@ public:
         horizontalLayout_4->addWidget(label_8);
 
 
-        gridLayout->addLayout(horizontalLayout_4, 4, 0, 1, 1);
+        gridLayout->addLayout(horizontalLayout_4, 5, 0, 1, 2);
 
         reserve_tableView = new QTableView(bookinfo_dialog);
         reserve_tableView->setObjectName("reserve_tableView");
 
-        gridLayout->addWidget(reserve_tableView, 5, 0, 1, 1);
+        gridLayout->addWidget(reserve_tableView, 6, 0, 1, 2);
+
+        horizontalLayout_5 = new QHBoxLayout();
+        horizontalLayout_5->setObjectName("horizontalLayout_5");
+        pushButton_2 = new QPushButton(bookinfo_dialog);
+        pushButton_2->setObjectName("pushButton_2");
+
+        horizontalLayout_5->addWidget(pushButton_2);
+
+        pushButton_3 = new QPushButton(bookinfo_dialog);
+        pushButton_3->setObjectName("pushButton_3");
+
+        horizontalLayout_5->addWidget(pushButton_3);
+
+        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_4);
+
+
+        gridLayout->addLayout(horizontalLayout_5, 7, 0, 1, 2);
 
 
         retranslateUi(bookinfo_dialog);
@@ -232,17 +244,19 @@ public:
     void retranslateUi(QDialog *bookinfo_dialog)
     {
         bookinfo_dialog->setWindowTitle(QCoreApplication::translate("bookinfo_dialog", "\345\233\276\344\271\246\350\257\246\347\273\206\344\277\241\346\201\257", nullptr));
-        label_5->setText(QCoreApplication::translate("bookinfo_dialog", "\345\200\237\351\230\205\346\234\254\344\271\246\347\232\204\347\224\250\346\210\267", nullptr));
-        num_label->setText(QCoreApplication::translate("bookinfo_dialog", "\345\205\261\345\200\237\345\207\272 0 \346\234\254", nullptr));
-        delete_btn->setText(QCoreApplication::translate("bookinfo_dialog", "\345\210\240\351\231\244\345\233\276\344\271\246", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("bookinfo_dialog", "\346\267\273\345\212\240\345\200\237\351\230\205\350\200\205", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("bookinfo_dialog", "\347\247\273\351\231\244\345\200\237\351\230\205\350\200\205", nullptr));
         label->setText(QCoreApplication::translate("bookinfo_dialog", "\344\271\246\345\220\215", nullptr));
         label_2->setText(QCoreApplication::translate("bookinfo_dialog", "\344\271\246\345\217\267", nullptr));
         label_3->setText(QCoreApplication::translate("bookinfo_dialog", "\346\225\260\351\207\217", nullptr));
         label_4->setText(QCoreApplication::translate("bookinfo_dialog", "\344\273\267\346\240\274", nullptr));
+        delete_btn->setText(QCoreApplication::translate("bookinfo_dialog", "\345\210\240\351\231\244\345\233\276\344\271\246", nullptr));
+        borrowBook_btn->setText(QCoreApplication::translate("bookinfo_dialog", "\345\200\237\351\230\205\346\255\244\344\271\246", nullptr));
+        returnBook_btn->setText(QCoreApplication::translate("bookinfo_dialog", "\345\275\222\350\277\230\346\255\244\344\271\246", nullptr));
+        label_5->setText(QCoreApplication::translate("bookinfo_dialog", "\345\200\237\351\230\205\346\234\254\344\271\246\347\232\204\347\224\250\346\210\267", nullptr));
+        num_label->setText(QCoreApplication::translate("bookinfo_dialog", "\345\205\261\345\200\237\345\207\272 0 \346\234\254", nullptr));
         label_7->setText(QCoreApplication::translate("bookinfo_dialog", "\351\242\204\347\272\246\346\234\254\344\271\246\347\232\204\347\224\250\346\210\267", nullptr));
         label_8->setText(QCoreApplication::translate("bookinfo_dialog", "\345\205\261\351\242\204\347\272\246 0 \346\234\254", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("bookinfo_dialog", "\346\267\273\345\212\240\345\200\237\351\230\205\350\200\205", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("bookinfo_dialog", "\347\247\273\351\231\244\345\200\237\351\230\205\350\200\205", nullptr));
     } // retranslateUi
 
 };

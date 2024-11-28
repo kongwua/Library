@@ -21,6 +21,9 @@ Book_manage::Book_manage(QWidget *parent) :
     ui->borrowBook_btn->setDisabled(true);//设置借阅按钮不可用
     ui->returnBook_btn->setDisabled(true);//设置还书按钮不可用
     ui->bookName_radioButton->setChecked(true);//默认按书名搜索
+    if (!isAdmin){
+        ui->addBook_btn->setHidden(true);//非管理员禁止添加书籍
+    }
     displayBookData();
 }
 

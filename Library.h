@@ -259,44 +259,46 @@ public:
     int size() {
         // 计算队列长度
         if (rear==nullptr||front==nullptr) return 0;
-        int ret = 0;
+        int count = 0;
         for (QNode<Q> *p = front; p != rear; p = p->next)
-            ret++;
-        return ret;
+            count++;
+        return count;
     }
     bool isEmpty() {
         // 判断队列是否为空
         return front == nullptr;
     }
-    QNode<Q>* enqueue(Q val) {
+    bool enqueue(Q &val) {
         // 入队操作
         QNode<Q> *item = new QNode<Q>;
-        item->next = nullptr;
         if (!item) {
             cerr << "内存分配失败.请检查剩余内存是否充足。" << endl;
-            return nullptr;
+            return false;
         }
         item->elem = val;
-        if (rear == nullptr) {
+        item->next = nullptr;
+        if (front == nullptr) {
             front = rear = item;
         } else {
             rear->next = item;
             rear = item;
         }
-        return rear;
+        return true;
     }
-    QNode<Q>* dequeue() {
+    bool dequeue(Q& val) {
         // 出队操作
         if (front == nullptr) {
             cerr << "队列为空。" << endl;
-            return nullptr;
+            return false;
         }
         QNode<Q> *item = front;
+        val = item->elem;
         front = front->next;
         if (front == nullptr) {
             rear = nullptr;
         }
-        return item;
+        delete item;
+        return true;
     }
     QNode<Q>* getFront() {
         // 返回队首元素
@@ -306,8 +308,15 @@ public:
         }
         return front;
     }
-
+    void clear() {
+        // 清空队列
+        while (front == nullptr) {
+            Q temp;
+            dequeue(temp);
+        }
+    }
 };
+
 
 
 class UserInfo {
@@ -598,6 +607,7 @@ public:
     }
 
     int borrowBook(Node<UserInfo>* userNode, Node<BookInfo>* bookNode) {
+        //成功返回0，失败返回1
         if (!userNode || !bookNode) {
             cerr << "不存在符合条件的图书或用户。" << endl;
             return 1;

@@ -50,7 +50,11 @@ void admin::menu_change(){
     do {
         if ("user_btn" == str){
             ui->stackedWidget->setCurrentIndex(0);//
-            m_user_manage->displayUserData();
+            if (isAdmin){
+                m_user_manage->displayUserData();
+            } else{
+                m_user_manage->displaySingleUserData(lib.findUser(login_UserID));
+            }
             break;
         }
         if ("book_btn" == str){

@@ -42,16 +42,24 @@ static constexpr auto qt_meta_stringdata_CLASSuserinfo_dialogENDCLASS = QtMocHel
     "buttonBox_accepted",
     "",
     "delete_btn_clicked",
-    "changePsw_btn_clicked"
+    "changePsw_btn_clicked",
+    "on_book_tableView_clicked",
+    "QModelIndex",
+    "index",
+    "on_returnBook_btn_clicked"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSuserinfo_dialogENDCLASS_t {
-    uint offsetsAndSizes[10];
+    uint offsetsAndSizes[18];
     char stringdata0[16];
     char stringdata1[19];
     char stringdata2[1];
     char stringdata3[19];
     char stringdata4[22];
+    char stringdata5[26];
+    char stringdata6[12];
+    char stringdata7[6];
+    char stringdata8[26];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSuserinfo_dialogENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -61,13 +69,21 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSuserinfo_dialogENDCLASS_t qt_me
         QT_MOC_LITERAL(16, 18),  // "buttonBox_accepted"
         QT_MOC_LITERAL(35, 0),  // ""
         QT_MOC_LITERAL(36, 18),  // "delete_btn_clicked"
-        QT_MOC_LITERAL(55, 21)   // "changePsw_btn_clicked"
+        QT_MOC_LITERAL(55, 21),  // "changePsw_btn_clicked"
+        QT_MOC_LITERAL(77, 25),  // "on_book_tableView_clicked"
+        QT_MOC_LITERAL(103, 11),  // "QModelIndex"
+        QT_MOC_LITERAL(115, 5),  // "index"
+        QT_MOC_LITERAL(121, 25)   // "on_returnBook_btn_clicked"
     },
     "userinfo_dialog",
     "buttonBox_accepted",
     "",
     "delete_btn_clicked",
-    "changePsw_btn_clicked"
+    "changePsw_btn_clicked",
+    "on_book_tableView_clicked",
+    "QModelIndex",
+    "index",
+    "on_returnBook_btn_clicked"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -79,7 +95,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSuserinfo_dialogENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -87,13 +103,17 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSuserinfo_dialogENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   32,    2, 0x0a,    1 /* Public */,
-       3,    0,   33,    2, 0x0a,    2 /* Public */,
-       4,    0,   34,    2, 0x0a,    3 /* Public */,
+       1,    0,   44,    2, 0x0a,    1 /* Public */,
+       3,    0,   45,    2, 0x0a,    2 /* Public */,
+       4,    0,   46,    2, 0x0a,    3 /* Public */,
+       5,    1,   47,    2, 0x0a,    4 /* Public */,
+       8,    0,   50,    2, 0x0a,    6 /* Public */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 6,    7,
     QMetaType::Void,
 
        0        // eod
@@ -113,6 +133,11 @@ Q_CONSTINIT const QMetaObject userinfo_dialog::staticMetaObject = { {
         // method 'delete_btn_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'changePsw_btn_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_book_tableView_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QModelIndex &, std::false_type>,
+        // method 'on_returnBook_btn_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -127,10 +152,11 @@ void userinfo_dialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         case 0: _t->buttonBox_accepted(); break;
         case 1: _t->delete_btn_clicked(); break;
         case 2: _t->changePsw_btn_clicked(); break;
+        case 3: _t->on_book_tableView_clicked((*reinterpret_cast< std::add_pointer_t<QModelIndex>>(_a[1]))); break;
+        case 4: _t->on_returnBook_btn_clicked(); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *userinfo_dialog::metaObject() const
@@ -152,13 +178,13 @@ int userinfo_dialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 5;
     }
     return _id;
 }

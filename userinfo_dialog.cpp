@@ -25,8 +25,7 @@ userinfo_dialog::userinfo_dialog(QWidget *parent,string userID) :
     if(userID.empty()){
         //添加用户操作
         ui->delete_btn->setDisabled(true);
-        ui->borrow_btn->setDisabled(true);
-        ui->return_btn->setDisabled(true);
+        ui->returnBook_btn->setDisabled(true);
         ui->psw_btn->setDisabled(true);
         ui->psw_btn->setToolTip("保存用户后修改密码");
     } else{
@@ -34,6 +33,10 @@ userinfo_dialog::userinfo_dialog(QWidget *parent,string userID) :
             displayBookTable();//显示书籍表格
             ui->lineEdit->setText(user->elem.ID.data());
             ui->admin_checkBox->setChecked(user->elem.type);//管理员权限
+            if(!isAdmin){
+                ui->admin_checkBox->setEnabled(false);//非管理员禁止修改权限
+                ui->delete_btn->setHidden(true);//非管理员禁止删除用户
+            }
     }
 
 }
@@ -113,7 +116,7 @@ void userinfo_dialog::changePsw_btn_clicked() {
 
 void userinfo_dialog::initBookModel() {
     //初始化书籍模型
-    ui->return_btn->setDisabled(true);
+    ui->returnBook_btn->setDisabled(true);
     bookModel->clear();
     bookModel->setColumnCount(5);
     bookModel->setHeaderData(0, Qt::Horizontal, "书名");
@@ -152,6 +155,33 @@ void userinfo_dialog::appendOneBook(Node<BookInfo> *book) {
          << new QStandardItem(std::to_string(book->elem.quantity-book->elem.readers.size()).data())
          << new QStandardItem(std::to_string(book->elem.price).data());
     bookModel->appendRow(list);
+}
+
+void userinfo_dialog::on_book_tableView_clicked(const QModelIndex &index) {
+    //单击书籍表格
+    ui->returnBook_btn->setEnabled(true);//还书按钮可用
+}
+
+void userinfo_dialog::on_returnBook_btn_clicked() {
+    //还书按钮点击事件
+    string bookIsbn = getSelect();
+    if(bookIsbn.empty()){
+        return;
+    }
+    if(!lib.returnBookbyISBN(user->elem.ID,bookIsbn)){
+        QMessageBox::information(this, "提示", "还书成功！");
+    } else{
+        QMessageBox::warning(this, "错误", "还书失败！");
+    }
+    displayBookTable();
+}
+
+string userinfo_dialog::getSelect() {
+    int row = ui->book_tableView->currentIndex().row();
+    QAbstractItemModel *model = ui->book_tableView->model();
+    QModelIndex index = model->index(row, 1);
+    QVariant bookName = model->data(index);
+    return bookName.toString().toStdString();//返回书号
 }
 
 

@@ -27,10 +27,13 @@ public:
     void initBookModel();//初始化书籍列表
     void displayBookTable();//显示书籍列表
     void appendOneBook(Node<BookInfo>* book);//添加一本书到模型
+    string getSelect();//获取选中的书籍isbn
 public slots:
     void buttonBox_accepted();//确认后更新用户信息
     void delete_btn_clicked();//删除用户信息
     void changePsw_btn_clicked();//修改密码
+    void on_book_tableView_clicked(const QModelIndex &index);//单击书籍列表
+    void on_returnBook_btn_clicked();//归还书籍
 private:
     Ui::userinfo_dialog *ui;
     QStandardItemModel *bookModel;
