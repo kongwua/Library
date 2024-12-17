@@ -59,7 +59,7 @@ public:
     QHBoxLayout *horizontalLayout_4;
     QLabel *label_7;
     QSpacerItem *horizontalSpacer_3;
-    QLabel *label_8;
+    QLabel *reserve_lable;
     QTableView *reserve_tableView;
     QHBoxLayout *horizontalLayout_5;
     QPushButton *pushButton_2;
@@ -203,10 +203,10 @@ public:
 
         horizontalLayout_4->addItem(horizontalSpacer_3);
 
-        label_8 = new QLabel(bookinfo_dialog);
-        label_8->setObjectName("label_8");
+        reserve_lable = new QLabel(bookinfo_dialog);
+        reserve_lable->setObjectName("reserve_lable");
 
-        horizontalLayout_4->addWidget(label_8);
+        horizontalLayout_4->addWidget(reserve_lable);
 
 
         gridLayout->addLayout(horizontalLayout_4, 5, 0, 1, 2);
@@ -254,7 +254,7 @@ public:
         label_5->setText(QCoreApplication::translate("bookinfo_dialog", "\345\200\237\351\230\205\346\234\254\344\271\246\347\232\204\347\224\250\346\210\267", nullptr));
         num_label->setText(QCoreApplication::translate("bookinfo_dialog", "\345\205\261\345\200\237\345\207\272 0 \346\234\254", nullptr));
         label_7->setText(QCoreApplication::translate("bookinfo_dialog", "\351\242\204\347\272\246\346\234\254\344\271\246\347\232\204\347\224\250\346\210\267", nullptr));
-        label_8->setText(QCoreApplication::translate("bookinfo_dialog", "\345\205\261\351\242\204\347\272\246 0 \346\234\254", nullptr));
+        reserve_lable->setText(QCoreApplication::translate("bookinfo_dialog", "\345\205\261\351\242\204\347\272\246 0 \346\234\254", nullptr));
         pushButton_2->setText(QCoreApplication::translate("bookinfo_dialog", "\346\267\273\345\212\240\345\200\237\351\230\205\350\200\205", nullptr));
         pushButton_3->setText(QCoreApplication::translate("bookinfo_dialog", "\347\247\273\351\231\244\345\200\237\351\230\205\350\200\205", nullptr));
     } // retranslateUi

@@ -75,7 +75,7 @@ void admin::menu_change(){
 
 void admin::closeEvent(QCloseEvent *event) {
     //关闭窗口时，将链表内数据写入文件
-    if(lib.writeUser(lib.userPath)||lib.writeBook(lib.bookPath)){
+    if(lib.writeUser(lib.userPath)||lib.writeBook(lib.bookPath)||lib.writeReserve(lib.reservePath)){
         QMessageBox::warning(this,"警告","数据写入失败！");
         return;
     }
@@ -101,7 +101,7 @@ void admin::appendOneUser(QStandardItemModel *userModel, Node<UserInfo> *p) {
     QList<QStandardItem*> list;
     list << new QStandardItem(p->elem.ID.data())
          << new QStandardItem(std::to_string(p->elem.books.size()).data())
-         << new QStandardItem(std::to_string(p->elem.reserveISBN.size()).data())
+         << new QStandardItem(std::to_string(p->elem.reserveBooks.size()).data())
          << new QStandardItem((p->elem.type)?"管理员":"普通用户");
     userModel->appendRow(list);
 }

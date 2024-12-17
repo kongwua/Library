@@ -51,7 +51,7 @@ public:
     QLabel *num_label;
     QSpacerItem *horizontalSpacer_2;
     QSpacerItem *horizontalSpacer_4;
-    QLabel *label_4;
+    QLabel *reserve_label;
 
     void setupUi(QDialog *userinfo_dialog)
     {
@@ -157,10 +157,10 @@ public:
 
         gridLayout->addItem(horizontalSpacer_4, 6, 1, 1, 2);
 
-        label_4 = new QLabel(userinfo_dialog);
-        label_4->setObjectName("label_4");
+        reserve_label = new QLabel(userinfo_dialog);
+        reserve_label->setObjectName("reserve_label");
 
-        gridLayout->addWidget(label_4, 4, 2, 1, 1);
+        gridLayout->addWidget(reserve_label, 4, 2, 1, 1);
 
 
         retranslateUi(userinfo_dialog);
@@ -179,7 +179,7 @@ public:
         admin_checkBox->setText(QCoreApplication::translate("userinfo_dialog", "\347\256\241\347\220\206\345\221\230", nullptr));
         psw_btn->setText(QCoreApplication::translate("userinfo_dialog", "\344\277\256\346\224\271\345\257\206\347\240\201", nullptr));
         num_label->setText(QCoreApplication::translate("userinfo_dialog", "\345\267\262\345\200\237 0 \346\234\254", nullptr));
-        label_4->setText(QCoreApplication::translate("userinfo_dialog", "\345\267\262\351\242\204\347\272\246 0 \346\234\254", nullptr));
+        reserve_label->setText(QCoreApplication::translate("userinfo_dialog", "\345\267\262\351\242\204\347\272\246 0 \346\234\254", nullptr));
     } // retranslateUi
 
 };

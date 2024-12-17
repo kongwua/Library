@@ -13,7 +13,7 @@ userinfo_dialog::userinfo_dialog(QWidget *parent,string userID) :
     ui->setupUi(this);
 
     bookModel = new QStandardItemModel();//书籍模型
-
+    reserveModel = new QStandardItemModel();//预约模型
     ui->book_tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
     ui->book_tableView->setSelectionMode(QAbstractItemView::SingleSelection);
     ui->reserve_tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
@@ -130,8 +130,23 @@ void userinfo_dialog::initBookModel() {
     ui->book_tableView->horizontalHeader()->setSectionResizeMode(2, QHeaderView::Fixed);
     ui->book_tableView->horizontalHeader()->setSectionResizeMode(3, QHeaderView::Fixed);
 
-    ui->book_tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
-    ui->book_tableView->setAlternatingRowColors(true);
+    ui->reserve_tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    ui->reserve_tableView->setAlternatingRowColors(true);
+    reserveModel->clear();
+    reserveModel->setColumnCount(5);
+    reserveModel->setHeaderData(0, Qt::Horizontal, "书名");
+    reserveModel->setHeaderData(1, Qt::Horizontal, "书号");
+    reserveModel->setHeaderData(2, Qt::Horizontal, "总数量");
+    reserveModel->setHeaderData(3, Qt::Horizontal, "剩余数量");
+    reserveModel->setHeaderData(4, Qt::Horizontal, "价格");
+    ui->reserve_tableView->setModel(reserveModel);
+    ui->reserve_tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->reserve_tableView->horizontalHeader()->setSectionResizeMode(1, QHeaderView::Fixed);
+    ui->reserve_tableView->horizontalHeader()->setSectionResizeMode(2, QHeaderView::Fixed);
+    ui->book_tableView->horizontalHeader()->setSectionResizeMode(3, QHeaderView::Fixed);
+
+    ui->reserve_tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    ui->reserve_tableView->setAlternatingRowColors(true);
 }
 
 void userinfo_dialog::displayBookTable() {
@@ -140,6 +155,10 @@ void userinfo_dialog::displayBookTable() {
     ui->num_label->setText(tr("已借") + QString::number(user->elem.books.size())+tr("本"));
     for(auto p = user->elem.books.begin(); p!=user->elem.books.end(); p=p->next){
         appendOneBook(p->elem);
+    }
+    ui->reserve_label->setText(tr("预约") + QString::number(user->elem.reserveBooks.size())+tr("本"));
+    for(auto p = user->elem.reserveBooks.begin(); p!=user->elem.reserveBooks.end(); p=p->next){
+        appendOneReserve(p->elem);
     }
 }
 
@@ -182,6 +201,20 @@ string userinfo_dialog::getSelect() {
     QModelIndex index = model->index(row, 1);
     QVariant bookName = model->data(index);
     return bookName.toString().toStdString();//返回书号
+}
+
+void userinfo_dialog::appendOneReserve(Node<BookInfo> *book) {
+    //添加一本预约书到模型
+    if(!book){
+        return;
+    }
+    QList<QStandardItem*> list;
+    list << new QStandardItem(book->elem.name.data())
+         << new QStandardItem(book->elem.isbn.data())
+         << new QStandardItem(std::to_string(book->elem.quantity).data())
+         << new QStandardItem(std::to_string(book->elem.quantity-book->elem.readers.size()).data())
+         << new QStandardItem(std::to_string(book->elem.price).data());
+    reserveModel->appendRow(list);
 }
 
 

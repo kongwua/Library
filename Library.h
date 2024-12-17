@@ -260,7 +260,7 @@ public:
         // 计算队列长度
         if (rear==nullptr||front==nullptr) return 0;
         int count = 0;
-        for (QNode<Q> *p = front; p != rear; p = p->next)
+        for (QNode<Q> *p = front; p != nullptr; p = p->next)
             count++;
         return count;
     }
@@ -325,8 +325,9 @@ public:
     string password;				// 密码
     int type;						// 用户类型
     List<Node<BookInfo>*> books;	// 已借阅的书籍
+    List<Node<BookInfo>*> reserveBooks; //预约的书籍
     List<string> booksISBN;
-    List<string> reserveISBN;   //预约书籍
+
 
     UserInfo(): ID(""),type(-1) {}
 
@@ -349,14 +350,14 @@ public:
     friend ostream &operator <<(ostream &output, const UserInfo &reader) {
         output << "{\"" << reader.ID << "\", \"" << reader.password << "\", "
                << ", " << reader.type << ", " << reader.booksISBN
-               <<", "<< reader.reserveISBN<< "}";
+               <<"}";
         return output;
     }
 
     friend ostream &operator <<(ostream &output, const UserInfo *&reader) {
         output << "{\"" << reader->ID << "\", \"" << reader->password << "\", "
                << ", " << reader->type << ", " << reader->booksISBN
-               <<", "<< reader->reserveISBN<< "}";
+               <<"}";
         return output;
     }
 
@@ -369,8 +370,9 @@ public:
     int quantity;					// 数量
     double price;					// 价格
     List<Node<UserInfo>*> readers;	// 借阅该书的读者
+    Queue<QNode<UserInfo>*> reserveReaders;    //预约队列,当可借阅书数量为0时启用
     List<string> readersID;
-    Queue<string> reserveID;//预约队列,当可借阅书数量为0时启用
+
 
     BookInfo(): isbn(), quantity(-1),price(0) {}
 
@@ -392,7 +394,7 @@ public:
             output << std::fixed << std::setprecision(2) << book.price;
             }
              output <<   ", " << book.readers
-               << ", " << book.reserveID;
+               << ", " << book.reserveReaders;
         output << "}";
         return output;
     }
@@ -404,39 +406,64 @@ public:
             output << std::fixed << std::setprecision(2) << book->price;
         }
              output << ", " << book->readers
-               << ", " << book->reserveID<< "}";
+                    << ", " << book->reserveReaders << "}";
         return output;
     }
 
+};
+
+class ReserveInfo {
+    //存储预约信息
+public:
+    string readerID;
+    string bookISBN;
+    ReserveInfo(): readerID(""), bookISBN("") {}
+    ReserveInfo(string reader, string bookisbn): readerID(reader), bookISBN(bookisbn) {}
+    ~ReserveInfo() {}
+    friend ostream &operator <<(ostream &output, const ReserveInfo &reserve) {
+        output << "{\"" << reserve.readerID << "\", " <<reserve.bookISBN << "}";
+        return output;
+    }
+    friend ostream &operator <<(ostream &output, const ReserveInfo *&reserve) {
+        output << "{\"" << reserve->readerID << "\", " <<reserve->bookISBN << "}";
+        return output;
+    }
+    bool operator ==(const ReserveInfo &reserve) const{
+        return (this->readerID == reserve.readerID && this->bookISBN == reserve.bookISBN);
+    }
 };
 
 class Library {
 public:
     List<BookInfo> books;
     List<UserInfo> users;
+    List<ReserveInfo> reserves;
     const char *bookPath;
     const char *userPath;
+    const char *reservePath;
     char DIVIDE_CHAR;
 
     Library() {
 
-        DIVIDE_CHAR =DIVIDER;
+        DIVIDE_CHAR =DIVIDER;//设置分隔符为逗号
     }
 
-    Library(const char *userFile, const char *bookFile) {
+    Library(const char *userFile, const char *bookFile,const char *reserveFile) {
         DIVIDE_CHAR = DIVIDER;
-        read(userFile, bookFile);
+        read(userFile, bookFile, reserveFile);
     };
 
     ~Library() {}
     // 从文件读取数据
-    int read(const char *userFile, const char *bookFile) {
+    int read(const char *userFile, const char *bookFile,const char *reserveFile) {
         //读取成功返回0，失败返回1
         bookPath = bookFile;
         userPath = userFile;
+        reservePath = reserveFile;
         int userState = userDataReader(userFile);
         int bookState = bookDataReader(bookFile);
-        if (userState || bookState) {
+        int reserveState = reserveDataReader(reserveFile);
+        if (userState || bookState|| reserveState) {
             cerr << "未读取到数据。" << endl;
             return 1;
         }
@@ -454,6 +481,19 @@ public:
                 p->elem.books.append(findBookbyISBN(q->elem));
             }
             booksID.clear();
+        }
+        for(auto *p = reserves.begin(); p!= reserves.end(); p = p->next){
+            auto readerID = p->elem.readerID;
+            auto bookISBN = p->elem.bookISBN;
+            auto reserveUser = findUser(readerID);
+            QNode<UserInfo> *reserveNode = new QNode<UserInfo>;
+            reserveNode->elem = reserveUser->elem;//转换为QNode类型
+            auto reserveBook = findBookbyISBN(bookISBN);
+            if(reserveUser && reserveBook){
+                //信息都存在
+                reserveUser->elem.reserveBooks.append(reserveBook);
+                reserveBook->elem.reserveReaders.enqueue(reserveNode);
+            }
         }
         return 0;
     }
@@ -495,6 +535,19 @@ public:
         }
         return 0;
     }
+    int writeReserve(const char *reserveFile){
+        //写入预约信息
+        ofstream output(reserveFile);
+        if (!output) {
+            cerr << "无法写入文件。请检查文件\"" << reserveFile << "\"是否被占用。" << endl;
+            return 1;
+        }
+        for(auto *p = reserves.begin(); p!= reserves.end(); p = p->next){
+            output << p->elem.readerID<< DIVIDE_CHAR << p->elem.bookISBN << endl;
+        }
+        return 0;
+    }
+
     // 按编号查找图书
     Node<BookInfo>* findBookbyISBN(string isbn) {
         for (auto *p = books.begin(); p != books.end(); p = p->next) {
@@ -534,6 +587,35 @@ public:
     // 添加用户信息
     Node<UserInfo>* add(UserInfo user) {
         return users.append(user);
+    }
+    Node<ReserveInfo>* addReserve(ReserveInfo reserve) {
+        //增加预约信息，同时更新用户链表和图书链表中的预约信息
+        auto book = findBookbyISBN(reserve.bookISBN);
+        auto user = findUser(reserve.readerID);
+        if(!book || !user) return nullptr;
+        if(book->elem.quantity>(book->elem.readers.size()+book->elem.reserveReaders.size())){
+            return nullptr;//数量足够，不需要预约
+        }
+        auto data = new QNode<UserInfo>;
+        data->elem = user->elem;
+        book->elem.reserveReaders.enqueue(data);//进队
+        user->elem.reserveBooks.append(book);
+        return reserves.append(reserve);
+    }
+    Node<ReserveInfo>* delReserve(ReserveInfo reserve){
+        //删除预约信息，同时更新用户链表和图书链表中的预约信息
+        auto book = findBookbyISBN(reserve.bookISBN);
+        auto user = findUser(reserve.readerID);
+        if(!book || !user) return nullptr;
+        auto data = book->elem.reserveReaders.getFront()->elem;
+        if(data->elem.ID!= reserve.readerID) return nullptr;//不是最先的预约者
+        QNode<UserInfo> *node;
+        book->elem.reserveReaders.dequeue(node);
+        user->elem.reserveBooks.delByValue(book);
+        reserves.delByValue(reserve);
+        Node<ReserveInfo>* p = new Node<ReserveInfo>;
+        p->elem = reserve;
+        return p;
     }
     // 删除图书节点，force=true 开启强制删除
     Node<BookInfo>* del(Node<BookInfo>* book, bool force = false) {
@@ -607,7 +689,7 @@ public:
     }
 
     int borrowBook(Node<UserInfo>* userNode, Node<BookInfo>* bookNode) {
-        //成功返回0，失败返回1
+        //成功返回0，失败返回1,预约返回2
         if (!userNode || !bookNode) {
             cerr << "不存在符合条件的图书或用户。" << endl;
             return 1;
@@ -615,9 +697,11 @@ public:
         BookInfo book = bookNode->elem;
         // 判断书是否还有剩余
         int quantity = book.quantity;
-        if (quantity <= book.readers.size()) {
-            cerr << "[信息] 该书 《" << book.name << "》(" << book.isbn << ") 已经被借完了。" << endl;
-            return 1;
+        if (quantity <= book.readers.size()+book.reserveReaders.size()) {
+          // 图书数量不足
+                //预约
+                addReserve(ReserveInfo(userNode->elem.ID, bookNode->elem.isbn));
+                return 2;
         }
         auto retUser = userNode->elem.books.append(bookNode);
         auto retBook = bookNode->elem.readers.append(userNode);
@@ -642,6 +726,18 @@ public:
         auto retUser = userNode->elem.books.delByValue(bookNode);
         auto retBook = bookNode->elem.readers.delByValue(userNode);
         if (!retUser || !retBook) return 1;
+
+        //还书后，判断是否有预约
+        if(bookNode->elem.reserveReaders.size() > 0){
+            //有预约，取出最先的预约者
+            QNode<UserInfo> *node ;
+            bookNode->elem.reserveReaders.dequeue(node);
+            UserInfo user = node->elem;
+            userNode->elem.reserveBooks.delByValue(bookNode);//删除用户链表中预约信息
+            //删除预约信息链表中信息
+            reserves.delByValue(ReserveInfo(user.ID, bookNode->elem.isbn));
+            borrowBookByISBN(user.ID,bookNode->elem.isbn);
+        }
         return 0;
     }
 
@@ -766,7 +862,44 @@ protected:
         input.close();
         return 0;
     }
+    int reserveDataReader(const char *fileName) {
+        ifstream input(fileName);
+        if (!input){
+            qDebug() << "数据读取失败。请检查文件\"" << fileName << "\"是否存在。";
+            return 1;
+        }
+        while (!input.eof()) {
+            string line;
+            getline(input, line);		// 读入一行
+            if (line.empty()) continue;	// 若读到空行则跳过
+            line += '\n';
 
+            string buff;		// 临时存储块
+            string ID;		    // 用户的id
+            string bookISBN;	// 预约的图书编号
+            int cnt = 0;		// 计算由分隔符隔开的块索引号
+            int type;		// 用户类型 0：非管理员；1：管理员
+            // 处理该行数据，按分隔符分隔处理
+            for (string::iterator i = line.begin(); i != line.end(); i++) {
+                if (*i == DIVIDE_CHAR || *i == '\n') {
+                    switch (cnt) {
+                        case 0:
+                            ID = buff;
+                            buff.clear(); break;
+                        default:
+                            bookISBN = buff;
+                            buff.clear(); break;
+                    }
+                    cnt++;
+                } else {
+                    buff += *i;
+                }
+            }
+            reserves.append(ReserveInfo(ID, bookISBN));
+        }
+        input.close();
+        return 0;
+    }
 };
 
 extern Library lib;

@@ -108,13 +108,9 @@ void Book_manage::on_borrowBook_btn_clicked() {
     //借阅图书
     string bookIsbn = getSelect();
     if(lib.borrowBookByISBN(login_UserID, bookIsbn)){
-        if (QMessageBox::question(this,"借阅失败","此书无剩余，是否预约？",
-                                  QMessageBox::Yes|QMessageBox::No)==QMessageBox::Yes){
-            //预约
-            return;
-        } else{
-            return;
-        }
+        QMessageBox::information(this,"提示","该书无剩余，已为您预约。当有空余时自动帮你借阅！");
+        displayBookData();
+        return;
     }
     displayBookData();
     QMessageBox::information(this,"提示",("借阅《" + tr(lib.findBookbyISBN(bookIsbn)->elem.name.data())+"》成功！"));

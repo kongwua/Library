@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
         return QApplication::exec();
     });
     if (lib.read("user.csv",
-                 "book.csv")) {//读取用户信息和图书信息
+                 "book.csv","reserve.csv")) {//读取用户信息和图书信息
         //首次登录
         login_w.first_longin();
     }

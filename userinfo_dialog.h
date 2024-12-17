@@ -27,6 +27,7 @@ public:
     void initBookModel();//初始化书籍列表
     void displayBookTable();//显示书籍列表
     void appendOneBook(Node<BookInfo>* book);//添加一本书到模型
+    void appendOneReserve(Node<BookInfo>* book);//添加一本预约书籍到模型
     string getSelect();//获取选中的书籍isbn
 public slots:
     void buttonBox_accepted();//确认后更新用户信息
@@ -37,6 +38,7 @@ public slots:
 private:
     Ui::userinfo_dialog *ui;
     QStandardItemModel *bookModel;
+    QStandardItemModel *reserveModel;
     Node<UserInfo>* user;
 };
 

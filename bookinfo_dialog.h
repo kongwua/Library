@@ -22,9 +22,11 @@ public:
     ~bookinfo_dialog() override;
     void initUserTable();//初始化借阅用户表
     void appendOneUser(Node<UserInfo>* p);//添加单个用户到模型
+    void appendOneReserve(QNode<UserInfo>* p);//添加单个预约用户到模型
     void displayUserData();//显示借阅者信息
     void updateBookInfo();//更新书籍信息
     bool checkBookInfo();//检查书籍信息是否合法
+
 public slots:
     void  on_buttonBox_accepted();
     void on_delete_btn_clicked();//删除按钮
@@ -32,7 +34,8 @@ public slots:
     void on_returnBook_btn_clicked();//归还按钮
 private:
     Ui::bookinfo_dialog *ui;
-    QStandardItemModel* userModel;
+    QStandardItemModel* userModel;//借阅用户模型
+    QStandardItemModel* reserveModel;//预约用户模型
     Node<BookInfo>* book;
 };
 

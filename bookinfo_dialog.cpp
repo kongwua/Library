@@ -13,6 +13,7 @@ bookinfo_dialog::bookinfo_dialog(QWidget *parent,string _bookIsbn) :
         QDialog(parent), ui(new Ui::bookinfo_dialog) {
     ui->setupUi(this);
     userModel = new QStandardItemModel(this);
+    reserveModel = new QStandardItemModel(this);
     ui->reader_tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
     ui->reader_tableView->setSelectionMode(QAbstractItemView::SingleSelection);
     ui->reserve_tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
@@ -45,6 +46,16 @@ void bookinfo_dialog::initUserTable() {
     ui->reader_tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     ui->reader_tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
     ui->reader_tableView->setAlternatingRowColors(true);
+
+    reserveModel->clear();
+    reserveModel->setColumnCount(3);
+    reserveModel->setHeaderData(0, Qt::Horizontal, "用户ID");
+    reserveModel->setHeaderData(1, Qt::Horizontal, "借阅数量");
+    reserveModel->setHeaderData(2, Qt::Horizontal, "预约数量");
+    ui->reserve_tableView->setModel(reserveModel);
+    ui->reserve_tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->reserve_tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    ui->reserve_tableView->setAlternatingRowColors(true);
 }
 
 void bookinfo_dialog::appendOneUser(Node<UserInfo> *p) {
@@ -53,7 +64,7 @@ void bookinfo_dialog::appendOneUser(Node<UserInfo> *p) {
     QList<QStandardItem*> list;
     list << new QStandardItem(p->elem.ID.data())
          << new QStandardItem(QString::number(p->elem.books.size()))
-         << new QStandardItem(QString::number(p->elem.reserveISBN.size()));
+         << new QStandardItem(QString::number(p->elem.reserveBooks.size()));
     userModel->appendRow(list);
 }
 
@@ -64,7 +75,10 @@ void bookinfo_dialog::displayUserData() {
     for(auto p=book->elem.readers.begin();p!=book->elem.readers.end();p=p->next){
         appendOneUser(p->elem);
     }
-
+    ui->reserve_lable->setText("共有"+QString::number(book->elem.reserveReaders.size())+"人预约");
+    for(auto p = book->elem.reserveReaders.getFront();p!=nullptr;p=p->next){
+        appendOneReserve(p->elem);
+    }
 }
 
 void bookinfo_dialog::on_buttonBox_accepted() {
@@ -138,17 +152,15 @@ void bookinfo_dialog::on_delete_btn_clicked() {
 
 void bookinfo_dialog::on_borrowBook_btn_clicked() {
     //图书详细界面借书
-    if (lib.borrowBookByISBN(login_UserID,book->elem.isbn)){
-        if (QMessageBox::question(this,"借阅失败","此书无剩余，是否预约？",
-                                  QMessageBox::Yes|QMessageBox::No)==QMessageBox::Yes){
-            //预约
-            return;
-        } else{
-            return;
-        }
-    }
+    int res = lib.borrowBookByISBN(login_UserID,book->elem.isbn);
+    if(res == 1){
+        QMessageBox::warning(this,"警告","借阅失败");
+    } else if(res == 2){
+        QMessageBox::information(this,"提示","当前无剩余图书，已预约!");
+    } else{QMessageBox::information(this,"提示",("借阅《" + tr(book->elem.name.data())+"》成功！"));}
+
     displayUserData();
-    QMessageBox::information(this,"提示",("借阅《" + tr(book->elem.name.data())+"》成功！"));
+
 }
 
 void bookinfo_dialog::on_returnBook_btn_clicked() {
@@ -160,5 +172,16 @@ void bookinfo_dialog::on_returnBook_btn_clicked() {
     displayUserData();
     QMessageBox::information(this,"提示",("还书《" + tr(book->elem.name.data())+"》成功！"));
 }
+
+void bookinfo_dialog::appendOneReserve(QNode<UserInfo> *p) {
+    if(!p) return;
+    QList<QStandardItem*> list;
+    list << new QStandardItem(p->elem.ID.data())
+         << new QStandardItem(QString::number(p->elem.books.size()))
+         << new QStandardItem(QString::number(p->elem.reserveBooks.size()));
+    reserveModel->appendRow(list);
+}
+
+
 
 

@@ -155,7 +155,7 @@
     </spacer>
    </item>
    <item row="4" column="2">
-    <widget class="QLabel" name="label_4">
+    <widget class="QLabel" name="reserve_label">
      <property name="text">
       <string>已预约 0 本</string>
      </property>
