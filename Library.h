@@ -730,13 +730,13 @@ public:
         //还书后，判断是否有预约
         if(bookNode->elem.reserveReaders.size() > 0){
             //有预约，取出最先的预约者
-            QNode<UserInfo> *node ;
-            bookNode->elem.reserveReaders.dequeue(node);
-            UserInfo user = node->elem;
-            userNode->elem.reserveBooks.delByValue(bookNode);//删除用户链表中预约信息
-            //删除预约信息链表中信息
-            reserves.delByValue(ReserveInfo(user.ID, bookNode->elem.isbn));
-            borrowBookByISBN(user.ID,bookNode->elem.isbn);
+            auto node = bookNode->elem.reserveReaders.getFront();
+            auto userid = node->elem->elem.ID;
+            //借书
+            delReserve(reserves.begin()->elem);//删除预约信息
+
+            borrowBookByISBN(userid,bookNode->elem.isbn);
+
         }
         return 0;
     }
