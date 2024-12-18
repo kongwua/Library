@@ -13,7 +13,6 @@ admin::admin(QWidget *parent) :
         QMainWindow(parent), ui(new Ui::admin)
             ,m_user_manage(nullptr)
             ,m_book_manage(nullptr)
-            ,m_borrow_manage(nullptr)
             ,m_borrow_record(nullptr)//页面指针初始化
 {
     ui->setupUi(this);
@@ -26,11 +25,9 @@ admin::~admin() {
 void admin::initUI() {
     m_user_manage = new User_manage(this);
     m_book_manage = new Book_manage(this);
-    m_borrow_manage = new Borrow_manage(this);
     m_borrow_record = new Borrow_record(this);
     ui->stackedWidget->addWidget(m_user_manage);
     ui->stackedWidget->addWidget(m_book_manage);
-    ui->stackedWidget->addWidget(m_borrow_manage);
     ui->stackedWidget->addWidget(m_borrow_record);
 
     ui->stackedWidget->setCurrentIndex(0);
@@ -62,12 +59,8 @@ void admin::menu_change(){
             m_book_manage->displayBookData();
             break;
         }
-        if ("borrow_btn" == str){
-            ui->stackedWidget->setCurrentIndex(2);//跳转到借阅管理页面
-            break;
-        }
         if ("borrow_record_btn" == str){
-            ui->stackedWidget->setCurrentIndex(3);//跳转到借阅记录页面
+            ui->stackedWidget->setCurrentIndex(2);//跳转到借阅记录页面
             break;
         }
     } while (false);

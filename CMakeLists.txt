@@ -30,9 +30,6 @@ add_executable(Library main.cpp
         book_manage.cpp
         book_manage.h
         book_manage.ui
-        borrow_manage.cpp
-        borrow_manage.h
-        borrow_manage.ui
         borrow_record.cpp
         borrow_record.h
         borrow_record.ui

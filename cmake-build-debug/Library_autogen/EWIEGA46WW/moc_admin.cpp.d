@@ -2,7 +2,6 @@ C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/EWIEGA46WW/m
   C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/moc_predefs.h \
   C:/Users/recatu/Documents/Library/Library.h \
   C:/Users/recatu/Documents/Library/book_manage.h \
-  C:/Users/recatu/Documents/Library/borrow_manage.h \
   C:/Users/recatu/Documents/Library/borrow_record.h \
   C:/Users/recatu/Documents/Library/user_manage.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QList \

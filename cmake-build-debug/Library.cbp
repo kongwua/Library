@@ -156,15 +156,6 @@
 		<Unit filename="C:/Users/recatu/Documents/Library/bookinfo_dialog.ui">
 			<Option target="Library"/>
 		</Unit>
-		<Unit filename="C:/Users/recatu/Documents/Library/borrow_manage.cpp">
-			<Option target="Library"/>
-		</Unit>
-		<Unit filename="C:/Users/recatu/Documents/Library/borrow_manage.h">
-			<Option target="Library"/>
-		</Unit>
-		<Unit filename="C:/Users/recatu/Documents/Library/borrow_manage.ui">
-			<Option target="Library"/>
-		</Unit>
 		<Unit filename="C:/Users/recatu/Documents/Library/borrow_record.cpp">
 			<Option target="Library"/>
 		</Unit>
@@ -190,9 +181,6 @@
 			<Option target="Library"/>
 		</Unit>
 		<Unit filename="C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_bookinfo_dialog.h">
-			<Option target="Library"/>
-		</Unit>
-		<Unit filename="C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_borrow_manage.h">
 			<Option target="Library"/>
 		</Unit>
 		<Unit filename="C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_borrow_record.h">

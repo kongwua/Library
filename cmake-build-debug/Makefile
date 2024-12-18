@@ -237,30 +237,6 @@ bookinfo_dialog.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/bookinfo_dialog.cpp.s
 .PHONY : bookinfo_dialog.cpp.s
 
-borrow_manage.obj: borrow_manage.cpp.obj
-.PHONY : borrow_manage.obj
-
-# target to build an object file
-borrow_manage.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/borrow_manage.cpp.obj
-.PHONY : borrow_manage.cpp.obj
-
-borrow_manage.i: borrow_manage.cpp.i
-.PHONY : borrow_manage.i
-
-# target to preprocess a source file
-borrow_manage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/borrow_manage.cpp.i
-.PHONY : borrow_manage.cpp.i
-
-borrow_manage.s: borrow_manage.cpp.s
-.PHONY : borrow_manage.s
-
-# target to generate assembly for a file
-borrow_manage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library.dir\build.make CMakeFiles/Library.dir/borrow_manage.cpp.s
-.PHONY : borrow_manage.cpp.s
-
 borrow_record.obj: borrow_record.cpp.obj
 .PHONY : borrow_record.obj
 
@@ -427,9 +403,6 @@ help:
 	@echo ... bookinfo_dialog.obj
 	@echo ... bookinfo_dialog.i
 	@echo ... bookinfo_dialog.s
-	@echo ... borrow_manage.obj
-	@echo ... borrow_manage.i
-	@echo ... borrow_manage.s
 	@echo ... borrow_record.obj
 	@echo ... borrow_record.i
 	@echo ... borrow_record.s

@@ -308,12 +308,6 @@
 			null
 		],
 		[
-			"C:/Users/recatu/Documents/Library/borrow_manage.h",
-			"MU",
-			"EWIEGA46WW/moc_borrow_manage.cpp",
-			null
-		],
-		[
 			"C:/Users/recatu/Documents/Library/borrow_record.h",
 			"MU",
 			"EWIEGA46WW/moc_borrow_record.cpp",
@@ -417,7 +411,6 @@
 		[ "C:/Users/recatu/Documents/Library/admin.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/book_manage.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/bookinfo_dialog.cpp", "MU", null ],
-		[ "C:/Users/recatu/Documents/Library/borrow_manage.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/borrow_record.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/change_psw_dialog.cpp", "MU", null ],
 		[ "C:/Users/recatu/Documents/Library/login.cpp", "MU", null ],

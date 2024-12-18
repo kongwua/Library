@@ -10,8 +10,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Library.dir/book_manage.cpp.obj.d"
   "CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj"
   "CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj.d"
-  "CMakeFiles/Library.dir/borrow_manage.cpp.obj"
-  "CMakeFiles/Library.dir/borrow_manage.cpp.obj.d"
   "CMakeFiles/Library.dir/borrow_record.cpp.obj"
   "CMakeFiles/Library.dir/borrow_record.cpp.obj.d"
   "CMakeFiles/Library.dir/change_psw_dialog.cpp.obj"

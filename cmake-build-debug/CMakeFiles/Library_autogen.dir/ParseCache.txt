@@ -1087,7 +1087,6 @@ C:/Users/recatu/Documents/Library/admin.h
  mdp:C:/Users/recatu/Documents/Library/Library.h
  mdp:C:/Users/recatu/Documents/Library/admin.h
  mdp:C:/Users/recatu/Documents/Library/book_manage.h
- mdp:C:/Users/recatu/Documents/Library/borrow_manage.h
  mdp:C:/Users/recatu/Documents/Library/borrow_record.h
  mdp:C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/moc_predefs.h
  mdp:C:/Users/recatu/Documents/Library/user_manage.h

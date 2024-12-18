@@ -10,7 +10,6 @@
 #include "Library.h"
 #include "book_manage.h"    //图书管理界面
 #include "user_manage.h"    //用户管理界面
-#include "borrow_manage.h"  //借阅管理界面
 #include "borrow_record.h" //借阅记录界面
 
 QT_BEGIN_NAMESPACE
@@ -42,7 +41,6 @@ private:
     Ui::admin *ui;
     User_manage *m_user_manage;
     Book_manage *m_book_manage;
-    Borrow_manage *m_borrow_manage;
     Borrow_record *m_borrow_record;
 
 };

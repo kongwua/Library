@@ -29,10 +29,9 @@ public:
     QStackedWidget *stackedWidget;
     QWidget *tool;
     QGridLayout *gridLayout;
-    QPushButton *user_btn;
-    QPushButton *book_btn;
-    QPushButton *borrow_btn;
     QPushButton *borrow_record_btn;
+    QPushButton *book_btn;
+    QPushButton *user_btn;
     QSpacerItem *verticalSpacer;
     QButtonGroup *buttonGroup;
 
@@ -65,15 +64,14 @@ public:
         gridLayout->setSpacing(0);
         gridLayout->setObjectName("gridLayout");
         gridLayout->setContentsMargins(0, 0, 0, 0);
-        user_btn = new QPushButton(tool);
+        borrow_record_btn = new QPushButton(tool);
         buttonGroup = new QButtonGroup(admin);
         buttonGroup->setObjectName("buttonGroup");
-        buttonGroup->addButton(user_btn);
-        user_btn->setObjectName("user_btn");
-        user_btn->setCheckable(true);
-        user_btn->setChecked(true);
+        buttonGroup->addButton(borrow_record_btn);
+        borrow_record_btn->setObjectName("borrow_record_btn");
+        borrow_record_btn->setCheckable(true);
 
-        gridLayout->addWidget(user_btn, 0, 0, 1, 1);
+        gridLayout->addWidget(borrow_record_btn, 2, 0, 1, 1);
 
         book_btn = new QPushButton(tool);
         buttonGroup->addButton(book_btn);
@@ -82,23 +80,17 @@ public:
 
         gridLayout->addWidget(book_btn, 1, 0, 1, 1);
 
-        borrow_btn = new QPushButton(tool);
-        buttonGroup->addButton(borrow_btn);
-        borrow_btn->setObjectName("borrow_btn");
-        borrow_btn->setCheckable(true);
+        user_btn = new QPushButton(tool);
+        buttonGroup->addButton(user_btn);
+        user_btn->setObjectName("user_btn");
+        user_btn->setCheckable(true);
+        user_btn->setChecked(true);
 
-        gridLayout->addWidget(borrow_btn, 2, 0, 1, 1);
-
-        borrow_record_btn = new QPushButton(tool);
-        buttonGroup->addButton(borrow_record_btn);
-        borrow_record_btn->setObjectName("borrow_record_btn");
-        borrow_record_btn->setCheckable(true);
-
-        gridLayout->addWidget(borrow_record_btn, 3, 0, 1, 1);
+        gridLayout->addWidget(user_btn, 0, 0, 1, 1);
 
         verticalSpacer = new QSpacerItem(20, 277, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout->addItem(verticalSpacer, 4, 0, 1, 1);
+        gridLayout->addItem(verticalSpacer, 3, 0, 1, 1);
 
 
         gridLayout_2->addWidget(tool, 0, 0, 1, 1);
@@ -113,10 +105,9 @@ public:
     void retranslateUi(QMainWindow *admin)
     {
         admin->setWindowTitle(QCoreApplication::translate("admin", "\345\233\276\344\271\246\347\256\241\347\220\206\347\263\273\347\273\237", nullptr));
-        user_btn->setText(QCoreApplication::translate("admin", "\347\224\250\346\210\267\347\256\241\347\220\206", nullptr));
-        book_btn->setText(QCoreApplication::translate("admin", " \345\233\276\344\271\246\347\256\241\347\220\206", nullptr));
-        borrow_btn->setText(QCoreApplication::translate("admin", "\345\200\237\351\230\205\347\256\241\347\220\206", nullptr));
         borrow_record_btn->setText(QCoreApplication::translate("admin", "\345\200\237\351\230\205\350\256\260\345\275\225", nullptr));
+        book_btn->setText(QCoreApplication::translate("admin", " \345\233\276\344\271\246\347\256\241\347\220\206", nullptr));
+        user_btn->setText(QCoreApplication::translate("admin", "\347\224\250\346\210\267\347\256\241\347\220\206", nullptr));
     } // retranslateUi
 
 };
