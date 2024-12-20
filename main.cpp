@@ -8,7 +8,7 @@ bool isAdmin;
 
 
 int main(int argc, char *argv[]) {
-
+    qDebug()<<lib.currentTime;
     QApplication a(argc, argv);
     login login_w;//登录界面
     admin admin_w;//管理员界面
@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
         return QApplication::exec();
     });
     if (lib.read("user.csv",
-                 "book.csv","reserve.csv")) {//读取用户信息和图书信息
+                 "book.csv","reserve.csv","record.csv")) {//读取用户信息和图书信息
         //首次登录
         login_w.first_longin();
     }

@@ -29,7 +29,7 @@ void admin::initUI() {
     ui->stackedWidget->addWidget(m_user_manage);
     ui->stackedWidget->addWidget(m_book_manage);
     ui->stackedWidget->addWidget(m_borrow_record);
-
+    if(!isAdmin) ui->borrow_record_btn->hide();//非管理员隐藏借阅记录按钮
     ui->stackedWidget->setCurrentIndex(0);
     auto l = ui->tool->children();//获取tool的子控件
 
@@ -61,6 +61,7 @@ void admin::menu_change(){
         }
         if ("borrow_record_btn" == str){
             ui->stackedWidget->setCurrentIndex(2);//跳转到借阅记录页面
+            m_borrow_record->displayRecord();
             break;
         }
     } while (false);
@@ -68,7 +69,8 @@ void admin::menu_change(){
 
 void admin::closeEvent(QCloseEvent *event) {
     //关闭窗口时，将链表内数据写入文件
-    if(lib.writeUser(lib.userPath)||lib.writeBook(lib.bookPath)||lib.writeReserve(lib.reservePath)){
+    if(lib.writeUser(lib.userPath)||lib.writeBook(lib.bookPath)||
+    lib.writeReserve(lib.reservePath)||lib.writeRecord(lib.recordPath)){
         QMessageBox::warning(this,"警告","数据写入失败！");
         return;
     }

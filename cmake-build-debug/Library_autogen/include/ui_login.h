@@ -112,7 +112,7 @@ public:
 
     void retranslateUi(QWidget *login)
     {
-        login->setWindowTitle(QCoreApplication::translate("login", "\347\231\273\345\275\225\347\225\214\351\235\242", nullptr));
+        login->setWindowTitle(QCoreApplication::translate("login", "\345\233\276\344\271\246\347\256\241\347\220\206\347\263\273\347\273\237", nullptr));
         label->setText(QCoreApplication::translate("login", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt;\">\347\231\273\345\275\225</span></p></body></html>", nullptr));
         login_btn->setText(QCoreApplication::translate("login", "\347\231\273\345\275\225", nullptr));
         label_2->setText(QCoreApplication::translate("login", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt;\">\350\264\246\345\217\267\357\274\232</span></p></body></html>", nullptr));

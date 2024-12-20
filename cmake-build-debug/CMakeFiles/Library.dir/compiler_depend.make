@@ -19,11 +19,13 @@ CMakeFiles/Library.dir/Library_autogen/mocs_compilation.cpp.obj: Library_autogen
   Library_autogen/EWIEGA46WW/moc_login.cpp \
   Library_autogen/EWIEGA46WW/moc_user_manage.cpp \
   Library_autogen/EWIEGA46WW/moc_userinfo_dialog.cpp \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QList \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QObject \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QRect \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSize \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDebug \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20memory.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -42,6 +44,7 @@ CMakeFiles/Library.dir/Library_autogen/mocs_compilation.cpp.obj: Library_autogen
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearraylist.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qchar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare_impl.h \
@@ -55,6 +58,7 @@ CMakeFiles/Library.dir/Library_autogen/mocs_compilation.cpp.obj: Library_autogen
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatastream.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdebug.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qflags.h \
@@ -72,6 +76,7 @@ CMakeFiles/Library.dir/Library_autogen/mocs_compilation.cpp.obj: Library_autogen
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qiterator.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qline.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlist.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlocale.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlogging.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qmalloc.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qmap.h \
@@ -436,11 +441,13 @@ CMakeFiles/Library.dir/admin.cpp.obj: C:/Users/recatu/Documents/Library/admin.cp
   C:/Users/recatu/Documents/Library/book_manage.h \
   C:/Users/recatu/Documents/Library/borrow_record.h \
   C:/Users/recatu/Documents/Library/user_manage.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QList \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QObject \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QRect \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSize \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QVariant \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDebug \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20memory.h \
@@ -460,6 +467,7 @@ CMakeFiles/Library.dir/admin.cpp.obj: C:/Users/recatu/Documents/Library/admin.cp
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearraylist.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qchar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare_impl.h \
@@ -475,6 +483,7 @@ CMakeFiles/Library.dir/admin.cpp.obj: C:/Users/recatu/Documents/Library/admin.cp
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatastream.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdebug.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qeventloop.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h \
@@ -876,11 +885,13 @@ CMakeFiles/Library.dir/book_manage.cpp.obj: C:/Users/recatu/Documents/Library/bo
   C:/Users/recatu/Documents/Library/bookinfo_dialog.h \
   C:/Users/recatu/Documents/Library/borrow_record.h \
   C:/Users/recatu/Documents/Library/user_manage.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QList \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QObject \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QRect \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSize \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QVariant \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDebug \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20memory.h \
@@ -900,6 +911,7 @@ CMakeFiles/Library.dir/book_manage.cpp.obj: C:/Users/recatu/Documents/Library/bo
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearraylist.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qchar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare_impl.h \
@@ -915,6 +927,7 @@ CMakeFiles/Library.dir/book_manage.cpp.obj: C:/Users/recatu/Documents/Library/bo
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatastream.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdebug.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qeventloop.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h \
@@ -1338,11 +1351,13 @@ CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj: C:/Users/recatu/Documents/Librar
   Library_autogen/include/ui_bookinfo_dialog.h \
   C:/Users/recatu/Documents/Library/Library.h \
   C:/Users/recatu/Documents/Library/bookinfo_dialog.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QList \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QObject \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QRect \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSize \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QVariant \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDebug \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20memory.h \
@@ -1362,6 +1377,7 @@ CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj: C:/Users/recatu/Documents/Librar
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearraylist.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qchar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare_impl.h \
@@ -1377,6 +1393,7 @@ CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj: C:/Users/recatu/Documents/Librar
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatastream.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdebug.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qeventloop.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h \
@@ -1802,8 +1819,17 @@ CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj: C:/Users/recatu/Documents/Librar
 
 CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/borrow_record.cpp \
   Library_autogen/include/ui_Borrow_record.h \
+  C:/Users/recatu/Documents/Library/Library.h \
   C:/Users/recatu/Documents/Library/borrow_record.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QList \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QObject \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QRect \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSize \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QVariant \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDebug \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20memory.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h \
@@ -1821,6 +1847,7 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearraylist.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qchar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare_impl.h \
@@ -1836,6 +1863,7 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatastream.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdebug.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qeventloop.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h \
@@ -1874,6 +1902,7 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qoverload.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qpair.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qpoint.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qpointer.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qprocessordetection.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qrect.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qrefcount.h \
@@ -1923,11 +1952,16 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qvarlengtharray.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qversiontagging.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qxptype_traits.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QCloseEvent \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QStandardItemModel \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QTransform \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qaction.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qbitmap.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qbrush.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qcolor.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qcursor.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qevent.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qeventpoint.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qfont.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qfontinfo.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qfontmetrics.h \
@@ -1935,6 +1969,7 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qguiapplication_platform.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qicon.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qimage.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qinputdevice.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qinputmethod.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qkeysequence.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qpaintdevice.h \
@@ -1943,10 +1978,13 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qpicture.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qpixelformat.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qpixmap.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qpointingdevice.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qpolygon.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qregion.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qrgb.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qrgba64.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qscreen.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qstandarditemmodel.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtextcursor.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtextdocument.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtextformat.h \
@@ -1956,13 +1994,19 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtguiglobal.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtransform.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qvalidator.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qvector2d.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qvectornd.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qwindowdefs.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qwindowdefs_win.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QApplication \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QCheckBox \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QComboBox \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QDateEdit \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QGridLayout \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QHeaderView \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QLabel \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QLineEdit \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QPushButton \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QSpacerItem \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QTableView \
@@ -1975,6 +2019,10 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qapplication.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qboxlayout.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qcheckbox.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qcombobox.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdatetimeedit.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qframe.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qgridlayout.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qheaderview.h \
@@ -1982,6 +2030,7 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlayout.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlayoutitem.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qpushbutton.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qrubberband.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qsizepolicy.h \
@@ -2010,10 +2059,13 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_base.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.tcc \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/charconv.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/concept_check.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h \
@@ -2023,6 +2075,7 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_ptr.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
@@ -2030,25 +2083,34 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable_policy.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/invoke.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/list.tcc \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.tcc \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_conv.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.tcc \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/move.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/nested_exception.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/node_handle.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream_insert.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/parse_numbers.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/quoted_string.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/refwrap.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_atomic.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_base.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/specfun.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_abs.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_function.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algo.h \
@@ -2093,6 +2155,7 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstring \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception \
@@ -2104,23 +2167,31 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/numeric_traits.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/string_conversions.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/type_traits.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/functional \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iomanip \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iterator \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/list \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/locale \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/map \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/numeric \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/optional \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/execution_defs.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_algorithm_defs.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_numeric_defs.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/pstl_config.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ratio \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf \
@@ -2148,14 +2219,20 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/version \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdarg.h \
   D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdbool.h \
@@ -2204,17 +2281,20 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: C:/Users/recatu/Documents/Library/
   D:/app_install/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   D:/app_install/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   D:/app_install/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  D:/app_install/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
+  D:/app_install/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
+  D:/app_install/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h
 
 CMakeFiles/Library.dir/change_psw_dialog.cpp.obj: C:/Users/recatu/Documents/Library/change_psw_dialog.cpp \
   Library_autogen/include/ui_change_psw_dialog.h \
   C:/Users/recatu/Documents/Library/Library.h \
   C:/Users/recatu/Documents/Library/change_psw_dialog.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QList \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QObject \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QRect \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSize \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QVariant \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDebug \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20memory.h \
@@ -2233,6 +2313,7 @@ CMakeFiles/Library.dir/change_psw_dialog.cpp.obj: C:/Users/recatu/Documents/Libr
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearraylist.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qchar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare_impl.h \
@@ -2248,6 +2329,7 @@ CMakeFiles/Library.dir/change_psw_dialog.cpp.obj: C:/Users/recatu/Documents/Libr
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatastream.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdebug.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qeventloop.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h \
@@ -2649,12 +2731,14 @@ CMakeFiles/Library.dir/login.cpp.obj: C:/Users/recatu/Documents/Library/login.cp
   Library_autogen/include/ui_login.h \
   C:/Users/recatu/Documents/Library/Library.h \
   C:/Users/recatu/Documents/Library/login.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QList \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QObject \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QPluginLoader \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QRect \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSize \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QVariant \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDebug \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20algorithm.h \
@@ -3102,12 +3186,14 @@ CMakeFiles/Library.dir/main.cpp.obj: C:/Users/recatu/Documents/Library/main.cpp 
   C:/Users/recatu/Documents/Library/borrow_record.h \
   C:/Users/recatu/Documents/Library/login.h \
   C:/Users/recatu/Documents/Library/user_manage.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDir \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QList \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QObject \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QRect \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSize \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDebug \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20memory.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -3540,6 +3626,7 @@ CMakeFiles/Library.dir/user_manage.cpp.obj: C:/Users/recatu/Documents/Library/us
   C:/Users/recatu/Documents/Library/borrow_record.h \
   C:/Users/recatu/Documents/Library/user_manage.h \
   C:/Users/recatu/Documents/Library/userinfo_dialog.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QList \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QObject \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QRect \
@@ -3565,6 +3652,7 @@ CMakeFiles/Library.dir/user_manage.cpp.obj: C:/Users/recatu/Documents/Library/us
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearraylist.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qchar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare_impl.h \
@@ -3580,6 +3668,7 @@ CMakeFiles/Library.dir/user_manage.cpp.obj: C:/Users/recatu/Documents/Library/us
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatastream.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdebug.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qeventloop.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h \
@@ -4002,11 +4091,13 @@ CMakeFiles/Library.dir/userinfo_dialog.cpp.obj: C:/Users/recatu/Documents/Librar
   C:/Users/recatu/Documents/Library/Library.h \
   C:/Users/recatu/Documents/Library/change_psw_dialog.h \
   C:/Users/recatu/Documents/Library/userinfo_dialog.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QList \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QObject \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QRect \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSize \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QVariant \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDebug \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20memory.h \
@@ -4026,6 +4117,7 @@ CMakeFiles/Library.dir/userinfo_dialog.cpp.obj: C:/Users/recatu/Documents/Librar
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearraylist.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qchar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare_impl.h \
@@ -4041,6 +4133,7 @@ CMakeFiles/Library.dir/userinfo_dialog.cpp.obj: C:/Users/recatu/Documents/Librar
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatastream.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdebug.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qeventloop.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h \
@@ -4180,6 +4273,7 @@ CMakeFiles/Library.dir/userinfo_dialog.cpp.obj: C:/Users/recatu/Documents/Librar
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QCheckBox \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QDialog \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QDialogButtonBox \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QDoubleSpinBox \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QGridLayout \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QHBoxLayout \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QHeaderView \
@@ -4213,6 +4307,7 @@ CMakeFiles/Library.dir/userinfo_dialog.cpp.obj: C:/Users/recatu/Documents/Librar
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qrubberband.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qslider.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qspinbox.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qstyle.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qstyleoption.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtabbar.h \
@@ -4477,11 +4572,15 @@ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c
 
 Library_autogen/mocs_compilation.cpp:
 
+D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QDateEdit:
+
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearray.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qvectornd.h:
 
 C:/Users/recatu/Documents/Library/Library.h:
+
+D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString:
 
 C:/Users/recatu/Documents/Library/borrow_record.h:
 
@@ -4549,6 +4648,8 @@ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qtmochelpers.h:
 
 D:/app_install/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/corecrt_startup.h:
 
+D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QComboBox:
+
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20memory.h:
 
 Library_autogen/EWIEGA46WW/moc_change_psw_dialog.cpp:
@@ -4568,6 +4669,18 @@ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcontainerinfo.h:
 
 Library_autogen/EWIEGA46WW/moc_userinfo_dialog.cpp:
+
+D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qassert.h:
+
+D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h:
+
+D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate:
+
+D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qarraydatapointer.h:
+
+D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qalgorithms.h:
+
+D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtwidgets-config.h:
 
 D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h:
 
@@ -4597,9 +4710,13 @@ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbasicatomic.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qfontinfo.h:
 
+D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QCheckBox:
+
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSize:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qttranslation.h:
+
+D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qcombobox.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSizeF:
 
@@ -4610,16 +4727,6 @@ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDebug:
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20type_traits.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h:
-
-D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qassert.h:
-
-D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h:
-
-D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qarraydatapointer.h:
-
-D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qalgorithms.h:
-
-D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtwidgets-config.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qanystringview.h:
 
@@ -4643,11 +4750,19 @@ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h:
 
-D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qstring.h:
-
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qjsonobject.h:
 
+D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qstring.h:
+
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qatomic.h:
+
+D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qforeach.h:
+
+D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlabel.h:
+
+D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h:
+
+D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompilerdetection.h:
 
@@ -4675,19 +4790,21 @@ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcontainertools_impl.h:
 
 D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h:
 
+D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatastream.h:
+
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qhash.h:
 
-D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatastream.h:
+D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qslider.h:
+
+D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h:
 
 D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unordered_map.h:
 
-D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qflags.h:
-
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20functional.h:
 
-D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qforeach.h:
+D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qflags.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qfunctionpointer.h:
 
@@ -4734,6 +4851,8 @@ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qline.h:
 D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.tcc:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlist.h:
+
+D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlocale.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QButtonGroup:
 
@@ -4870,8 +4989,6 @@ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qstackedwidget.h:
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qsystemdetection.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qtaggedpointer.h:
-
-D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcborvalue.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qtclasshelpermacros.h:
 
@@ -5131,8 +5248,6 @@ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c
 
 D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable.h:
 
-D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qplugin.h:
-
 D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/invoke.h:
 
 D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h:
@@ -5208,8 +5323,6 @@ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c
 D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/variant:
 
 D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_list.h:
-
-D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcborcommon.h:
 
 D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_map.h:
 
@@ -5355,12 +5468,6 @@ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c
 
 D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h:
 
-D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h:
-
-D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h:
-
-D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlabel.h:
-
 D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractitemview.h:
@@ -5409,9 +5516,9 @@ D:/app_install/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/signal.h:
 
 D:/app_install/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/stdarg.h:
 
-D:/app_install/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/stddef.h:
-
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qjsonvalue.h:
+
+D:/app_install/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/stddef.h:
 
 D:/app_install/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/stdint.h:
 
@@ -5434,8 +5541,6 @@ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QStackedWidget:
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication_platform.h:
-
-D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlocale.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qinputmethod.h:
 
@@ -5465,10 +5570,6 @@ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qradiobutton.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qrubberband.h:
 
-D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h:
-
-D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qslider.h:
-
 D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtableview.h:
@@ -5487,6 +5588,10 @@ C:/Users/recatu/Documents/Library/borrow_record.cpp:
 
 Library_autogen/include/ui_Borrow_record.h:
 
+D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qcheckbox.h:
+
+D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdatetimeedit.h:
+
 C:/Users/recatu/Documents/Library/change_psw_dialog.cpp:
 
 Library_autogen/include/ui_login.h:
@@ -5495,7 +5600,13 @@ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QPluginLoader:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20algorithm.h:
 
+D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcborcommon.h:
+
+D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcborvalue.h:
+
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlibrary.h:
+
+D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qplugin.h:
 
 D:/app_install/QT/6.5.3/mingw_64/include/QtCore/quuid.h:
 
@@ -5519,12 +5630,6 @@ C:/Users/recatu/Documents/Library/user_manage.cpp:
 
 Library_autogen/include/ui_User_manage.h:
 
-D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString:
-
 C:/Users/recatu/Documents/Library/userinfo_dialog.cpp:
 
 Library_autogen/include/ui_userinfo_dialog.h:
-
-D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QCheckBox:
-
-D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qcheckbox.h:

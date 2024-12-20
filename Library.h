@@ -8,6 +8,8 @@
 #include <iostream>
 #include <fstream>
 #include <Qdebug>
+#include <QDate>
+#include <QString>
 #include <QMessageBox>
 #include <QCloseEvent>
 #include <iomanip>
@@ -24,19 +26,6 @@ using std::endl;
 
 class BookInfo;		// 图书信息类
 class UserInfo;		// 用户类
-
-struct USER_data{
-    //用户信息结构
-    QString ID;//用户ID
-    QString password;//用户密码
-    int book_borrow;//用户借阅的图书数量
-    int user_type;//用户类型,1为管理员，0为普通用户
-};
-struct USER_NODE{
-    //用户节点结构
-    USER_data data;
-    USER_NODE *next;
-};
 
 // 通用链表节点
 template<class T> struct Node {
@@ -324,24 +313,27 @@ public:
     string ID;					    // 用户id
     string password;				// 密码
     int type;						// 用户类型
+    double fine=0;					// 罚款
     List<Node<BookInfo>*> books;	// 已借阅的书籍
     List<Node<BookInfo>*> reserveBooks; //预约的书籍
     List<string> booksISBN;
 
 
-    UserInfo(): ID(""),type(-1) {}
+    UserInfo(): ID(""),type(-1),fine(0) {}
 
     UserInfo(string id): ID(id), type(0) {}
 
     UserInfo(string reader, int _type):
             ID(reader), type(_type) {}
 
-    UserInfo(string reader, string pwd, int _type):
-            ID(reader), password(pwd), type(_type) {}
+    UserInfo(string reader, string pwd, int _type,double _fine):
+            ID(reader), password(pwd), type(_type),fine(_fine) {}
 
     UserInfo(string reader, int _type, List<string> booksisbn):
             ID(reader), type(_type), booksISBN(booksisbn) {}
-
+    UserInfo(string reader, string pwd, int _type,double _fine,List<string> booksisbn):
+            ID(reader), password(pwd), type(_type),fine(_fine), booksISBN(booksisbn) {}
+    //初始化时fine没有初始值，可能会出错
     UserInfo(string reader, string pwd, int _type, List<string> booksisbn):
             ID(reader), password(pwd), type(_type), booksISBN(booksisbn) {}
 
@@ -349,15 +341,21 @@ public:
 
     friend ostream &operator <<(ostream &output, const UserInfo &reader) {
         output << "{\"" << reader.ID << "\", \"" << reader.password << "\", "
-               << ", " << reader.type << ", " << reader.booksISBN
-               <<"}";
+               << ", " << reader.type << ", ";
+        {
+            output << std::fixed << std::setprecision(2) << reader.fine;
+        }
+        output<< reader.booksISBN <<"}";
         return output;
     }
 
     friend ostream &operator <<(ostream &output, const UserInfo *&reader) {
         output << "{\"" << reader->ID << "\", \"" << reader->password << "\", "
-               << ", " << reader->type << ", " << reader->booksISBN
-               <<"}";
+               << ", " << reader->type << ", " ;
+        {
+            output << std::fixed << std::setprecision(2) << reader->fine;
+        }
+        output<< reader->booksISBN<<"}";
         return output;
     }
 
@@ -433,42 +431,74 @@ public:
     }
 };
 
+class RecordInfo{
+    //存储借阅信息,用来实现逾期罚款功能
+public:
+    string readerID;//借阅者id
+    string bookISBN;//书籍isbn
+    QDate returnTime;//归还时间
+    RecordInfo(): readerID(""), bookISBN(""), returnTime() {}
+    RecordInfo(string reader, string bookisbn):
+            readerID(reader), bookISBN(bookisbn) {}
+    RecordInfo(string reader, string bookisbn, QDate returntime):
+            readerID(reader), bookISBN(bookisbn), returnTime(returntime) {}
+    ~RecordInfo() {}
+    friend ostream &operator <<(ostream &output, const RecordInfo &record) {
+        output << "{\"" << record.readerID << "\", " << record.bookISBN << "\", " << record.returnTime.toString().toStdString() << "}";
+        return output;
+    }
+    friend ostream &operator <<(ostream &output, const RecordInfo *record) {
+        output << "{\"" << record->readerID << "\", " << record->bookISBN << "\", " << record->returnTime.toString().toStdString() << "}";
+        return output;
+    }
+
+};
+
 class Library {
 public:
-    List<BookInfo> books;
-    List<UserInfo> users;
-    List<ReserveInfo> reserves;
+    List<BookInfo> books;// 图书信息链表
+    List<UserInfo> users;// 用户信息链表
+    List<ReserveInfo> reserves;//预约信息链表
+    List<RecordInfo> records;//借阅信息链表
+    QDate currentTime;//当前日期
+    int days=30;//借阅期限为30天
     const char *bookPath;
     const char *userPath;
     const char *reservePath;
+    const char *recordPath;
     char DIVIDE_CHAR;
 
     Library() {
-
+        currentTime = QDate::currentDate();
         DIVIDE_CHAR =DIVIDER;//设置分隔符为逗号
     }
 
-    Library(const char *userFile, const char *bookFile,const char *reserveFile) {
+    Library(const char *userFile, const char *bookFile,const char *reserveFile,const char *recordFile) {
         DIVIDE_CHAR = DIVIDER;
-        read(userFile, bookFile, reserveFile);
+        read(userFile, bookFile, reserveFile, recordFile);
+        currentTime = QDate::currentDate();//初始化当前日期
     };
 
     ~Library() {}
     // 从文件读取数据
-    int read(const char *userFile, const char *bookFile,const char *reserveFile) {
+    int read(const char *userFile, const char *bookFile,const char *reserveFile,const char *recordFile) {
         //读取成功返回0，失败返回1
         bookPath = bookFile;
         userPath = userFile;
         reservePath = reserveFile;
+        recordPath = recordFile;
         int userState = userDataReader(userFile);
         int bookState = bookDataReader(bookFile);
         int reserveState = reserveDataReader(reserveFile);
-        if (userState || bookState|| reserveState) {
+        int recordState = recordDataReader(recordFile);
+
+        if (userState || bookState|| reserveState||recordState) {
             cerr << "未读取到数据。" << endl;
             return 1;
         }
         // 预处理编号数据，添加节点指针到链表中
         for (auto *p = books.begin(); p != books.end(); p = p->next) {
+            // 遍历图书链表，添加节点指针到bookInfo读者链表
             auto readersID = p->elem.readersID;
             for (auto *q = readersID.begin(); q != readersID.end(); q = q->next) {
                 p->elem.readers.append(findUser(q->elem));
@@ -476,6 +506,7 @@ public:
             readersID.clear();
         }
         for (auto *p = users.begin(); p != users.end(); p = p->next) {
+            // 遍历用户链表，添加节点指针到userInfo书籍链表
             auto booksID = p->elem.booksISBN;
             for (auto *q = booksID.begin(); q != booksID.end(); q = q->next) {
                 p->elem.books.append(findBookbyISBN(q->elem));
@@ -483,6 +514,7 @@ public:
             booksID.clear();
         }
         for(auto *p = reserves.begin(); p!= reserves.end(); p = p->next){
+            //遍历预约链表，添加节点指针到reserveInfo读者链表
             auto readerID = p->elem.readerID;
             auto bookISBN = p->elem.bookISBN;
             auto reserveUser = findUser(readerID);
@@ -493,6 +525,19 @@ public:
                 //信息都存在
                 reserveUser->elem.reserveBooks.append(reserveBook);
                 reserveBook->elem.reserveReaders.enqueue(reserveNode);
+            }
+        }
+        for(auto *p=records.begin();p!=records.end();p=p->next){
+            //遍历借阅记录链表，将逾期未归还的记录添加到用户罚款中
+            if(p->elem.returnTime<currentTime){
+                //逾期
+                auto user = findUser(p->elem.readerID);
+                auto book = findBookbyISBN(p->elem.bookISBN);
+                if(user && book){
+                    user->elem.fine += book->elem.price;
+                } else{
+                    cerr << "借阅记录中读者或书籍不存在。" << endl;
+                }
             }
         }
         return 0;
@@ -525,7 +570,7 @@ public:
         }
         for (auto *p = users.begin(); p != users.end(); p = p->next) {
             output << p->elem.ID<< DIVIDE_CHAR << p->elem.password
-                   <<  DIVIDE_CHAR << p->elem.type;
+                   <<  DIVIDE_CHAR << p->elem.type<< DIVIDE_CHAR <<p->elem.fine;
             auto books = p->elem.books;
             for (auto *q = books.begin(); q != books.end(); q = q->next) {
                 Node<BookInfo> *book = q->elem;
@@ -544,6 +589,18 @@ public:
         }
         for(auto *p = reserves.begin(); p!= reserves.end(); p = p->next){
             output << p->elem.readerID<< DIVIDE_CHAR << p->elem.bookISBN << endl;
+        }
+        return 0;
+    }
+    int writeRecord(const char *recordFile){
+        //写入借阅信息
+        ofstream output(recordFile);
+        if (!output) {
+            cerr << "无法写入文件。请检查文件\"" << recordFile << "\"是否被占用。" << endl;
+            return 1;
+        }
+        for(auto *p = records.begin(); p!= records.end(); p = p->next){
+            output << p->elem.readerID << DIVIDE_CHAR << p->elem.bookISBN << DIVIDE_CHAR << p->elem.returnTime.toString("yyyy-MM-dd").toStdString() << endl;
         }
         return 0;
     }
@@ -569,6 +626,14 @@ public:
         }
         return nullptr;
     }
+    //查找借阅记录
+    Node<RecordInfo>* findRecord(string readerID, string bookISBN){
+        for(auto *p = records.begin(); p!= records.end(); p = p->next){
+            if(p->elem.readerID == readerID && p->elem.bookISBN == bookISBN){
+                return p;}
+            }
+        return nullptr;
+    }
     // 按名称查找图书（模糊查找），返回一个链表，存有目标图书的节点指针
     List<Node<BookInfo>*> fuzzyFindBook(string name) {
         List<Node<BookInfo>*> ret;
@@ -587,6 +652,10 @@ public:
     // 添加用户信息
     Node<UserInfo>* add(UserInfo user) {
         return users.append(user);
+    }
+    // 添加借阅信息
+    Node<RecordInfo>* add(RecordInfo record){
+        return records.append(record);
     }
     Node<ReserveInfo>* addReserve(ReserveInfo reserve) {
         //增加预约信息，同时更新用户链表和图书链表中的预约信息
@@ -654,8 +723,6 @@ public:
         }
         return users.del(user);
     }
-
-
     Node<BookInfo>* delBookbyISBN(string isbn, bool force = false) {//删除指定编号的图书
         return del(findBookbyISBN(isbn), force);
     }
@@ -668,6 +735,12 @@ public:
         return del(findBookbyName(name), force);
     }
 
+    Node<RecordInfo>* delRecord(string readerID, string bookISBN){//根据书名和读者id删除借阅记录
+       auto p = findRecord(readerID, bookISBN);
+       if(p){
+           return records.del(p);
+       }
+    }
     Node<BookInfo>* modify(Node<BookInfo>* src, BookInfo target) {
         return books.modify(src, target);
     }
@@ -689,11 +762,12 @@ public:
     }
 
     int borrowBook(Node<UserInfo>* userNode, Node<BookInfo>* bookNode) {
-        //成功返回0，失败返回1,预约返回2
+        //成功返回0，失败返回1,预约返回2,逾期返回3
         if (!userNode || !bookNode) {
             cerr << "不存在符合条件的图书或用户。" << endl;
             return 1;
         }
+        if(userNode->elem.fine>0) return 3; //用户有罚款,不能借书
         BookInfo book = bookNode->elem;
         // 判断书是否还有剩余
         int quantity = book.quantity;
@@ -705,8 +779,11 @@ public:
         }
         auto retUser = userNode->elem.books.append(bookNode);
         auto retBook = bookNode->elem.readers.append(userNode);
+        //添加借阅记录
+        auto record=add(RecordInfo(userNode->elem.ID,
+                                   bookNode->elem.isbn,currentTime.addDays(days)));
         // cout << retBook->elem->elem << "借了" << retUser->elem->elem << endl;
-        if (!retUser || !retBook) return 1;
+        if (!retUser || !retBook||!record) return 1;
         return 0;
     }
 
@@ -725,7 +802,8 @@ public:
         }
         auto retUser = userNode->elem.books.delByValue(bookNode);
         auto retBook = bookNode->elem.readers.delByValue(userNode);
-        if (!retUser || !retBook) return 1;
+        auto retRecord= delRecord(userNode->elem.ID,bookNode->elem.isbn);
+        if (!retUser || !retBook||!retRecord) return 1;
 
         //还书后，判断是否有预约
         if(bookNode->elem.reserveReaders.size() > 0){
@@ -832,6 +910,7 @@ protected:
             string password;	// 用户的密码
             int cnt = 0;		// 计算由分隔符隔开的块索引号
             int type;		// 用户类型 0：非管理员；1：管理员
+            double fine;		// 罚款金额
             List<string> ISBN;		// 用户借阅的图书编号
             // 处理该行数据，按分隔符分隔处理
             for (string::iterator i = line.begin(); i != line.end(); i++) {
@@ -846,6 +925,9 @@ protected:
                         case 2:
                             type = atoi(buff.data());
                             buff.clear(); break;
+                        case 3:
+                            fine = atof(buff.data());
+                            buff.clear(); break;
                         default:
                             string isbn = buff;
                             if (!isbn.empty()) ISBN.append(isbn);
@@ -857,7 +939,7 @@ protected:
                 }
             }
 
-            users.append(UserInfo(ID, password,type,ISBN));
+            users.append(UserInfo(ID, password,type,fine,ISBN));
         }
         input.close();
         return 0;
@@ -878,7 +960,6 @@ protected:
             string ID;		    // 用户的id
             string bookISBN;	// 预约的图书编号
             int cnt = 0;		// 计算由分隔符隔开的块索引号
-            int type;		// 用户类型 0：非管理员；1：管理员
             // 处理该行数据，按分隔符分隔处理
             for (string::iterator i = line.begin(); i != line.end(); i++) {
                 if (*i == DIVIDE_CHAR || *i == '\n') {
@@ -900,6 +981,53 @@ protected:
         input.close();
         return 0;
     }
+    int recordDataReader(const char *fileName) {
+        ifstream input(fileName);
+        if (!input) {
+            qDebug() << "数据读取失败。请检查文件\"" << fileName << "\"是否存在。";
+            return 1;
+        }
+        while (!input.eof()) {
+            string line;
+            getline(input, line);		// 读入一行
+            if (line.empty()) continue;	// 若读到空行则跳过
+            line += '\n';
+
+            string buff;		// 临时存储块
+            string ID;		    // 用户的id
+            string bookISBN;	// 借阅的图书编号
+            string time;		// 归还时间
+            int cnt = 0;		// 计算由分隔符隔开的块索引号
+            // 处理该行数据，按分隔符分隔处理
+            for (string::iterator i = line.begin(); i != line.end(); i++) {
+                if (*i ==DIVIDE_CHAR  || *i == '\n') {
+                    switch (cnt) {
+                        case 0:
+                            ID = buff;
+                            buff.clear(); break;
+                        case 1:
+                            bookISBN = buff;
+                            buff.clear(); break;
+                        default:
+                            time = buff;
+                            buff.clear(); break;
+                    }
+                    cnt++;
+                } else {
+                    buff += *i;
+                }
+            }
+            QString time1= QString::fromStdString(time);//转换为Qstring类型
+            QDate date = QDate::fromString(time1, "yyyy-MM-dd");//可能因格式问题导致转换失败
+            if(!date.isValid()){
+                qDebug() << "日期格式错误，请检查文件\"" << fileName << "\"。";
+            }
+            records.append(RecordInfo(ID, bookISBN,date));
+        }
+        input.close();
+        return 0;
+    }
+
 };
 
 extern Library lib;

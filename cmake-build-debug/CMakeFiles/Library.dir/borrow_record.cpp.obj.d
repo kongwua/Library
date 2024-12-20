@@ -350,34 +350,91 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qsizepolicy.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qcursor.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qbitmap.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QStandardItemModel \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qstandarditemmodel.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h \
+ C:\Users\recatu\Documents\Library\Library.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
+ D:/app_install/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/Qdebug \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdebug.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlocale.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qstring.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qwidget.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QCloseEvent \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qevent.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qiodevice.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qpointer.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qurl.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qeventpoint.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qvector2d.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qvectornd.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qpointingdevice.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qinputdevice.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qscreen.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QList \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlist.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QObject \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qobject.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QRect \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qrect.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSize \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qsize.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/QTransform \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtransform.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qnativeinterface.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iomanip \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/locale \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.tcc \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_conv.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/quoted_string.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc \
  C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/include/ui_Borrow_record.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QVariant \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qvariant.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QApplication \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qapplication.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qeventloop.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qnativeinterface.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qguiapplication.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qinputmethod.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlocale.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qguiapplication_platform.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QGridLayout \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qgridlayout.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlayout.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlayoutitem.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qgridlayout.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QHeaderView \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qheaderview.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractitemview.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qframe.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qwidget.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qitemselectionmodel.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QCheckBox \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qcheckbox.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractbutton.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QComboBox \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qcombobox.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qstyleoption.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
@@ -389,12 +446,25 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtabbar.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qrubberband.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qframe.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QDateEdit \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdatetimeedit.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QGridLayout \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlayout.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QHeaderView \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qheaderview.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractitemview.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qitemselectionmodel.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QLabel \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qpicture.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qiodevice.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtextdocument.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qurl.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QLineEdit \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtextcursor.h \
@@ -403,7 +473,6 @@ CMakeFiles/Library.dir/borrow_record.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qtextoption.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QPushButton \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qpushbutton.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractbutton.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QSpacerItem \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlayoutitem.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QTableView \

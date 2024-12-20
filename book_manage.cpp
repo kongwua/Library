@@ -107,9 +107,14 @@ void Book_manage::on_book_tableView_doubleClicked() {
 void Book_manage::on_borrowBook_btn_clicked() {
     //借阅图书
     string bookIsbn = getSelect();
-    if(lib.borrowBookByISBN(login_UserID, bookIsbn)){
+    int result = lib.borrowBookByISBN(login_UserID, bookIsbn);
+    if(result==2){
         QMessageBox::information(this,"提示","该书无剩余，已为您预约。当有空余时自动帮你借阅！");
         displayBookData();
+        return;
+    }
+    if(result==3){
+        QMessageBox::warning(this,"提示","当前账号罚款未缴纳，请联系管理员缴清罚款后再操作");
         return;
     }
     displayBookData();

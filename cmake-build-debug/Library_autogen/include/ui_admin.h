@@ -105,7 +105,7 @@ public:
     void retranslateUi(QMainWindow *admin)
     {
         admin->setWindowTitle(QCoreApplication::translate("admin", "\345\233\276\344\271\246\347\256\241\347\220\206\347\263\273\347\273\237", nullptr));
-        borrow_record_btn->setText(QCoreApplication::translate("admin", "\345\200\237\351\230\205\350\256\260\345\275\225", nullptr));
+        borrow_record_btn->setText(QCoreApplication::translate("admin", "\351\200\276\346\234\237\350\256\260\345\275\225", nullptr));
         book_btn->setText(QCoreApplication::translate("admin", " \345\233\276\344\271\246\347\256\241\347\220\206", nullptr));
         user_btn->setText(QCoreApplication::translate("admin", "\347\224\250\346\210\267\347\256\241\347\220\206", nullptr));
     } // retranslateUi

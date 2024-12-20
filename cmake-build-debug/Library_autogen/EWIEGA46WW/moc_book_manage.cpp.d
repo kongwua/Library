@@ -1,11 +1,13 @@
 C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/EWIEGA46WW/moc_book_manage.cpp: C:/Users/recatu/Documents/Library/book_manage.h \
   C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/moc_predefs.h \
   C:/Users/recatu/Documents/Library/Library.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QList \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QObject \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QRect \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSize \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/Qdebug \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20memory.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -24,6 +26,7 @@ C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/EWIEGA46WW/m
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearraylist.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qchar.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcompare_impl.h \
@@ -37,6 +40,7 @@ C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/EWIEGA46WW/m
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatastream.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdebug.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qflags.h \
@@ -54,6 +58,7 @@ C:/Users/recatu/Documents/Library/cmake-build-debug/Library_autogen/EWIEGA46WW/m
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qiterator.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qline.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlist.h \
+  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlocale.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlogging.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qmalloc.h \
   D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qmap.h \

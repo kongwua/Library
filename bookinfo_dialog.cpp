@@ -157,7 +157,10 @@ void bookinfo_dialog::on_borrowBook_btn_clicked() {
         QMessageBox::warning(this,"警告","借阅失败");
     } else if(res == 2){
         QMessageBox::information(this,"提示","当前无剩余图书，已预约!");
-    } else{QMessageBox::information(this,"提示",("借阅《" + tr(book->elem.name.data())+"》成功！"));}
+    } else if(res == 3){
+        QMessageBox::warning(this,"提示","当前账号罚款未缴纳，请联系管理员缴清罚款后再操作");
+    }
+    else{QMessageBox::information(this,"提示",("借阅《" + tr(book->elem.name.data())+"》成功！"));}
 
     displayUserData();
 

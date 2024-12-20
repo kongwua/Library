@@ -375,6 +375,12 @@ CMakeFiles/Library.dir/user_manage.cpp.obj: \
  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/Qdebug \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdebug.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlocale.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qstring.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
@@ -423,7 +429,6 @@ CMakeFiles/Library.dir/user_manage.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qguiapplication.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qinputmethod.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlocale.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qguiapplication_platform.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QGridLayout \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qgridlayout.h \
@@ -470,10 +475,7 @@ CMakeFiles/Library.dir/user_manage.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h \
  C:\Users\recatu\Documents\Library\book_manage.h \
- C:\Users\recatu\Documents\Library\borrow_manage.h \
  C:\Users\recatu\Documents\Library\borrow_record.h \
  C:\Users\recatu\Documents\Library\userinfo_dialog.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QDialog \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qstring.h
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h

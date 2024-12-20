@@ -44,7 +44,7 @@ void login::user_login() {
 
 void login::first_longin() {
     //第一次登录，创建默认管理员账户
-    UserInfo firstUser("1234","1234",1);
+    UserInfo firstUser("1234","1234",1,0);
     lib.users.append(firstUser);
     login_UserID = firstUser.ID;
     isAdmin = true;

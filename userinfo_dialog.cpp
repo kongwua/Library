@@ -18,10 +18,12 @@ userinfo_dialog::userinfo_dialog(QWidget *parent,string userID) :
     ui->book_tableView->setSelectionMode(QAbstractItemView::SingleSelection);
     ui->reserve_tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
     ui->reserve_tableView->setSelectionMode(QAbstractItemView::SingleSelection);
+    ui->fine_spinbox->setEnabled(false);//罚金输入框禁用
     connect(ui->buttonBox,&QDialogButtonBox::accepted,this,&userinfo_dialog::buttonBox_accepted);
     connect(ui->delete_btn,&QPushButton::clicked,this,&userinfo_dialog::delete_btn_clicked);
     connect(ui->psw_btn,&QPushButton::clicked,this,&userinfo_dialog::changePsw_btn_clicked);
     user = lib.findUser(userID);
+    ui->fine_spinbox->setValue(user->elem.fine);
     if(userID.empty()){
         //添加用户操作
         ui->delete_btn->setDisabled(true);
@@ -30,6 +32,9 @@ userinfo_dialog::userinfo_dialog(QWidget *parent,string userID) :
         ui->psw_btn->setToolTip("保存用户后修改密码");
     } else{
             //显示用户信息
+            if(user->elem.fine>0){
+                QMessageBox::warning(this, "警告", "该用户有罚金，请及时联系管理员缴纳！");
+            }
             displayBookTable();//显示书籍表格
             ui->lineEdit->setText(user->elem.ID.data());
             ui->admin_checkBox->setChecked(user->elem.type);//管理员权限

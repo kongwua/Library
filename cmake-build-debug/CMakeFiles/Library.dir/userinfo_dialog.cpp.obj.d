@@ -376,6 +376,12 @@ CMakeFiles/Library.dir/userinfo_dialog.cpp.obj: \
  D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/Qdebug \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdebug.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlocale.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qstring.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
@@ -425,7 +431,6 @@ CMakeFiles/Library.dir/userinfo_dialog.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qguiapplication.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qinputmethod.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlocale.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qguiapplication_platform.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QCheckBox \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qcheckbox.h \
@@ -433,6 +438,11 @@ CMakeFiles/Library.dir/userinfo_dialog.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QDialog \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QDialogButtonBox \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QDoubleSpinBox \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qspinbox.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qvalidator.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qregularexpression.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QGridLayout \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qgridlayout.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qlayout.h \
@@ -449,9 +459,6 @@ CMakeFiles/Library.dir/userinfo_dialog.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qitemselectionmodel.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qstyleoption.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qvalidator.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qregularexpression.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qslider.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qabstractslider.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qstyle.h \

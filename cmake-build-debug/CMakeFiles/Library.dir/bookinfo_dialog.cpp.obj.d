@@ -328,6 +328,20 @@ CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qhash.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qvarlengtharray.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/q20memory.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QDate \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlocale.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qvariant.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdebug.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qobject.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qobject_impl.h \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbindingstorage.h \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/chrono \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ratio \
+ D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/QString \
+ D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qstring.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -340,12 +354,6 @@ CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/qwidget.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qwindowdefs.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qwindowdefs_win.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qobject.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qobject_impl.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qbindingstorage.h \
- D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/chrono \
- D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ratio \
- D:/app_install/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qmargins.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qaction.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qkeysequence.h \
@@ -364,8 +372,6 @@ CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qpolygon.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qregion.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qline.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qvariant.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qdebug.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qpalette.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qbrush.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qfont.h \
@@ -425,7 +431,6 @@ CMakeFiles/Library.dir/bookinfo_dialog.cpp.obj: \
  D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qguiapplication.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qinputmethod.h \
- D:/app_install/QT/6.5.3/mingw_64/include/QtCore/qlocale.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtGui/qguiapplication_platform.h \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QDialog \
  D:/app_install/QT/6.5.3/mingw_64/include/QtWidgets/QDialogButtonBox \
