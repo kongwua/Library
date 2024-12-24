@@ -242,7 +242,7 @@ public:
         label_5->setText(QCoreApplication::translate("bookinfo_dialog", "\345\200\237\351\230\205\346\234\254\344\271\246\347\232\204\347\224\250\346\210\267", nullptr));
         num_label->setText(QCoreApplication::translate("bookinfo_dialog", "\345\205\261\345\200\237\345\207\272 0 \346\234\254", nullptr));
         label_7->setText(QCoreApplication::translate("bookinfo_dialog", "\351\242\204\347\272\246\346\234\254\344\271\246\347\232\204\347\224\250\346\210\267", nullptr));
-        reserve_lable->setText(QCoreApplication::translate("bookinfo_dialog", "\345\205\261\351\242\204\347\272\246 0 \346\234\254", nullptr));
+        reserve_lable->setText(QCoreApplication::translate("bookinfo_dialog", "\345\205\261\351\242\204\347\272\246 0 \344\272\272", nullptr));
     } // retranslateUi
 
 };

@@ -1,20 +1,21 @@
 cmake_minimum_required(VERSION 3.27)
-project(Library)
+project(Library)    #项目名
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-set(CMAKE_PREFIX_PATH "D:/app_install/QT/6.5.3/mingw_64")
+set(CMAKE_PREFIX_PATH "D:/app_install/QT/6.5.3/mingw_64")#QT安装路径，需要改
 
 find_package(Qt6 COMPONENTS
         Core
         Gui
         Widgets
         Sql
-        REQUIRED)
+        REQUIRED)#查找Qt6组件，不用改
 
+#可执行文件名，项目中所有源代码和头文件以及ui文件都要写在这里，需要改
 add_executable(Library main.cpp
         login.cpp
         login.h
@@ -48,7 +49,7 @@ target_link_libraries(Library
         Qt::Gui
         Qt::Widgets
         Qt::Sql
-)
+)#链接Qt库，不用改
 
 if (WIN32 AND NOT DEFINED CMAKE_TOOLCHAIN_FILE)
     set(DEBUG_SUFFIX)

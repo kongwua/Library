@@ -19,6 +19,7 @@ bookinfo_dialog::bookinfo_dialog(QWidget *parent,string _bookIsbn) :
     ui->reserve_tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
     ui->reserve_tableView->setSelectionMode(QAbstractItemView::SingleSelection);
     book = lib.findBookbyISBN(_bookIsbn);
+    if(!isAdmin){ui->delete_btn->hide();ui->buttonBox->hide();}
     if(book){
         //搜索结果不为空
         displayUserData();
@@ -28,6 +29,7 @@ bookinfo_dialog::bookinfo_dialog(QWidget *parent,string _bookIsbn) :
         ui->price_doubleSpinBox->setValue(book->elem.price);
     } else{
         //搜索结果为空,添加图书信息
+        ui->delete_btn->hide();ui->returnBook_btn->hide();ui->borrowBook_btn->hide();
     }
 }
 

@@ -23,7 +23,7 @@ userinfo_dialog::userinfo_dialog(QWidget *parent,string userID) :
     connect(ui->delete_btn,&QPushButton::clicked,this,&userinfo_dialog::delete_btn_clicked);
     connect(ui->psw_btn,&QPushButton::clicked,this,&userinfo_dialog::changePsw_btn_clicked);
     user = lib.findUser(userID);
-    ui->fine_spinbox->setValue(user->elem.fine);
+
     if(userID.empty()){
         //添加用户操作
         ui->delete_btn->setDisabled(true);
@@ -36,6 +36,7 @@ userinfo_dialog::userinfo_dialog(QWidget *parent,string userID) :
                 QMessageBox::warning(this, "警告", "该用户有罚金，请及时联系管理员缴纳！");
             }
             displayBookTable();//显示书籍表格
+            ui->fine_spinbox->setValue(user->elem.fine);
             ui->lineEdit->setText(user->elem.ID.data());
             ui->admin_checkBox->setChecked(user->elem.type);//管理员权限
             if(!isAdmin){

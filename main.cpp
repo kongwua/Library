@@ -2,6 +2,7 @@
 #include <QDir>
 #include "admin.h"
 #include "login.h"
+#include <windows.h>
 Library lib;
 string login_UserID;
 bool isAdmin;
@@ -9,6 +10,7 @@ bool isAdmin;
 
 int main(int argc, char *argv[]) {
     qDebug()<<lib.currentTime;
+    FreeConsole();//隐藏控制台
     QApplication a(argc, argv);
     login login_w;//登录界面
     admin admin_w;//管理员界面

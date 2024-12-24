@@ -150,10 +150,6 @@ public:
     Node<T>* delByValue(T val) {
         return del(find(val));
     }
-    // 删除末尾元素
-    Node<T>* pop() {
-        return del(head->prev);
-    }
     // 修改链表元素，若修改成功返回改节点指针，若修改失败则返回空指针
     Node<T>* modify(Node<T> *pos, T val) {
         if (pos == nullptr) {
@@ -316,7 +312,7 @@ public:
     double fine=0;					// 罚款
     List<Node<BookInfo>*> books;	// 已借阅的书籍
     List<Node<BookInfo>*> reserveBooks; //预约的书籍
-    List<string> booksISBN;
+    List<string> booksISBN;//记录借阅的书籍ISBN，存储在文件中
 
 
     UserInfo(): ID(""),type(-1),fine(0) {}
@@ -369,7 +365,7 @@ public:
     double price;					// 价格
     List<Node<UserInfo>*> readers;	// 借阅该书的读者
     Queue<QNode<UserInfo>*> reserveReaders;    //预约队列,当可借阅书数量为0时启用
-    List<string> readersID;
+    List<string> readersID;//借阅者的id，存储在文件中
 
 
     BookInfo(): isbn(), quantity(-1),price(0) {}
@@ -462,11 +458,11 @@ public:
     List<RecordInfo> records;//借阅信息链表
     QDate currentTime;//当前日期
     int days=30;//借阅期限为30天
-    const char *bookPath;
-    const char *userPath;
-    const char *reservePath;
-    const char *recordPath;
-    char DIVIDE_CHAR;
+    const char *bookPath;//图书信息文件路径
+    const char *userPath;//用户信息文件路径
+    const char *reservePath;//预约信息文件路径
+    const char *recordPath;//借阅信息文件路径
+    char DIVIDE_CHAR;//分隔符
 
     Library() {
         currentTime = QDate::currentDate();
@@ -608,6 +604,7 @@ public:
     // 按编号查找图书
     Node<BookInfo>* findBookbyISBN(string isbn) {
         for (auto *p = books.begin(); p != books.end(); p = p->next) {
+            //遍历图书链表，直到找到目标图书
             if (p->elem.isbn == isbn) return p;
         }
         return nullptr;
@@ -615,6 +612,7 @@ public:
     // 按id查找用户
     Node<UserInfo>* findUser(string id) {
         for (auto *p = users.begin(); p != users.end(); p = p->next) {
+            //遍历用户链表，直到找到目标用户
             if (p->elem.ID == id) return p;
         }
         return nullptr;
@@ -622,6 +620,7 @@ public:
     // 按名称查找图书
     Node<BookInfo>* findBookbyName(string name) {
         for (auto *p = books.begin(); p != books.end(); p = p->next) {
+            //遍历图书链表，直到找到目标图书
             if (p->elem.name == name) return p;
         }
         return nullptr;
@@ -629,6 +628,7 @@ public:
     //查找借阅记录
     Node<RecordInfo>* findRecord(string readerID, string bookISBN){
         for(auto *p = records.begin(); p!= records.end(); p = p->next){
+            //遍历借阅记录链表，直到找到目标记录
             if(p->elem.readerID == readerID && p->elem.bookISBN == bookISBN){
                 return p;}
             }
@@ -638,6 +638,7 @@ public:
     List<Node<BookInfo>*> fuzzyFindBook(string name) {
         List<Node<BookInfo>*> ret;
         for (auto *p = books.begin(); p != books.end(); p = p->next) {
+            //遍历图书链表，查找名称包含name的图书
             if (p->elem.name.find(name) != string::npos) {
                 ret.append(p);
             }
@@ -692,15 +693,15 @@ public:
             cerr << "不存在符合条件的图书。" << endl;
             return nullptr;
         }
-        auto readers = book->elem.readers;
+        auto readers = book->elem.readers;//获取读者链表
         if (!readers.isEmpty()) {
             cerr << "[警告] 现在还有 " << readers.size() << " 名用户未还该书 《"
                  << book->elem.name << "》(" << book->elem.isbn << ")。" << endl;
             if (!force) return nullptr;
         }
         for (auto *p = readers.begin(); p != readers.end(); p = p->next) {
+            //遍历读者链表，删除读者信息
             Node<UserInfo> *user = p->elem;
-            // cerr << "[警告] 用户 " << user->elem.name << "(" << user->elem.identifier << ") 未还该书." << endl;
             user->elem.books.delByValue(book);
         }
         return books.del(book);
@@ -711,13 +712,14 @@ public:
             cerr << "不存在符合条件的用户。" << endl;
             return nullptr;
         }
-        auto books = user->elem.books;
+        auto books = user->elem.books;//获取书籍链表
         if (!books.isEmpty()) {
             cerr << "[警告] 该用户" << user->elem.ID
                   << "未还图书 " << books.size() << " 本。";
             if (!force) return nullptr;
         }
         for (auto *p = books.begin(); p != books.end(); p = p->next) {
+            //遍历书籍链表，删除书籍信息
             Node<BookInfo> *book = p->elem;
             book->elem.readers.delByValue(user);
         }
@@ -762,7 +764,7 @@ public:
     }
 
     int borrowBook(Node<UserInfo>* userNode, Node<BookInfo>* bookNode) {
-        //成功返回0，失败返回1,预约返回2,逾期返回3
+        //借书函数  成功返回0，失败返回1,预约返回2,逾期返回3
         if (!userNode || !bookNode) {
             cerr << "不存在符合条件的图书或用户。" << endl;
             return 1;
@@ -771,7 +773,7 @@ public:
         BookInfo book = bookNode->elem;
         // 判断书是否还有剩余
         int quantity = book.quantity;
-        if (quantity <= book.readers.size()+book.reserveReaders.size()) {
+        if (quantity <= book.readers.size()) {
           // 图书数量不足
                 //预约
                 addReserve(ReserveInfo(userNode->elem.ID, bookNode->elem.isbn));
@@ -800,10 +802,13 @@ public:
             cerr << "不存在符合条件的图书或用户。" << endl;
             return 1;
         }
+        //删除用户信息
         auto retUser = userNode->elem.books.delByValue(bookNode);
+        //删除图书信息
         auto retBook = bookNode->elem.readers.delByValue(userNode);
+        //删除借阅记录
         auto retRecord= delRecord(userNode->elem.ID,bookNode->elem.isbn);
-        if (!retUser || !retBook||!retRecord) return 1;
+        if (!retUser || !retBook||!retRecord) return 1;//删除失败
 
         //还书后，判断是否有预约
         if(bookNode->elem.reserveReaders.size() > 0){
@@ -812,9 +817,8 @@ public:
             auto userid = node->elem->elem.ID;
             //借书
             delReserve(reserves.begin()->elem);//删除预约信息
-
+            //借书
             borrowBookByISBN(userid,bookNode->elem.isbn);
-
         }
         return 0;
     }
@@ -894,6 +898,7 @@ protected:
     }
 
     int userDataReader(const char *fileName) {
+        // 从文件读取用户数据
         ifstream input(fileName);
         if (!input) {
             qDebug() << "数据读取失败。请检查文件\"" << fileName << "\"是否存在。";
@@ -982,6 +987,7 @@ protected:
         return 0;
     }
     int recordDataReader(const char *fileName) {
+        // 从文件读取借阅记录数据
         ifstream input(fileName);
         if (!input) {
             qDebug() << "数据读取失败。请检查文件\"" << fileName << "\"是否存在。";

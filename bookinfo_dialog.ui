@@ -178,7 +178,7 @@
      <item>
       <widget class="QLabel" name="reserve_lable">
        <property name="text">
-        <string>共预约 0 本</string>
+        <string>共预约 0 人</string>
        </property>
       </widget>
      </item>
